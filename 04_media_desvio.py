@@ -57,6 +57,11 @@ def prob_entre(a, b):
     return phi(b) - phi(a)
 
 
+def erro_padrao(sigma, n):
+    """Erro padrão da média amostral: sigma / sqrt(n) (Teorema do Limite Central)."""
+    return sigma / sqrt(n)
+
+
 def area_intervalo(k):
     """Área sob a curva normal em mi ± k·sigma (independe de mi e sigma): erf(k / sqrt(2))."""
     return erf(k / sqrt(2))
@@ -96,6 +101,11 @@ if __name__ == "__main__":
     print(f"Phi({z:.2f})                  : {phi(round(z, 2)):.4f}")
     print(f"P(Z > {z:.2f})               : {prob_maior(round(z, 2)):.4f}")
     print(f"P({z:.2f} < Z < 2,00)        : {prob_entre(round(z, 2), 2):.4f}")
+
+    for n in (20, 30, 100, 1200):
+        print(f"erro padrao (n={n:>4})       : {erro_padrao(s, n):.4f}")
+    ep = erro_padrao(s, 30)
+    print(f"P(x_barra > 260 | n=30)    : {prob_maior(round(escore_z(260, mi, ep), 2)):.4f}")
 
     for k in (1, 2, 3):
         print(f"mi +/- {k}sigma = [{mi - k * s:.2f}, {mi + k * s:.2f}]  area = {area_intervalo(k):.4%}")
