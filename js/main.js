@@ -17,7 +17,7 @@
   if (!dados.length) {
     const aviso = document.createElement("div");
     aviso.className = "erro";
-    aviso.innerHTML = "Não encontrei <code>data/gastos.js</code>. Rode <code>python 03_exportar_gastos.py</code> e recarregue a página.";
+    aviso.innerHTML = "Não encontrei <code>data/gastos.js</code>. Confira se a pasta <code>data</code> está junto do <code>index.html</code> e recarregue a página.";
     document.querySelector("main").insertBefore(aviso, document.querySelector("header").nextSibling);
     return;
   }

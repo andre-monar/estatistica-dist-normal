@@ -1,6 +1,6 @@
 /**
  * Distribuição normal: densidade f(x; mu, sigma) e área acumulada Φ(z).
- * Funções puras (sem DOM). Espelha 04_media_desvio.py.
+ * Funções puras (sem DOM).
  *
  * O JavaScript não tem a função erro (erf) pronta, então ela é calculada aqui:
  * série de Taylor para |x| pequeno e fração contínua nas caudas.

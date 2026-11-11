@@ -19,7 +19,7 @@ function perto(nome, obtido, esperado, tol) {
   ok++;
 }
 
-// 04_media_desvio.py
+// média, desvio padrão, Z e erro padrão
 assert.strictEqual(dados.length, 1200); ok++;
 perto("média", E.media(dados), 247.2942, 1e-4);
 perto("desvio amostral", E.desvioPadrao(dados), 49.3737, 1e-4);
@@ -29,7 +29,7 @@ perto("erro padrão n=20", E.erroPadrao(E.desvioPadrao(dados), 20), 11.0403, 1e-
 perto("erro padrão n=30", E.erroPadrao(E.desvioPadrao(dados), 30), 9.0144, 1e-4);
 perto("erro padrão n=1200", E.erroPadrao(E.desvioPadrao(dados), 1200), 1.4253, 1e-4);
 
-// 01_gasto_sucesso.py
+// critério de sucesso
 assert.strictEqual(E.contarAcima(dados, 300), 175); ok++;
 
 // normal
@@ -46,7 +46,7 @@ perto("área 3σ", E.areaIntervalo(3), 0.9973002039367398, 1e-12);
 perto("densidade no pico", E.densidade(247.2942, 247.2942, 49.3737), 0.008080, 1e-6);
 perto("P(1,07<Z<2)", E.probEntre(1.07, 2), 0.1196, 5e-5);
 
-// binomial (02_binomial.py)
+// binomial
 const p = 175 / 1200;
 perto("binomial(10,2)", E.binomial(10, 2, p), 0.271186, 1e-6);
 perto("binomial(10,0)", E.binomial(10, 0, p), 0.206741, 1e-6);

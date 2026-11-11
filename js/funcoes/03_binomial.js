@@ -1,6 +1,6 @@
 /**
  * Lei binomial: P(X = k) = n! / (k! (n-k)!) * p^k * (1-p)^(n-k)
- * Funções puras (sem DOM). Espelha 02_binomial.py.
+ * Funções puras (sem DOM).
  *
  * Tudo é calculado em logaritmo (log de P) para n grande não estourar:
  * 10000! não cabe em um número, mas o seu logaritmo cabe.

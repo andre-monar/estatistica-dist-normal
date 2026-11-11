@@ -1,7 +1,6 @@
 /**
  * Estatística descritiva: média, desvio padrão, escore Z e erro padrão.
  * Funções puras: não tocam na página (sem DOM), então rodam também no Node.
- * Espelha 04_media_desvio.py.
  */
 (function (raiz) {
   "use strict";
