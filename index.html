@@ -64,13 +64,13 @@
   .wheel-field label { display: block; font-family: var(--display); font-style: italic; font-size: 34px; line-height: 1.1; margin-bottom: 6px; }
   .wheel-field .hint { display: block; font-size: 16px; color: var(--muted); margin-top: 8px; }
 
-  .wheel-wrap { position: relative; width: 168px; height: 192px; margin: 0 auto; }
+  .wheel-wrap { position: relative; width: 168px; height: var(--h, 192px); margin: 0 auto; }
   .wheel-wrap::before, .wheel-wrap::after {
     content: ""; position: absolute; left: 0; right: 0; height: 0;
     border-top: 1px solid var(--ink); pointer-events: none; z-index: 2; transition: border-top-width .12s;
   }
-  .wheel-wrap::before { top: 72px; }
-  .wheel-wrap::after { top: 120px; }
+  .wheel-wrap::before { top: calc(var(--h, 192px) / 2 - var(--item, 48px) / 2); }
+  .wheel-wrap::after { top: calc(var(--h, 192px) / 2 + var(--item, 48px) / 2); }
   .wheel-wrap:focus-within::before, .wheel-wrap:focus-within::after { border-top-width: 2px; }
   .wheel {
     position: absolute; inset: 0; overflow: hidden; cursor: grab;
@@ -80,20 +80,28 @@
   }
   .wheel.grabbing { cursor: grabbing; }
   .wheel .row {
-    position: absolute; left: 0; right: 0; top: 0; height: 48px;
+    position: absolute; left: 0; right: 0; top: 0; height: var(--item, 48px);
     display: flex; align-items: center; justify-content: center;
-    font-family: var(--display); font-style: italic; font-size: 42px; line-height: 1;
+    font-family: var(--display); font-style: italic; font-size: var(--fs, 42px); line-height: 1;
     font-variant-numeric: lining-nums tabular-nums;
     will-change: transform, opacity; pointer-events: none;
   }
   .wheel input {
-    position: absolute; left: 0; right: 0; top: 72px; height: 48px; width: 100%;
+    position: absolute; left: 0; right: 0; top: calc(var(--h, 192px) / 2 - var(--item, 48px) / 2); height: var(--item, 48px); width: 100%;
     margin: 0; padding: 0; border: 0; border-radius: 0; outline: none; background: transparent;
     text-align: center; color: var(--ink); pointer-events: none;
-    font-family: var(--display); font-style: italic; font-size: 42px; line-height: 1;
+    font-family: var(--display); font-style: italic; font-size: var(--fs, 42px); line-height: 1;
     font-variant-numeric: lining-nums tabular-nums;
     -moz-appearance: textfield; appearance: textfield;
   }
+
+  .sigma-row { display: flex; align-items: center; justify-content: center; gap: 32px; flex-wrap: wrap; margin-top: 24px; }
+  .sigma-row p { flex: 1 1 260px; margin: 0; }
+  .wheel-field.compact label { font-size: 26px; margin-bottom: 2px; }
+
+  .btn { font: inherit; font-size: 18px; color: var(--ink); background: transparent; border: 1px solid var(--ink); padding: 6px 16px; cursor: pointer; transition: background .12s, color .12s; }
+  .btn:hover { background: var(--ink); color: var(--bg); }
+  .btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
 
   .calc { margin-top: 32px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 28px 0; }
   .vigente { text-align: center; font-size: 19px; color: var(--muted); margin: 8px 0 0; }
@@ -136,7 +144,10 @@
     <dt>Clientes</dt><dd>1.200, com 20 variáveis e sem valores ausentes</dd>
     <dt>Variável</dt><dd><code>gasto_mensal</code> (R$), quantitativa contínua</dd>
     <dt>Amplitude</dt><dd>de R$ 103,82 a R$ 444,83</dd>
+    <dt>Média (<em>μ</em>)</dt><dd id="f-mu">–</dd>
+    <dt>Desvio padrão (<em>σ</em>)</dt><dd id="f-sigma">–</dd>
   </dl>
+  <p class="small" style="margin-top:12px">A média é o centro dos gastos e o desvio padrão mede o quanto eles se espalham em torno dela. O desvio é o amostral (divisão por <em>n</em> − 1).</p>
 </section>
 
 <section>
@@ -164,10 +175,55 @@
     <tfoot><tr><td>Total (<em>n</em>)</td><td id="t-n">–</td><td>1,0000</td></tr></tfoot>
     <caption>Como <em>q</em> é o complementar de <em>p</em>, vale <em>p</em> + <em>q</em> = 1. A tabela acompanha o limite escolhido acima.</caption>
   </table>
+
+  <p>Com a média <em>μ</em> e o desvio padrão <em>σ</em>, a curva normal descreve como os gastos se distribuem em torno do centro. A média define onde fica o pico, e o desvio padrão define o quanto a curva é larga ou achatada.</p>
+  <div class="math-block" id="normal-formula"></div>
+  <figure>
+    <svg id="normal" viewBox="0 0 640 304" role="img" aria-labelledby="normal-cap"></svg>
+    <figcaption id="normal-cap"></figcaption>
+  </figure>
+  <div class="sigma-row">
+    <div class="wheel-field compact">
+      <label for="sigma-input">± σ</label>
+      <div id="w-sigma"></div>
+    </div>
+    <p id="sigma-txt" aria-live="polite"></p>
+  </div>
+
+  <p style="margin-top:40px">O escore <em>Z</em> mede a distância do limite <em>L</em> até a média, contada em desvios padrão:</p>
+  <div class="math-block" id="z-formula"></div>
+  <p id="z-txt" aria-live="polite"></p>
 </section>
 
 <section>
-  <h2><span class="num">4.</span> Lei binomial</h2>
+  <h2><span class="num">4.</span> Área acumulada Φ(z)</h2>
+  <p>A função <em>Φ(z)</em> dá a área acumulada sob a curva normal padrão (<em>μ</em> = 0 e <em>σ</em> = 1), da esquerda até <em>z</em>. Ela é a probabilidade de <em>Z</em> ser menor ou igual a <em>z</em>:</p>
+  <div class="math-block" id="phi-def"></div>
+  <p>Com ela calculamos as duas probabilidades mais usadas:</p>
+  <div class="math-block" id="phi-forms"></div>
+  <p>Escolha <em>a</em> e <em>b</em>, de −4,00 a 4,00, com passo de 0,01.</p>
+  <div class="wheels">
+    <div class="wheel-field compact">
+      <label for="a-input">a</label>
+      <div id="w-a"></div>
+    </div>
+    <div class="wheel-field compact">
+      <label for="b-input">b</label>
+      <div id="w-b"></div>
+    </div>
+  </div>
+  <p style="text-align:center"><button type="button" class="btn" id="usar-z">usar o Z do limite L como a</button></p>
+  <figure>
+    <svg id="phi-chart" viewBox="0 0 640 220" role="img" aria-labelledby="phi-cap"></svg>
+    <figcaption id="phi-cap"></figcaption>
+  </figure>
+  <div class="math-block" id="phi-res"></div>
+  <p id="phi-txt" aria-live="polite"></p>
+  <p class="small" id="phi-ref"></p>
+</section>
+
+<section>
+  <h2><span class="num">5.</span> Lei binomial</h2>
   <p>Para <em>n</em> ensaios independentes, cada um com probabilidade de sucesso <em>p</em>, a probabilidade de obter exatamente <em>k</em> sucessos é:</p>
   <div class="math-block" id="formula"></div>
   <p>Aqui, <em>n</em> clientes sorteados ao acaso, com o <em>p</em> do limite escolhido na seção 2. Gire as roletas ou digite os valores de <em>n</em> e <em>k</em>.</p>
@@ -218,7 +274,8 @@
    * Passou do máximo -> volta ao 0 (e o inverso ao descer abaixo de 0).
    * ===================================================================== */
   function Roulette(host, opts) {
-    var ITEM = 48, H = 192, CY = H / 2, OFFS = 3;
+    var ITEM = opts.item || 48, H = ITEM * 4, CY = H / 2, OFFS = 3;
+    var fmt = opts.format || String;   // como o valor é exibido (ex.: 0 -> "–")
     var TAU = 0.9;          // constante de tempo do atrito da inércia (s)
     var SNAP_V = 2.5;       // abaixo disso (unid/s) a roleta assenta no inteiro
     var max = opts.max, pos = opts.value, lastVal = opts.value, gain = 1;
@@ -227,6 +284,10 @@
 
     // ---- DOM ----
     var wrap = document.createElement("div"); wrap.className = "wheel-wrap";
+    wrap.style.setProperty("--item", ITEM + "px");
+    wrap.style.setProperty("--h", H + "px");
+    wrap.style.setProperty("--fs", Math.round(ITEM * 0.875) + "px");
+    if (opts.width) wrap.style.width = opts.width + "px";
     var wheel = document.createElement("div"); wheel.className = "wheel";
     var rows = [];
     for (var o = -OFFS; o <= OFFS; o++) {
@@ -249,7 +310,7 @@
       var base = Math.round(pos), idle = !dragging && mode === "none";
       for (var o = -OFFS; o <= OFFS; o++) {
         var idx = base + o, d = Math.abs(idx - pos), row = rows[o + OFFS], v = mod(idx);
-        if (row._v !== v) { row.textContent = v; row._v = v; }
+        if (row._v !== v) { row.textContent = fmt(v); row._v = v; }
         var s = 1 - 0.14 * Math.min(d, 2.5);
         row.style.transform = "translateY(" + (CY - ITEM / 2 + (idx - pos) * ITEM) + "px) scale(" + s.toFixed(3) + ")";
         var op = Math.max(0, 1 - d * 0.38);
@@ -260,7 +321,8 @@
       input.style.opacity = idle ? 1 : 0;
       input.setAttribute("aria-valuemax", max);
       input.setAttribute("aria-valuenow", value());
-      if (document.activeElement !== input) input.value = String(value());
+      input.setAttribute("aria-valuetext", fmt(value()));
+      if (document.activeElement !== input) input.value = fmt(value());
     }
 
     function emit() {
@@ -326,14 +388,21 @@
     // ---- digitar ----
     input.addEventListener("focus", function () { input.select(); });
     input.addEventListener("input", function () {
+      if (opts.parse) {                       // entrada personalizada (decimais, sinal)
+        var pv = opts.parse(input.value);
+        if (pv === null) return;              // texto incompleto, ex.: "-" ou ""
+        pv = Math.max(0, Math.min(max, pv));
+        stop(); pos = pv; render(); emit();
+        return;
+      }
       var digits = input.value.replace(/\D/g, "");
       if (digits === "") { input.value = ""; return; }
       var v = parseInt(digits, 10);
       if (v > max) v = max;
-      input.value = String(v);
+      input.value = fmt(v);
       stop(); pos = v; render(); emit();
     });
-    input.addEventListener("blur", function () { input.value = String(value()); });
+    input.addEventListener("blur", function () { input.value = fmt(value()); });
     input.addEventListener("keydown", function (e) {
       var step = 0;
       if (e.key === "ArrowUp") step = 1; else if (e.key === "ArrowDown") step = -1;
@@ -342,13 +411,14 @@
       if (!step) return;
       e.preventDefault();
       stop(); pos = Math.round(pos) + step; render(); emit();
-      input.value = String(value()); input.select();
+      input.value = fmt(value()); input.select();
     });
 
     setGain(); render();
 
     return {
       get value() { return value(); },
+      set: function (v) { commitTo(v); },
       setMax: function (m) {
         max = Math.max(0, m); setGain();
         if (value() > max) pos = max; else pos = value();
@@ -434,11 +504,15 @@
   /* =====================================================================
    * Estado e tela
    * ===================================================================== */
-  var state = { L: 300, n: 20, k: 3 };
+  var state = { L: 300, n: 20, k: 3, s: 0, a: 400, b: 600 };
   var $ = function (id) { return document.getElementById(id); };
 
   tex($("hero-math"), "P(X=k)=\\binom{n}{k}\\,p^{k}(1-p)^{n-k}", false);
   tex($("formula"), "P(X=k)=\\frac{n!}{k!\\,(n-k)!}\\;p^{k}\\,(1-p)^{n-k}", true);
+  tex($("phi-def"), "\\Phi(z)=P(Z\\le z)=\\int_{-\\infty}^{z}\\frac{1}{\\sqrt{2\\pi}}\\,e^{-t^{2}/2}\\,dt", true);
+  tex($("phi-forms"), "\\begin{gathered}P(Z>a)=1-\\Phi(a)\\\\[6pt]P(a<Z<b)=\\Phi(b)-\\Phi(a)\\end{gathered}", true);
+  tex($("normal-formula"),
+    "f(x;\\mu,\\sigma)=\\underbrace{\\frac{1}{\\sigma\\sqrt{2\\pi}}}_{\\text{constante de normalização}}\\;e^{-\\frac{1}{2}\\left(\\frac{x-\\mu}{\\sigma}\\right)^{2}}", true);
 
   if (!N_TOTAL) {
     var err = document.createElement("div");
@@ -455,6 +529,213 @@
     if (avail > 0 && need > avail) el.style.fontSize = Math.max(11, Math.floor(basePx * avail / need * 0.97)) + "px";
   }
 
+  // média e desvio padrão amostral (n - 1) do gasto mensal
+  var MU = 0, SIGMA = 0;
+  (function () {
+    var i, soma = 0, sq = 0;
+    for (i = 0; i < N_TOTAL; i++) soma += G[i];
+    MU = soma / N_TOTAL;
+    for (i = 0; i < N_TOTAL; i++) sq += (G[i] - MU) * (G[i] - MU);
+    SIGMA = Math.sqrt(sq / (N_TOTAL - 1));
+    $("f-mu").textContent = "R$ " + nf(2).format(MU);
+    $("f-sigma").textContent = "R$ " + nf(2).format(SIGMA);
+  })();
+
+  function densidadeNormal(x) {
+    var z = (x - MU) / SIGMA;
+    return Math.exp(-0.5 * z * z) / (SIGMA * Math.sqrt(2 * Math.PI));
+  }
+
+  var normalSvg = $("normal");
+  // área sob a curva normal em mi ± k·sigma = erf(k/√2) (regra 68–95–99,7)
+  var AREA_SIGMA = { 1: "68,27", 2: "95,45", 3: "99,73" };
+
+  function drawNormal(L, ks) {
+    var W = 640, H = 304, Lm = 16, Rm = 16, T = 54, B = 84, iw = W - Lm - Rm, ih = H - T - B;
+    var X0 = 0, X1 = 500;
+    var sx = function (x) { return Lm + (x - X0) / (X1 - X0) * iw; };
+    var ymax = densidadeNormal(MU) * 1.08;
+    var sy = function (d) { return T + ih - (d / ymax) * ih; };
+    var FONT = "EB Garamond, serif", x, line = "", area = "";
+    normalSvg.textContent = "";
+
+    for (x = X0; x <= X1; x += 2.5) {
+      var px = sx(x).toFixed(1), py = sy(densidadeNormal(x)).toFixed(1);
+      line += (x === X0 ? "M" : "L") + px + " " + py;
+    }
+    area = line + "L" + sx(X1).toFixed(1) + " " + sy(0) + "L" + sx(X0).toFixed(1) + " " + sy(0) + "Z";
+    normalSvg.appendChild(svg("path", { d: area, fill: "#ececec" }));
+    var a = MU - ks * SIGMA, b = MU + ks * SIGMA;
+    if (ks > 0) {
+      var faixa = "M" + sx(a).toFixed(1) + " " + sy(0);
+      for (x = a; x < b; x += 2.5) faixa += "L" + sx(x).toFixed(1) + " " + sy(densidadeNormal(x)).toFixed(1);
+      faixa += "L" + sx(b).toFixed(1) + " " + sy(densidadeNormal(b)).toFixed(1) + "L" + sx(b).toFixed(1) + " " + sy(0) + "Z";
+      normalSvg.appendChild(svg("path", { d: faixa, fill: "#c4c4c4" }));
+    }
+    normalSvg.appendChild(svg("path", { d: line, fill: "none", stroke: "#111", "stroke-width": 1.8, "stroke-linejoin": "round" }));
+    normalSvg.appendChild(svg("line", { x1: Lm, x2: W - Rm, y1: sy(0), y2: sy(0), stroke: "#111", "stroke-width": 1.2 }));
+
+    for (x = 0; x <= 500; x += 100) {
+      normalSvg.appendChild(svg("line", { x1: sx(x), x2: sx(x), y1: sy(0), y2: sy(0) + 5, stroke: "#111" }));
+      normalSvg.appendChild(svg("text", { x: sx(x), y: sy(0) + 22, "text-anchor": "middle", "font-size": 14, fill: "#6b6b6b", "font-family": FONT }, String(x)));
+    }
+    // segunda linha: escore Z de cada ponto (μ + Z·σ), no mesmo eixo
+    for (var kz = -4; kz <= 5; kz++) {
+      var xz = MU + kz * SIGMA;
+      if (xz < X0 || xz > X1) continue;
+      normalSvg.appendChild(svg("text", { x: sx(xz), y: sy(0) + 42, "text-anchor": "middle", "font-size": 14, "font-style": "italic", fill: "#6b6b6b", "font-family": FONT },
+        (kz < 0 ? "−" : "") + Math.abs(kz)));
+    }
+    normalSvg.appendChild(svg("text", { x: W - Rm, y: sy(0) + 42, "text-anchor": "end", "font-size": 14, "font-style": "italic", fill: "#111", "font-family": FONT }, "Z"));
+    normalSvg.appendChild(svg("text", { x: W / 2, y: H - 4, "text-anchor": "middle", "font-size": 16, "font-style": "italic", fill: "#111", "font-family": FONT }, "gasto mensal x (R$)"));
+
+    // limites do intervalo μ ± kσ
+    if (ks > 0) {
+      [[a, "μ − " + ks + "σ"], [b, "μ + " + ks + "σ"]].forEach(function (e) {
+        normalSvg.appendChild(svg("line", { x1: sx(e[0]), x2: sx(e[0]), y1: sy(densidadeNormal(e[0])), y2: sy(0) + 28, stroke: "#111", "stroke-width": 1 }));
+        normalSvg.appendChild(svg("text", { x: sx(e[0]), y: sy(0) + 66, "text-anchor": "middle", "font-size": 15, fill: "#111", "font-family": FONT },
+          e[1] + " = " + nf(2).format(e[0])));
+      });
+    }
+    // média: tracejada
+    normalSvg.appendChild(svg("line", { x1: sx(MU), x2: sx(MU), y1: T - 6, y2: sy(0), stroke: "#6b6b6b", "stroke-width": 1.2, "stroke-dasharray": "4 4" }));
+    // limite L: sólida
+    normalSvg.appendChild(svg("line", { x1: sx(L), x2: sx(L), y1: T - 6, y2: sy(0), stroke: "#111", "stroke-width": 2 }));
+    var direita = L >= MU;
+    normalSvg.appendChild(svg("text", { x: sx(MU) + (direita ? -6 : 6), y: T - 12, "text-anchor": direita ? "end" : "start", "font-size": 15, "font-style": "italic", fill: "#6b6b6b", "font-family": FONT }, "μ = " + nf(2).format(MU)));
+    // rótulo de L com o seu Z; vai para o outro lado da linha se não couber
+    var zL = (L - MU) / SIGMA, txtL = "L = " + nInt.format(L), txtZ = "Z = " + nf(2).format(zL).replace("-", "−");
+    var larg = 8.5 * Math.max(txtL.length, txtZ.length), xL = sx(L), lado = direita ? 1 : -1;
+    if (lado === 1 && xL + 6 + larg > W - 4) lado = -1;
+    else if (lado === -1 && xL - 6 - larg < 4) lado = 1;
+    [[txtL, T - 30], [txtZ, T - 12]].forEach(function (r) {
+      normalSvg.appendChild(svg("text", { x: xL + lado * 6, y: r[1], "text-anchor": lado === 1 ? "start" : "end", "font-size": 15, "font-style": "italic", fill: "#111", "font-weight": 600, "font-family": FONT }, r[0]));
+    });
+
+    $("normal-cap").textContent = "Curva normal com μ = R$ " + nf(2).format(MU) + " e σ = R$ " + nf(2).format(SIGMA) +
+      ". A linha tracejada marca a média e a linha escura marca o limite L = R$ " + nInt.format(L) +
+      ". A linha de números em itálico sob o eixo é o escore Z: quantos desvios padrão cada ponto está da média.";
+
+    $("sigma-txt").textContent = ks === 0
+      ? "Gire o seletor para destacar o intervalo de 1, 2 ou 3 desvios padrão em torno da média."
+      : "O intervalo μ ± " + ks + "σ vai de R$ " + nf(2).format(a) + " a R$ " + nf(2).format(b) +
+        " e abrange cerca de " + AREA_SIGMA[ks] + "% da área sob a curva.";
+  }
+
+  // escore Z = (L - mi) / sigma
+  function drawZ(L) {
+    var z = (L - MU) / SIGMA, dif = L - MU;
+    var zT = tc(nf(2).format(z)), muT = tc(nf(2).format(MU)), sT = tc(nf(2).format(SIGMA));
+    tex($("z-formula"),
+      "Z=\\frac{L-\\mu}{\\sigma}=\\frac{" + L + "-" + muT + "}{" + sT + "}=" + zT, true);
+    fit($("z-formula"), 23);
+
+    var az = nf(2).format(Math.abs(z)), el = $("z-txt");
+    if (Math.abs(z) < 0.005) {
+      el.innerHTML = "O limite <em>L</em> = R$ " + nInt.format(L) + " coincide com a média.";
+      return;
+    }
+    var plural = az === "1,00" ? "desvio padrão" : "desvios padrão";
+    el.innerHTML = "O limite <em>L</em> = R$ " + nInt.format(L) + " está <strong>" + az + " " + plural + " " +
+      (z > 0 ? "acima" : "abaixo") + "</strong> da média, ou seja, R$ " + nf(2).format(Math.abs(dif)) +
+      (z > 0 ? " acima" : " abaixo") + " de <em>μ</em>.";
+  }
+
+  /* ---- Φ(z): área acumulada da normal padrão ---- */
+  function erfSeries(x) {
+    var x2 = x * x, term = x, sum = x, n, d;
+    for (n = 1; n < 200; n++) {
+      term *= -x2 / n; d = term / (2 * n + 1); sum += d;
+      if (Math.abs(d) < 1e-17 * Math.abs(sum)) break;
+    }
+    return 2 / Math.sqrt(Math.PI) * sum;
+  }
+  function erfcCF(x) {                       // fração contínua, x >= 2,5
+    var t = x, k;
+    for (k = 60; k >= 1; k--) t = x + (k / 2) / t;
+    return Math.exp(-x * x) / (Math.sqrt(Math.PI) * t);
+  }
+  function erfc(x) {
+    if (x >= 2.5) return erfcCF(x);
+    if (x <= -2.5) return 2 - erfcCF(-x);
+    return 1 - erfSeries(x);
+  }
+  function Phi(z) { return 0.5 * erfc(-z / Math.SQRT2); }
+  function phiDens(x) { return Math.exp(-0.5 * x * x) / Math.sqrt(2 * Math.PI); }
+
+  var Z_MIN = -4, Z_STEPS = 800;             // índice i  <->  z = (i - 400) / 100
+  var zOf = function (i) { return (i - 400) / 100; };
+  var iOf = function (z) { return Math.max(0, Math.min(Z_STEPS, Math.round(z * 100) + 400)); };
+  function fmtZ(i) {
+    var z = zOf(i);
+    return (z < 0 ? "−" : "") + nf(2).format(Math.abs(z));
+  }
+  function parseZ(txt) {
+    var s = txt.replace(/−/g, "-").replace(",", ".").trim();
+    if (!/^-?\d*\.?\d*$/.test(s) || !/\d/.test(s)) return null;
+    var v = parseFloat(s);
+    return isNaN(v) ? null : iOf(v);
+  }
+  var r4 = function (x) { return Math.round(x * 10000) / 10000; };
+  var f4 = function (x) { return tc(nf(4).format(x)); };
+  var pct2 = function (x) { return nf(2).format(x * 100) + "%"; };
+
+  var phiSvg = $("phi-chart");
+  function drawPhi(L, pObs) {
+    var A = zOf(state.a), B = zOf(state.b), temIntervalo = B > A;
+    var phiA = Phi(A), phiB = Phi(B);
+    var pa = r4(phiA), pb = r4(phiB), cauda = r4(1 - pa), inter = temIntervalo ? r4(pb - pa) : null;
+
+    // gráfico
+    var W = 640, H = 220, Lm = 16, Rm = 16, T = 30, B_ = 40, iw = W - Lm - Rm, ih = H - T - B_, x, FONT = "EB Garamond, serif";
+    var sx = function (v) { return Lm + (v - Z_MIN) / 8 * iw; };
+    var ymax = phiDens(0) * 1.1, sy = function (d) { return T + ih - d / ymax * ih; };
+    phiSvg.textContent = "";
+    function regiao(x0, x1, fill) {
+      if (x1 <= x0) return;
+      var d = "M" + sx(x0).toFixed(1) + " " + sy(0);
+      for (x = x0; x < x1; x += 0.02) d += "L" + sx(x).toFixed(1) + " " + sy(phiDens(x)).toFixed(1);
+      d += "L" + sx(x1).toFixed(1) + " " + sy(phiDens(x1)).toFixed(1) + "L" + sx(x1).toFixed(1) + " " + sy(0) + "Z";
+      phiSvg.appendChild(svg("path", { d: d, fill: fill }));
+    }
+    regiao(A, 4, "#e0e0e0");
+    if (temIntervalo) regiao(A, B, "#a6a6a6");
+    var linha = "";
+    for (x = -4; x <= 4.0001; x += 0.02) linha += (x === -4 ? "M" : "L") + sx(x).toFixed(1) + " " + sy(phiDens(x)).toFixed(1);
+    phiSvg.appendChild(svg("path", { d: linha, fill: "none", stroke: "#111", "stroke-width": 1.8, "stroke-linejoin": "round" }));
+    phiSvg.appendChild(svg("line", { x1: Lm, x2: W - Rm, y1: sy(0), y2: sy(0), stroke: "#111", "stroke-width": 1.2 }));
+    for (var t = -4; t <= 4; t++) {
+      phiSvg.appendChild(svg("line", { x1: sx(t), x2: sx(t), y1: sy(0), y2: sy(0) + 5, stroke: "#111" }));
+      phiSvg.appendChild(svg("text", { x: sx(t), y: sy(0) + 22, "text-anchor": "middle", "font-size": 14, fill: "#6b6b6b", "font-family": FONT }, (t < 0 ? "−" : "") + Math.abs(t)));
+    }
+    phiSvg.appendChild(svg("text", { x: W / 2, y: H - 4, "text-anchor": "middle", "font-size": 16, "font-style": "italic", fill: "#111", "font-family": FONT }, "z"));
+    var aEsq = !temIntervalo ? A <= B : true;   // rótulo de a à esquerda da sua linha
+    [[A, "a = " + fmtZ(state.a), aEsq], [B, "b = " + fmtZ(state.b), !aEsq]].forEach(function (e) {
+      phiSvg.appendChild(svg("line", { x1: sx(e[0]), x2: sx(e[0]), y1: T - 8, y2: sy(0), stroke: "#111", "stroke-width": 1.6 }));
+      phiSvg.appendChild(svg("text", { x: sx(e[0]) + (e[2] ? -6 : 6), y: T - 12, "text-anchor": e[2] ? "end" : "start", "font-size": 15, "font-style": "italic", fill: "#111", "font-family": FONT }, e[1]));
+    });
+    $("phi-cap").textContent = "Curva normal padrão (μ = 0, σ = 1). Cinza claro: Z > a. Cinza escuro: a < Z < b.";
+
+    // contas
+    var aT = tc(nf(2).format(A)), bT = tc(nf(2).format(B));
+    var linhas = [
+      "\\Phi(" + aT + ")=" + f4(pa),
+      "P(Z>" + aT + ")=1-\\Phi(" + aT + ")=1-" + f4(pa) + "=" + f4(cauda),
+      temIntervalo
+        ? "P(" + aT + "<Z<" + bT + ")=\\Phi(" + bT + ")-\\Phi(" + aT + ")=" + f4(pb) + "-" + f4(pa) + "=" + f4(inter)
+        : "P(a<Z<b)\\;\\text{exige } b>a"
+    ];
+    tex($("phi-res"), "\\begin{gathered}" + linhas.join("\\\\[6pt]") + "\\end{gathered}", true);
+    fit($("phi-res"), 23);
+
+    $("phi-txt").textContent = "P(Z > " + nf(2).format(A) + ") = " + pct2(cauda) + " da área" +
+      (temIntervalo ? "; P(" + nf(2).format(A) + " < Z < " + nf(2).format(B) + ") = " + pct2(inter) + " da área." : ". Para a probabilidade entre a e b, escolha b maior que a.");
+
+    var zL = (L - MU) / SIGMA;
+    $("phi-ref").textContent = "Comparação com os dados: o Z do limite L = R$ " + nInt.format(L) + " é " + nf(2).format(zL) +
+      ", e 1 − Φ(" + nf(2).format(zL) + ") = " + pct2(Phi(-zL)) + ". A proporção observada de clientes com gasto acima de L é p = " + pct2(pObs) + ".";
+  }
+
   var scheduled = false;
   function schedule() {
     if (scheduled) return; scheduled = true;
@@ -467,6 +748,12 @@
     state.n = v; if (wK) wK.setMax(v); schedule();
   } });
   wK = Roulette($("w-k"), { id: "k-input", max: state.n, value: state.k, onChange: function (v) { state.k = v; schedule(); } });
+
+  var wSigma = Roulette($("w-sigma"), {
+    id: "sigma-input", max: 3, value: state.s, item: 36, width: 100,
+    format: function (v) { return v === 0 ? "–" : String(v); },
+    onChange: function (v) { state.s = v; schedule(); }
+  });
 
   var cache = { L: null, sucessos: 0, iguais: 0 };
   function contar(L) {
@@ -548,6 +835,9 @@
     $("t-n").textContent = nInt.format(N_TOTAL);
     $("t-ps").textContent = nf(4).format(p) + " · " + nf(2).format(p * 100) + "%";
     $("t-pf").textContent = nf(4).format(q) + " · " + nf(2).format(q * 100) + "%";
+    drawNormal(L, state.s);
+    drawZ(L);
+    drawPhi(L, p);
 
     // seção 4
     $("k-hint").textContent = "de 0 a " + nInt.format(n);
@@ -566,6 +856,15 @@
       " clientes gastarem mais de R$ " + nInt.format(L) + ",00.";
     drawChart(n, k, p);
   }
+
+  // roletas de a e b (passo 0,01; índice 0..800 <-> z de -4,00 a 4,00)
+  state.a = iOf((state.L - MU) / SIGMA);     // a começa no Z do limite L
+  state.b = iOf(2);
+  var wA = Roulette($("w-a"), { id: "a-input", max: Z_STEPS, value: state.a, item: 36, width: 120, format: fmtZ, parse: parseZ,
+    onChange: function (v) { state.a = v; schedule(); } });
+  var wB = Roulette($("w-b"), { id: "b-input", max: Z_STEPS, value: state.b, item: 36, width: 120, format: fmtZ, parse: parseZ,
+    onChange: function (v) { state.b = v; schedule(); } });
+  $("usar-z").addEventListener("click", function () { wA.set(iOf((state.L - MU) / SIGMA)); });
 
   update();
   window.addEventListener("load", schedule);
