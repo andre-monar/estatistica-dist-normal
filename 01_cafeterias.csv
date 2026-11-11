@@ -1,0 +1,1201 @@
+﻿id,idade,genero,regiao,escolaridade,estado_civil,renda_mensal,classe_social,frequencia_uso_mes,gasto_mensal,canal_preferido,tempo_cliente_meses,programa_fidelidade,satisf_qualidade,satisf_preco,confianca_marca,influencia_redes_sociais,intencao_compra_futura,nps_recomendacao,bebida_preferida
+1,22,Feminino,Baeta Neves,Superior completo,Divorciado(a),2480.00,D,9,298.94,Loja física,24,Não,4,1,4,5,3,6,Coado
+2,59,Masculino,Ferrazópolis,Superior incompleto,Casado(a),4240.00,C,10,208.45,App,6,Não,2,5,3,1,3,5,Gelado
+3,52,Masculino,Rudge Ramos,Médio,Solteiro(a),1300.00,D,8,197.44,Loja física,3,Sim,5,2,3,2,4,6,Coado
+4,41,Masculino,Ferrazópolis,Superior completo,Casado(a),5580.00,C,4,306.69,Delivery,13,Sim,5,4,3,2,4,6,Latte
+5,40,Masculino,Jardim do Mar,Superior completo,Solteiro(a),6060.00,B,7,294.52,App,39,Não,5,3,5,4,4,7,Gelado
+6,63,Masculino,Rudge Ramos,Superior completo,Casado(a),3480.00,C,8,181.68,App,11,Sim,4,3,3,3,4,6,Latte
+7,22,Masculino,Nova Petrópolis,Superior incompleto,Casado(a),3320.00,C,0,171.44,Loja física,50,Não,5,3,4,4,3,8,Latte
+8,54,Feminino,Ferrazópolis,Pós-graduação,Solteiro(a),4800.00,C,10,206.41,Drive-thru,45,Não,2,4,5,2,4,7,Gelado
+9,28,Masculino,Ferrazópolis,Médio,Solteiro(a),1760.00,D,6,223.17,App,25,Não,4,2,4,4,3,5,Cappuccino
+10,22,Feminino,Ferrazópolis,Pós-graduação,Casado(a),4200.00,C,6,311.18,Drive-thru,7,Sim,3,3,4,4,2,3,Cappuccino
+11,45,Masculino,Demarchi,Médio,Solteiro(a),1740.00,D,7,160.28,Delivery,38,Sim,4,4,3,4,3,5,Expresso
+12,69,Masculino,Ferrazópolis,Médio,União estável,2100.00,D,6,213.45,Delivery,60,Não,5,2,3,4,3,2,Coado
+13,56,Masculino,Ferrazópolis,Superior incompleto,Casado(a),4910.00,C,11,306.69,App,29,Sim,5,2,5,3,4,7,Latte
+14,58,Outro,Centro,Superior incompleto,Casado(a),4620.00,C,5,303.34,Delivery,59,Sim,5,2,4,3,3,6,Coado
+15,56,Feminino,Paulicéia,Superior completo,Solteiro(a),2430.00,D,11,261.25,Loja física,21,Não,4,4,5,5,4,7,Expresso
+16,59,Masculino,Baeta Neves,Médio,Casado(a),1910.00,D,9,213.74,Drive-thru,6,Sim,3,2,3,3,3,5,Cappuccino
+17,45,Masculino,Centro,Pós-graduação,União estável,2690.00,D,6,207.92,App,47,Não,4,5,5,3,4,10,Expresso
+18,24,Feminino,Baeta Neves,Médio,Solteiro(a),3210.00,C,6,343.57,Loja física,64,Não,5,4,4,4,4,7,Cappuccino
+19,62,Feminino,Baeta Neves,Superior incompleto,Solteiro(a),1930.00,D,15,270.50,Drive-thru,64,Não,4,3,5,2,4,5,Gelado
+20,41,Feminino,Centro,Pós-graduação,Solteiro(a),4160.00,C,7,238.13,Loja física,70,Sim,2,3,2,3,3,2,Gelado
+21,44,Masculino,Jardim do Mar,Superior incompleto,Solteiro(a),3940.00,C,7,245.11,App,8,Não,4,5,5,3,4,7,Latte
+22,37,Feminino,Bairro Assunção,Superior completo,Casado(a),2970.00,D,7,186.68,Drive-thru,4,Não,2,1,3,2,2,2,Expresso
+23,27,Outro,Nova Petrópolis,Pós-graduação,Casado(a),5270.00,C,8,317.56,App,42,Sim,5,3,4,3,4,7,Gelado
+24,67,Feminino,Baeta Neves,Pós-graduação,Casado(a),3430.00,C,7,205.61,Loja física,69,Não,3,3,3,3,3,4,Expresso
+25,59,Masculino,Taboão,Superior incompleto,Solteiro(a),2720.00,D,5,136.91,Loja física,72,Sim,3,2,5,3,3,7,Expresso
+26,52,Feminino,Paulicéia,Superior incompleto,Solteiro(a),1870.00,D,9,255.75,Delivery,21,Sim,5,3,5,3,4,6,Latte
+27,39,Masculino,Paulicéia,Fundamental,Solteiro(a),3430.00,C,9,286.94,Delivery,28,Não,5,3,3,3,3,4,Gelado
+28,61,Feminino,Bairro Assunção,Superior incompleto,Divorciado(a),2140.00,D,4,179.42,Delivery,48,Sim,4,3,4,1,4,7,Coado
+29,46,Masculino,Taboão,Pós-graduação,Casado(a),4230.00,C,12,292.99,Delivery,66,Sim,5,3,5,2,4,8,Cappuccino
+30,41,Masculino,Taboão,Superior incompleto,Solteiro(a),2700.00,D,8,214.86,App,13,Não,5,1,4,3,4,7,Latte
+31,41,Masculino,Baeta Neves,Médio,Divorciado(a),1540.00,D,6,211.35,Drive-thru,71,Sim,3,3,4,4,3,2,Expresso
+32,30,Masculino,Demarchi,Fundamental,Solteiro(a),1590.00,D,8,243.57,Loja física,59,Sim,5,3,5,3,4,7,Cappuccino
+33,22,Feminino,Centro,Médio,Solteiro(a),4270.00,C,7,271.37,Drive-thru,5,Sim,4,3,3,3,3,4,Coado
+34,47,Feminino,Paulicéia,Médio,Solteiro(a),2770.00,D,9,280.25,Drive-thru,61,Não,5,4,4,3,4,7,Latte
+35,65,Feminino,Jardim do Mar,Pós-graduação,Viúvo(a),2470.00,D,9,224.23,Loja física,47,Não,4,4,4,4,4,7,Gelado
+36,21,Feminino,Baeta Neves,Superior incompleto,Casado(a),2950.00,D,15,280.03,Loja física,71,Sim,4,3,5,5,4,7,Latte
+37,63,Masculino,Demarchi,Fundamental,Casado(a),2240.00,D,8,185.15,Delivery,16,Não,3,3,4,2,3,5,Gelado
+38,61,Masculino,Baeta Neves,Fundamental,Solteiro(a),11230.00,B,6,361.50,Loja física,72,Sim,4,3,5,1,4,9,Coado
+39,32,Masculino,Centro,Pós-graduação,Solteiro(a),3880.00,C,13,282.51,Drive-thru,4,Sim,4,4,4,2,5,9,Latte
+40,51,Masculino,Ferrazópolis,Pós-graduação,Casado(a),3100.00,C,9,200.36,App,6,Sim,3,5,4,2,4,7,Gelado
+41,26,Masculino,Paulicéia,Superior completo,Solteiro(a),5600.00,C,13,338.18,Drive-thru,33,Sim,4,4,4,4,4,9,Gelado
+42,58,Masculino,Jardim do Mar,Fundamental,União estável,1300.00,D,11,256.34,Loja física,48,Sim,4,2,5,3,3,5,Cappuccino
+43,55,Feminino,Jardim do Mar,Fundamental,Casado(a),2420.00,D,7,235.25,Loja física,13,Não,4,2,5,3,4,6,Cappuccino
+44,36,Feminino,Baeta Neves,Fundamental,Casado(a),5270.00,C,8,282.91,Delivery,20,Não,3,4,5,3,3,6,Coado
+45,21,Masculino,Jardim do Mar,Superior completo,Casado(a),2750.00,D,10,234.10,Drive-thru,29,Não,4,3,4,3,3,5,Expresso
+46,69,Masculino,Demarchi,Superior completo,Viúvo(a),1610.00,D,8,213.70,Drive-thru,10,Não,4,2,3,4,3,1,Coado
+47,41,Feminino,Ferrazópolis,Pós-graduação,Casado(a),2960.00,D,6,245.69,Drive-thru,13,Sim,4,2,5,3,4,6,Latte
+48,65,Feminino,Ferrazópolis,Fundamental,Casado(a),4640.00,C,8,307.80,Delivery,11,Sim,4,5,5,1,4,8,Coado
+49,53,Masculino,Jardim do Mar,Fundamental,União estável,2720.00,D,8,230.76,Loja física,69,Sim,4,1,3,1,3,4,Expresso
+50,59,Feminino,Paulicéia,Pós-graduação,Solteiro(a),2610.00,D,6,246.43,Delivery,68,Sim,4,1,3,2,3,3,Latte
+51,58,Feminino,Rudge Ramos,Pós-graduação,União estável,2780.00,D,6,236.24,Delivery,46,Não,4,1,5,4,4,7,Latte
+52,28,Masculino,Centro,Superior completo,Solteiro(a),2320.00,D,7,210.41,App,50,Sim,5,1,3,3,4,6,Expresso
+53,37,Masculino,Baeta Neves,Fundamental,Casado(a),2540.00,D,6,231.85,Drive-thru,10,Sim,4,4,3,4,3,5,Latte
+54,42,Feminino,Demarchi,Fundamental,Divorciado(a),4020.00,C,9,330.70,Drive-thru,4,Sim,5,5,4,3,5,7,Coado
+55,44,Masculino,Ferrazópolis,Fundamental,Casado(a),3560.00,C,9,322.89,Drive-thru,28,Não,5,3,5,4,4,8,Latte
+56,20,Feminino,Baeta Neves,Superior completo,Casado(a),3540.00,C,9,225.95,Drive-thru,71,Sim,5,4,4,3,4,5,Coado
+57,46,Masculino,Demarchi,Pós-graduação,Casado(a),1980.00,D,9,293.25,Delivery,35,Não,5,2,5,2,4,7,Cappuccino
+58,26,Feminino,Jardim do Mar,Superior completo,Solteiro(a),1630.00,D,4,246.18,Drive-thru,59,Sim,5,1,5,4,3,8,Coado
+59,57,Masculino,Nova Petrópolis,Médio,Solteiro(a),3350.00,C,7,235.93,Loja física,27,Sim,3,5,3,3,3,3,Cappuccino
+60,54,Feminino,Baeta Neves,Superior completo,Solteiro(a),1810.00,D,5,189.34,Loja física,23,Sim,5,4,5,3,4,6,Cappuccino
+61,66,Feminino,Demarchi,Fundamental,Casado(a),2190.00,D,9,259.26,Delivery,59,Não,5,3,5,3,5,7,Expresso
+62,57,Masculino,Baeta Neves,Pós-graduação,Casado(a),4330.00,C,7,291.33,Loja física,34,Não,5,2,5,3,4,6,Expresso
+63,37,Feminino,Jardim do Mar,Pós-graduação,Solteiro(a),2090.00,D,8,177.08,Drive-thru,53,Sim,3,2,2,2,2,2,Expresso
+64,69,Feminino,Jardim do Mar,Superior completo,União estável,2220.00,D,13,204.86,Loja física,53,Sim,5,2,3,2,3,5,Expresso
+65,39,Feminino,Demarchi,Pós-graduação,Solteiro(a),3370.00,C,10,281.38,App,53,Sim,4,3,4,3,4,6,Coado
+66,35,Masculino,Baeta Neves,Superior incompleto,Casado(a),3410.00,C,9,264.09,App,49,Sim,5,4,5,3,5,8,Cappuccino
+67,65,Masculino,Demarchi,Superior incompleto,Casado(a),4940.00,C,8,284.39,Delivery,59,Sim,3,3,2,3,2,1,Cappuccino
+68,37,Outro,Rudge Ramos,Médio,Solteiro(a),3190.00,C,6,189.26,Loja física,34,Sim,3,2,4,2,2,3,Expresso
+69,22,Feminino,Baeta Neves,Pós-graduação,Casado(a),3390.00,C,6,196.77,Drive-thru,22,Não,2,5,2,2,3,2,Latte
+70,42,Feminino,Bairro Assunção,Superior completo,Casado(a),2250.00,D,7,252.64,Drive-thru,37,Não,4,3,3,3,4,6,Cappuccino
+71,60,Feminino,Rudge Ramos,Fundamental,Solteiro(a),1460.00,D,2,227.15,Delivery,24,Não,5,3,5,2,4,8,Cappuccino
+72,28,Masculino,Centro,Pós-graduação,Viúvo(a),2670.00,D,10,229.63,Loja física,4,Não,4,2,3,4,3,4,Expresso
+73,42,Outro,Demarchi,Fundamental,Divorciado(a),2650.00,D,4,236.26,App,27,Não,4,1,3,4,3,5,Latte
+74,24,Masculino,Centro,Superior incompleto,Casado(a),3030.00,C,7,222.97,Loja física,37,Não,5,3,3,2,4,7,Cappuccino
+75,54,Masculino,Ferrazópolis,Fundamental,União estável,1300.00,D,3,161.83,Delivery,38,Sim,4,2,2,2,3,4,Coado
+76,43,Feminino,Baeta Neves,Superior completo,União estável,2220.00,D,6,255.40,Drive-thru,25,Sim,4,3,5,4,5,10,Gelado
+77,35,Masculino,Nova Petrópolis,Superior incompleto,Solteiro(a),4680.00,C,8,274.21,Drive-thru,53,Sim,4,4,5,2,5,7,Latte
+78,30,Feminino,Paulicéia,Superior incompleto,Casado(a),2760.00,D,9,253.96,Drive-thru,21,Não,3,3,4,4,3,5,Latte
+79,47,Feminino,Demarchi,Superior completo,Casado(a),1700.00,D,8,212.51,Delivery,47,Sim,4,3,3,4,2,2,Gelado
+80,53,Feminino,Paulicéia,Superior completo,Solteiro(a),9510.00,B,5,324.55,Loja física,20,Sim,5,5,5,3,4,8,Cappuccino
+81,67,Feminino,Paulicéia,Médio,Solteiro(a),2710.00,D,3,223.89,App,72,Sim,5,3,5,2,4,5,Expresso
+82,41,Feminino,Centro,Pós-graduação,Solteiro(a),4210.00,C,6,289.03,App,47,Não,5,4,5,1,4,9,Coado
+83,26,Feminino,Bairro Assunção,Superior incompleto,Casado(a),3140.00,C,6,276.21,Loja física,41,Não,4,4,4,5,4,7,Coado
+84,62,Feminino,Demarchi,Fundamental,Divorciado(a),2020.00,D,12,286.65,Drive-thru,31,Não,4,1,4,5,3,7,Latte
+85,51,Masculino,Jardim do Mar,Fundamental,Casado(a),1640.00,D,2,201.34,Delivery,55,Não,5,2,5,4,3,6,Cappuccino
+86,55,Feminino,Rudge Ramos,Médio,Solteiro(a),6790.00,B,15,352.26,Drive-thru,31,Não,3,2,5,3,4,7,Expresso
+87,23,Feminino,Rudge Ramos,Superior completo,Solteiro(a),4590.00,C,7,230.77,Drive-thru,58,Sim,3,3,5,3,4,8,Latte
+88,34,Masculino,Jardim do Mar,Superior incompleto,Casado(a),3920.00,C,10,290.85,Delivery,12,Não,4,2,4,4,3,6,Latte
+89,58,Masculino,Jardim do Mar,Médio,Casado(a),3430.00,C,7,225.74,Loja física,60,Não,3,4,4,2,3,4,Latte
+90,62,Masculino,Rudge Ramos,Superior incompleto,União estável,1930.00,D,7,197.50,App,70,Sim,4,3,3,3,3,2,Cappuccino
+91,41,Feminino,Baeta Neves,Pós-graduação,União estável,6290.00,B,7,348.58,App,18,Não,5,5,5,4,5,6,Expresso
+92,60,Masculino,Ferrazópolis,Superior incompleto,União estável,2060.00,D,7,134.45,Delivery,17,Não,3,4,3,2,3,5,Latte
+93,62,Feminino,Rudge Ramos,Fundamental,Divorciado(a),2710.00,D,9,269.46,Delivery,69,Não,4,1,5,4,4,9,Coado
+94,38,Feminino,Nova Petrópolis,Fundamental,Viúvo(a),1300.00,D,8,209.94,Drive-thru,30,Não,3,1,5,4,3,4,Expresso
+95,65,Masculino,Nova Petrópolis,Superior incompleto,Casado(a),1300.00,D,9,210.14,Loja física,51,Sim,3,5,3,2,4,5,Expresso
+96,33,Masculino,Ferrazópolis,Superior incompleto,Solteiro(a),3110.00,C,8,238.82,Loja física,14,Sim,5,4,5,2,4,7,Latte
+97,30,Masculino,Nova Petrópolis,Pós-graduação,Solteiro(a),2350.00,D,6,190.89,Drive-thru,31,Sim,3,3,4,1,4,9,Expresso
+98,54,Masculino,Baeta Neves,Superior incompleto,Solteiro(a),1300.00,D,4,137.23,App,51,Não,3,2,2,2,2,5,Expresso
+99,51,Masculino,Bairro Assunção,Superior completo,Solteiro(a),4170.00,C,5,155.62,Drive-thru,65,Não,4,3,3,1,4,6,Coado
+100,25,Feminino,Paulicéia,Superior incompleto,Solteiro(a),6780.00,B,12,360.18,Drive-thru,32,Não,4,1,5,5,3,7,Cappuccino
+101,62,Feminino,Rudge Ramos,Médio,União estável,5020.00,C,11,323.48,Loja física,6,Não,5,2,5,2,4,8,Latte
+102,28,Feminino,Bairro Assunção,Superior completo,Solteiro(a),2660.00,D,9,287.80,Delivery,30,Não,5,2,4,4,4,5,Coado
+103,60,Feminino,Bairro Assunção,Superior completo,União estável,3400.00,C,9,261.51,Loja física,47,Sim,3,2,3,4,2,4,Expresso
+104,18,Masculino,Jardim do Mar,Superior completo,Casado(a),4270.00,C,11,249.69,Loja física,64,Sim,3,3,4,4,2,3,Cappuccino
+105,60,Feminino,Jardim do Mar,Fundamental,Casado(a),3920.00,C,12,306.14,Loja física,61,Sim,5,5,5,3,5,8,Cappuccino
+106,59,Masculino,Demarchi,Superior completo,Casado(a),2890.00,D,13,260.74,Drive-thru,55,Não,5,2,5,4,4,9,Latte
+107,59,Masculino,Rudge Ramos,Médio,Solteiro(a),2700.00,D,8,194.69,Loja física,12,Sim,5,3,5,3,3,6,Latte
+108,53,Masculino,Paulicéia,Superior completo,Casado(a),3770.00,C,12,237.09,Delivery,38,Não,3,3,3,2,3,6,Expresso
+109,42,Feminino,Baeta Neves,Superior completo,Solteiro(a),4050.00,C,7,267.52,App,42,Não,5,4,5,3,5,10,Latte
+110,55,Feminino,Taboão,Superior completo,União estável,3130.00,C,8,304.42,App,34,Sim,5,3,4,3,4,4,Coado
+111,32,Outro,Nova Petrópolis,Pós-graduação,Solteiro(a),3240.00,C,2,143.59,Loja física,67,Não,4,5,4,3,4,4,Gelado
+112,59,Masculino,Jardim do Mar,Superior incompleto,Solteiro(a),5570.00,C,6,233.83,App,70,Não,3,4,5,1,4,9,Latte
+113,47,Masculino,Taboão,Fundamental,Casado(a),3870.00,C,10,324.82,App,16,Não,4,2,3,4,4,7,Coado
+114,42,Masculino,Bairro Assunção,Superior completo,Casado(a),3910.00,C,3,243.63,App,69,Sim,5,3,2,4,4,5,Gelado
+115,44,Masculino,Paulicéia,Superior completo,Casado(a),6890.00,B,8,291.95,Delivery,61,Sim,3,3,3,4,4,6,Coado
+116,48,Feminino,Bairro Assunção,Fundamental,Casado(a),1890.00,D,10,257.11,Drive-thru,51,Sim,3,2,3,5,3,5,Latte
+117,19,Masculino,Nova Petrópolis,Fundamental,Solteiro(a),4160.00,C,11,284.00,App,28,Sim,3,4,2,5,3,5,Latte
+118,25,Feminino,Bairro Assunção,Médio,Casado(a),2960.00,D,12,286.66,Loja física,55,Não,4,3,2,5,2,2,Gelado
+119,31,Masculino,Ferrazópolis,Pós-graduação,Solteiro(a),14820.00,A,8,418.54,Delivery,43,Não,4,4,5,3,4,8,Coado
+120,24,Masculino,Bairro Assunção,Superior incompleto,Solteiro(a),1520.00,D,9,258.33,Drive-thru,65,Não,5,3,5,4,5,8,Cappuccino
+121,41,Feminino,Ferrazópolis,Pós-graduação,Solteiro(a),2600.00,D,6,165.19,Delivery,52,Sim,4,2,4,1,4,7,Latte
+122,53,Feminino,Demarchi,Pós-graduação,Solteiro(a),4480.00,C,9,308.28,Delivery,70,Não,4,1,5,3,4,7,Coado
+123,52,Feminino,Paulicéia,Superior incompleto,Solteiro(a),3480.00,C,6,240.45,Delivery,31,Sim,4,4,5,3,5,7,Latte
+124,42,Masculino,Jardim do Mar,Superior completo,Casado(a),7580.00,B,10,346.52,Drive-thru,6,Sim,5,4,5,3,5,8,Latte
+125,63,Feminino,Centro,Médio,Solteiro(a),2000.00,D,5,144.33,Loja física,36,Não,2,1,2,1,2,5,Coado
+126,47,Feminino,Jardim do Mar,Fundamental,Solteiro(a),3370.00,C,6,305.86,Drive-thru,72,Não,5,4,3,3,4,5,Cappuccino
+127,22,Feminino,Rudge Ramos,Médio,Casado(a),3860.00,C,10,287.95,Drive-thru,48,Não,3,4,4,5,5,8,Coado
+128,58,Feminino,Demarchi,Superior incompleto,Solteiro(a),4090.00,C,7,249.25,Drive-thru,51,Não,4,4,4,2,3,6,Coado
+129,48,Feminino,Nova Petrópolis,Fundamental,Casado(a),1460.00,D,7,211.18,App,46,Sim,4,3,5,3,4,7,Gelado
+130,51,Feminino,Ferrazópolis,Médio,União estável,4840.00,C,18,343.27,Drive-thru,43,Sim,4,4,2,3,4,6,Gelado
+131,47,Feminino,Paulicéia,Fundamental,Casado(a),3900.00,C,4,318.52,Loja física,5,Sim,4,4,5,4,4,8,Coado
+132,47,Feminino,Taboão,Superior completo,União estável,4210.00,C,11,279.54,App,30,Não,4,3,5,5,4,6,Coado
+133,22,Feminino,Baeta Neves,Pós-graduação,Solteiro(a),3600.00,C,3,272.95,Drive-thru,7,Sim,4,4,5,4,4,8,Coado
+134,47,Feminino,Jardim do Mar,Pós-graduação,Solteiro(a),4010.00,C,5,288.95,App,25,Sim,5,3,4,3,3,4,Cappuccino
+135,60,Feminino,Nova Petrópolis,Médio,Casado(a),2570.00,D,4,282.30,Drive-thru,52,Sim,5,4,5,3,5,10,Gelado
+136,34,Masculino,Bairro Assunção,Superior incompleto,Casado(a),3610.00,C,8,269.34,App,58,Não,4,1,3,4,3,5,Latte
+137,49,Feminino,Nova Petrópolis,Pós-graduação,Divorciado(a),3710.00,C,6,284.87,Delivery,17,Não,5,4,4,4,4,6,Gelado
+138,19,Feminino,Demarchi,Superior incompleto,Solteiro(a),1740.00,D,8,257.84,Delivery,48,Sim,3,2,3,5,3,5,Cappuccino
+139,36,Feminino,Ferrazópolis,Médio,Casado(a),1510.00,D,5,215.15,Drive-thru,17,Sim,5,3,4,1,5,7,Cappuccino
+140,41,Feminino,Taboão,Médio,Solteiro(a),1760.00,D,2,205.31,App,15,Não,3,2,3,4,2,3,Coado
+141,70,Feminino,Bairro Assunção,Superior completo,Solteiro(a),3900.00,C,14,343.33,Drive-thru,70,Não,4,3,4,3,3,5,Latte
+142,29,Feminino,Nova Petrópolis,Superior incompleto,Solteiro(a),2620.00,D,10,271.57,App,44,Sim,4,2,3,4,3,3,Latte
+143,32,Masculino,Jardim do Mar,Pós-graduação,Viúvo(a),3760.00,C,8,214.65,App,15,Sim,4,4,3,1,3,3,Cappuccino
+144,39,Feminino,Baeta Neves,Pós-graduação,Solteiro(a),4400.00,C,10,274.46,Loja física,11,Não,4,2,5,3,3,9,Cappuccino
+145,70,Feminino,Bairro Assunção,Fundamental,Divorciado(a),1860.00,D,7,209.19,Loja física,4,Não,3,3,3,2,3,4,Coado
+146,63,Feminino,Jardim do Mar,Superior completo,Casado(a),6630.00,B,8,326.51,Drive-thru,36,Sim,5,1,5,4,4,7,Expresso
+147,19,Feminino,Baeta Neves,Médio,Casado(a),2010.00,D,12,251.09,Loja física,8,Não,3,2,2,5,2,1,Expresso
+148,30,Feminino,Jardim do Mar,Superior incompleto,Casado(a),2190.00,D,4,210.26,Loja física,43,Não,5,1,5,3,5,9,Gelado
+149,61,Masculino,Jardim do Mar,Médio,Divorciado(a),3320.00,C,8,250.98,Loja física,32,Sim,5,4,4,1,4,6,Gelado
+150,21,Masculino,Jardim do Mar,Médio,Solteiro(a),1300.00,D,6,179.84,App,46,Sim,4,3,3,4,3,3,Expresso
+151,63,Feminino,Demarchi,Médio,Solteiro(a),1890.00,D,6,208.56,Loja física,15,Não,5,3,4,3,3,5,Expresso
+152,32,Feminino,Paulicéia,Fundamental,Casado(a),3290.00,C,9,236.34,Delivery,11,Sim,4,5,5,3,4,7,Cappuccino
+153,66,Feminino,Jardim do Mar,Superior completo,Solteiro(a),1590.00,D,14,229.77,Drive-thru,8,Sim,3,2,1,3,2,1,Latte
+154,33,Feminino,Bairro Assunção,Fundamental,Solteiro(a),3510.00,C,7,224.69,Delivery,7,Não,3,4,3,3,3,3,Expresso
+155,41,Masculino,Centro,Médio,Solteiro(a),4880.00,C,13,332.38,Delivery,6,Sim,5,3,4,4,4,6,Gelado
+156,53,Feminino,Nova Petrópolis,Fundamental,Solteiro(a),1950.00,D,12,284.90,Drive-thru,19,Não,5,2,4,4,4,6,Latte
+157,24,Feminino,Ferrazópolis,Fundamental,Solteiro(a),2330.00,D,6,239.57,Drive-thru,58,Sim,4,4,5,3,4,6,Latte
+158,47,Masculino,Demarchi,Médio,Solteiro(a),4190.00,C,8,255.14,Delivery,44,Sim,4,5,3,2,4,6,Expresso
+159,44,Feminino,Centro,Pós-graduação,União estável,2900.00,D,9,297.45,Loja física,19,Sim,4,2,5,5,3,9,Cappuccino
+160,59,Feminino,Demarchi,Pós-graduação,Solteiro(a),5620.00,C,11,279.56,Drive-thru,68,Não,4,4,5,4,4,9,Coado
+161,70,Masculino,Rudge Ramos,Médio,Viúvo(a),2050.00,D,9,131.59,Drive-thru,55,Não,2,3,3,1,3,7,Coado
+162,53,Feminino,Demarchi,Superior incompleto,Viúvo(a),2360.00,D,5,218.91,App,57,Não,4,3,3,1,3,4,Cappuccino
+163,39,Feminino,Demarchi,Pós-graduação,Solteiro(a),2450.00,D,8,279.60,Loja física,65,Sim,5,3,3,4,3,6,Latte
+164,39,Feminino,Ferrazópolis,Médio,Casado(a),2860.00,D,5,248.88,Loja física,54,Não,4,2,5,2,4,7,Expresso
+165,40,Masculino,Baeta Neves,Pós-graduação,Casado(a),5940.00,C,10,276.78,App,69,Sim,5,1,5,3,3,7,Latte
+166,61,Feminino,Baeta Neves,Fundamental,Casado(a),2180.00,D,4,182.89,Delivery,24,Não,3,4,4,3,3,6,Cappuccino
+167,35,Feminino,Ferrazópolis,Médio,Solteiro(a),1360.00,D,7,190.77,Drive-thru,62,Sim,3,2,5,3,3,5,Gelado
+168,26,Feminino,Paulicéia,Médio,Solteiro(a),1430.00,D,17,304.07,Loja física,9,Não,4,2,5,5,4,8,Cappuccino
+169,35,Feminino,Taboão,Fundamental,Solteiro(a),2550.00,D,8,266.83,App,22,Sim,4,2,5,5,3,6,Latte
+170,19,Masculino,Nova Petrópolis,Pós-graduação,Casado(a),7430.00,B,12,307.94,Drive-thru,65,Sim,2,2,2,3,2,0,Coado
+171,23,Feminino,Baeta Neves,Pós-graduação,Viúvo(a),3930.00,C,13,317.76,Loja física,10,Não,5,3,4,3,5,8,Expresso
+172,22,Masculino,Nova Petrópolis,Médio,Casado(a),1920.00,D,7,252.24,Drive-thru,37,Sim,4,2,5,4,4,8,Cappuccino
+173,58,Masculino,Demarchi,Pós-graduação,Casado(a),5350.00,C,10,300.27,Loja física,25,Sim,2,2,2,4,1,1,Gelado
+174,56,Masculino,Rudge Ramos,Superior completo,Viúvo(a),2990.00,D,11,210.75,App,8,Não,4,3,5,2,5,9,Coado
+175,54,Feminino,Baeta Neves,Pós-graduação,Casado(a),3150.00,C,1,205.87,Loja física,17,Sim,3,3,3,4,2,2,Cappuccino
+176,42,Masculino,Rudge Ramos,Pós-graduação,Solteiro(a),2310.00,D,15,272.33,Drive-thru,39,Não,4,3,4,2,3,5,Latte
+177,56,Masculino,Demarchi,Superior incompleto,União estável,5570.00,C,2,227.48,App,46,Não,3,2,3,2,3,4,Gelado
+178,26,Feminino,Taboão,Fundamental,Solteiro(a),1300.00,D,3,182.80,App,49,Não,4,2,4,3,4,6,Expresso
+179,65,Masculino,Jardim do Mar,Pós-graduação,Solteiro(a),5580.00,C,5,277.07,Delivery,10,Sim,5,4,5,2,5,8,Cappuccino
+180,44,Masculino,Baeta Neves,Superior completo,Casado(a),2580.00,D,11,201.27,App,24,Não,4,2,3,3,3,5,Cappuccino
+181,67,Feminino,Centro,Pós-graduação,União estável,3270.00,C,5,200.36,Drive-thru,8,Sim,2,2,2,3,3,4,Coado
+182,26,Masculino,Bairro Assunção,Pós-graduação,Solteiro(a),7140.00,B,11,306.55,App,1,Sim,4,3,3,5,3,5,Latte
+183,44,Feminino,Rudge Ramos,Fundamental,Casado(a),1610.00,D,7,236.19,Drive-thru,29,Não,4,2,3,3,2,5,Latte
+184,54,Masculino,Paulicéia,Superior incompleto,Solteiro(a),2160.00,D,5,129.87,Delivery,45,Não,3,2,3,1,3,5,Cappuccino
+185,44,Outro,Jardim do Mar,Fundamental,Solteiro(a),2090.00,D,9,225.86,Delivery,27,Sim,4,2,5,3,4,9,Cappuccino
+186,41,Feminino,Demarchi,Fundamental,Solteiro(a),2640.00,D,11,303.82,Drive-thru,3,Sim,5,1,5,4,5,9,Latte
+187,26,Masculino,Rudge Ramos,Pós-graduação,Casado(a),2730.00,D,11,237.11,Delivery,16,Não,3,3,4,4,4,6,Coado
+188,38,Feminino,Centro,Pós-graduação,União estável,1720.00,D,4,150.53,App,32,Sim,2,4,2,3,4,4,Gelado
+189,30,Masculino,Jardim do Mar,Pós-graduação,Solteiro(a),2290.00,D,4,159.75,Delivery,26,Não,2,1,3,4,2,3,Coado
+190,33,Masculino,Nova Petrópolis,Pós-graduação,Solteiro(a),6100.00,B,13,328.51,Delivery,60,Sim,3,1,2,3,2,0,Expresso
+191,54,Feminino,Rudge Ramos,Superior completo,Solteiro(a),3420.00,C,7,244.52,App,44,Sim,4,4,4,3,4,7,Latte
+192,51,Feminino,Rudge Ramos,Superior incompleto,Solteiro(a),3550.00,C,9,240.46,App,72,Não,3,5,4,2,4,7,Cappuccino
+193,50,Feminino,Bairro Assunção,Pós-graduação,Casado(a),3260.00,C,9,220.20,Drive-thru,13,Não,3,1,4,2,3,5,Gelado
+194,37,Feminino,Ferrazópolis,Superior incompleto,Casado(a),2040.00,D,14,329.25,App,27,Sim,5,3,5,4,3,6,Latte
+195,68,Feminino,Taboão,Superior completo,Casado(a),7440.00,B,8,335.94,Loja física,7,Não,4,5,5,3,4,6,Cappuccino
+196,22,Feminino,Bairro Assunção,Médio,Solteiro(a),2100.00,D,5,199.94,Delivery,2,Sim,4,1,4,3,3,7,Cappuccino
+197,36,Feminino,Ferrazópolis,Superior completo,Casado(a),2520.00,D,8,265.55,Loja física,67,Sim,5,4,4,3,4,6,Expresso
+198,24,Feminino,Centro,Pós-graduação,Solteiro(a),5420.00,C,7,275.29,Drive-thru,36,Sim,3,3,4,4,3,4,Latte
+199,35,Masculino,Centro,Superior completo,Solteiro(a),2210.00,D,9,229.99,Drive-thru,48,Sim,3,3,4,2,4,7,Cappuccino
+200,68,Masculino,Centro,Superior incompleto,União estável,2370.00,D,7,183.50,Delivery,20,Não,3,2,3,2,3,4,Latte
+201,37,Masculino,Jardim do Mar,Fundamental,Casado(a),2170.00,D,9,167.11,Loja física,4,Sim,3,4,4,3,4,6,Cappuccino
+202,66,Feminino,Demarchi,Fundamental,União estável,2420.00,D,5,188.52,Drive-thru,65,Sim,2,3,2,2,2,2,Latte
+203,44,Masculino,Taboão,Superior completo,União estável,3570.00,C,6,246.70,Loja física,48,Sim,3,5,2,2,3,3,Coado
+204,55,Masculino,Centro,Superior completo,Casado(a),8510.00,B,14,408.30,Loja física,52,Não,5,5,5,2,5,10,Coado
+205,42,Feminino,Centro,Superior completo,União estável,3670.00,C,11,275.38,App,39,Não,5,3,3,3,4,6,Gelado
+206,32,Feminino,Taboão,Pós-graduação,Casado(a),1300.00,D,5,228.41,Delivery,30,Sim,5,5,5,4,5,8,Expresso
+207,58,Masculino,Rudge Ramos,Superior incompleto,Solteiro(a),3450.00,C,7,233.30,Delivery,31,Sim,4,5,3,3,4,7,Expresso
+208,69,Feminino,Rudge Ramos,Pós-graduação,Solteiro(a),4030.00,C,9,288.06,App,55,Não,5,4,4,2,4,6,Latte
+209,31,Feminino,Demarchi,Superior completo,Solteiro(a),3080.00,C,9,261.35,Drive-thru,17,Sim,3,2,3,4,3,5,Latte
+210,59,Outro,Ferrazópolis,Médio,Solteiro(a),2970.00,D,12,236.51,Drive-thru,25,Não,3,1,4,4,3,5,Coado
+211,31,Feminino,Bairro Assunção,Pós-graduação,Solteiro(a),3360.00,C,7,260.67,Loja física,23,Não,5,2,4,4,4,7,Cappuccino
+212,55,Feminino,Baeta Neves,Fundamental,Casado(a),2260.00,D,6,253.43,Loja física,38,Não,4,1,3,3,3,4,Latte
+213,59,Outro,Ferrazópolis,Superior incompleto,Divorciado(a),3940.00,C,10,211.71,Delivery,70,Sim,3,5,4,3,3,4,Coado
+214,41,Masculino,Baeta Neves,Pós-graduação,Casado(a),2770.00,D,10,239.00,Loja física,67,Sim,5,3,4,3,4,7,Coado
+215,57,Feminino,Nova Petrópolis,Superior completo,Solteiro(a),2190.00,D,6,198.05,App,40,Sim,4,2,4,3,2,6,Latte
+216,32,Masculino,Centro,Pós-graduação,Casado(a),13320.00,A,9,419.68,Drive-thru,15,Sim,3,3,3,3,3,3,Latte
+217,22,Masculino,Baeta Neves,Fundamental,Solteiro(a),1470.00,D,10,189.23,Loja física,68,Sim,3,2,4,2,3,5,Expresso
+218,23,Masculino,Taboão,Superior incompleto,Solteiro(a),2710.00,D,9,265.75,App,23,Não,4,3,5,4,5,8,Latte
+219,41,Masculino,Ferrazópolis,Superior completo,Solteiro(a),1600.00,D,6,174.38,Drive-thru,26,Sim,4,1,4,3,4,7,Latte
+220,65,Feminino,Taboão,Superior completo,Solteiro(a),3640.00,C,3,212.94,Delivery,64,Sim,5,4,5,2,4,7,Expresso
+221,24,Feminino,Rudge Ramos,Pós-graduação,Solteiro(a),2170.00,D,11,265.52,Delivery,19,Sim,4,3,2,5,3,7,Gelado
+222,42,Masculino,Centro,Superior incompleto,Divorciado(a),2290.00,D,7,198.48,Drive-thru,34,Sim,4,1,3,2,3,4,Coado
+223,55,Feminino,Demarchi,Superior completo,Casado(a),5310.00,C,7,295.02,Drive-thru,67,Sim,5,5,5,1,5,10,Coado
+224,28,Masculino,Rudge Ramos,Superior incompleto,Casado(a),3270.00,C,7,207.12,App,23,Sim,5,3,4,3,4,8,Latte
+225,56,Masculino,Demarchi,Pós-graduação,Solteiro(a),4860.00,C,6,245.93,Delivery,45,Não,4,2,5,1,3,7,Gelado
+226,34,Feminino,Jardim do Mar,Fundamental,Divorciado(a),1300.00,D,8,170.15,Delivery,3,Não,2,3,3,4,4,6,Expresso
+227,60,Masculino,Nova Petrópolis,Médio,Casado(a),6090.00,B,8,240.79,App,72,Sim,3,3,2,2,3,4,Gelado
+228,48,Feminino,Demarchi,Fundamental,Solteiro(a),1320.00,D,10,256.28,Drive-thru,31,Não,3,3,4,4,3,5,Cappuccino
+229,46,Masculino,Ferrazópolis,Superior completo,Casado(a),6370.00,B,5,227.90,Delivery,49,Sim,4,2,3,4,2,4,Gelado
+230,27,Feminino,Rudge Ramos,Médio,Casado(a),3700.00,C,9,260.99,Delivery,37,Sim,3,4,3,3,4,5,Expresso
+231,42,Masculino,Taboão,Médio,Casado(a),3220.00,C,9,260.25,App,32,Não,5,5,5,2,5,8,Cappuccino
+232,63,Masculino,Bairro Assunção,Pós-graduação,Solteiro(a),2630.00,D,5,146.05,Loja física,30,Não,2,1,4,3,2,3,Latte
+233,19,Feminino,Taboão,Médio,Casado(a),2420.00,D,8,231.94,Loja física,2,Sim,3,3,2,5,2,0,Coado
+234,58,Masculino,Ferrazópolis,Fundamental,Solteiro(a),1900.00,D,12,247.95,Drive-thru,20,Sim,4,2,4,1,4,7,Expresso
+235,44,Masculino,Rudge Ramos,Fundamental,Solteiro(a),2250.00,D,4,265.54,Delivery,28,Sim,5,5,4,3,4,8,Cappuccino
+236,56,Masculino,Paulicéia,Médio,Solteiro(a),2340.00,D,7,161.80,Delivery,27,Sim,1,4,3,1,3,4,Gelado
+237,53,Masculino,Rudge Ramos,Pós-graduação,União estável,1480.00,D,4,179.67,Loja física,20,Não,2,3,4,2,3,6,Expresso
+238,40,Outro,Demarchi,Superior incompleto,Solteiro(a),4600.00,C,11,270.83,Drive-thru,47,Sim,4,2,3,4,4,4,Gelado
+239,34,Feminino,Jardim do Mar,Pós-graduação,Solteiro(a),3320.00,C,3,228.68,App,60,Não,5,2,5,5,4,7,Coado
+240,51,Feminino,Jardim do Mar,Médio,Solteiro(a),2070.00,D,12,269.89,Delivery,65,Não,5,3,5,2,5,8,Gelado
+241,25,Feminino,Taboão,Médio,União estável,1800.00,D,9,259.33,App,71,Sim,4,1,5,3,4,7,Gelado
+242,48,Masculino,Baeta Neves,Fundamental,Casado(a),2650.00,D,4,143.48,Loja física,47,Não,4,1,4,2,4,6,Cappuccino
+243,23,Masculino,Demarchi,Médio,União estável,1540.00,D,4,147.63,Loja física,30,Não,3,2,4,4,2,4,Gelado
+244,52,Feminino,Nova Petrópolis,Superior incompleto,Solteiro(a),1300.00,D,13,242.20,Drive-thru,47,Sim,5,3,4,2,4,6,Latte
+245,51,Feminino,Jardim do Mar,Pós-graduação,Solteiro(a),4430.00,C,15,341.01,Loja física,10,Sim,5,4,3,2,4,5,Cappuccino
+246,22,Masculino,Baeta Neves,Médio,Casado(a),2890.00,D,10,267.94,Loja física,59,Não,5,2,4,3,3,7,Gelado
+247,58,Feminino,Paulicéia,Superior completo,Solteiro(a),3070.00,C,7,229.11,App,39,Não,4,4,4,3,3,4,Latte
+248,40,Masculino,Nova Petrópolis,Superior completo,Divorciado(a),1870.00,D,3,166.34,Drive-thru,12,Sim,3,1,3,3,3,7,Coado
+249,59,Feminino,Paulicéia,Médio,União estável,2760.00,D,9,215.92,Delivery,31,Não,4,3,4,2,4,6,Coado
+250,20,Masculino,Bairro Assunção,Pós-graduação,Casado(a),1680.00,D,7,211.15,Drive-thru,22,Não,5,3,3,3,3,5,Cappuccino
+251,27,Feminino,Paulicéia,Superior incompleto,Viúvo(a),1660.00,D,10,219.00,Loja física,26,Não,4,3,4,4,4,7,Gelado
+252,44,Feminino,Centro,Fundamental,Casado(a),1580.00,D,11,192.53,Drive-thru,4,Sim,2,4,5,2,3,6,Gelado
+253,27,Masculino,Rudge Ramos,Pós-graduação,Solteiro(a),4890.00,C,12,269.21,Loja física,2,Sim,4,3,5,3,3,8,Latte
+254,35,Masculino,Nova Petrópolis,Pós-graduação,Casado(a),2940.00,D,4,234.87,Loja física,26,Não,4,2,4,4,3,6,Latte
+255,53,Feminino,Baeta Neves,Fundamental,Solteiro(a),1880.00,D,8,183.16,App,22,Sim,2,1,3,2,2,3,Expresso
+256,25,Feminino,Paulicéia,Pós-graduação,Divorciado(a),8000.00,B,10,340.10,App,72,Sim,4,1,4,2,2,5,Coado
+257,53,Masculino,Nova Petrópolis,Pós-graduação,Solteiro(a),4350.00,C,7,316.27,App,19,Não,5,3,3,3,3,3,Gelado
+258,23,Masculino,Centro,Pós-graduação,Solteiro(a),3840.00,C,5,269.09,Loja física,24,Sim,5,3,5,4,3,5,Gelado
+259,27,Feminino,Nova Petrópolis,Médio,Casado(a),1980.00,D,9,212.07,App,66,Não,3,1,1,3,2,2,Latte
+260,49,Feminino,Baeta Neves,Superior completo,Solteiro(a),2480.00,D,10,261.46,App,62,Sim,5,1,4,3,4,7,Gelado
+261,60,Masculino,Demarchi,Superior incompleto,Solteiro(a),1300.00,D,8,180.69,Delivery,5,Não,5,4,4,2,5,8,Coado
+262,27,Masculino,Ferrazópolis,Superior completo,Casado(a),4590.00,C,7,292.91,App,7,Sim,5,4,4,5,4,6,Latte
+263,33,Masculino,Bairro Assunção,Superior completo,Solteiro(a),3720.00,C,6,220.96,Loja física,7,Não,3,2,5,3,3,6,Gelado
+264,67,Masculino,Ferrazópolis,Superior completo,Casado(a),3210.00,C,10,168.01,Delivery,34,Sim,3,3,5,2,3,7,Expresso
+265,70,Feminino,Ferrazópolis,Superior incompleto,Solteiro(a),2940.00,D,12,241.46,Delivery,42,Sim,4,3,5,3,5,9,Coado
+266,48,Masculino,Paulicéia,Superior completo,Solteiro(a),4500.00,C,9,241.58,App,26,Não,4,3,3,2,3,3,Coado
+267,41,Masculino,Demarchi,Superior incompleto,Solteiro(a),1380.00,D,6,152.29,Loja física,1,Não,3,2,5,4,2,3,Latte
+268,36,Masculino,Taboão,Fundamental,Casado(a),1650.00,D,11,256.82,Drive-thru,15,Sim,5,2,5,4,5,10,Coado
+269,50,Feminino,Bairro Assunção,Fundamental,União estável,1360.00,D,9,235.22,Delivery,45,Sim,4,4,3,3,3,3,Gelado
+270,49,Feminino,Paulicéia,Pós-graduação,Solteiro(a),8110.00,B,9,308.80,App,27,Não,2,4,3,3,3,5,Latte
+271,33,Masculino,Centro,Pós-graduação,União estável,5080.00,C,9,299.74,Delivery,9,Não,4,2,5,4,4,9,Cappuccino
+272,19,Feminino,Rudge Ramos,Superior incompleto,Casado(a),1300.00,D,7,212.19,App,47,Sim,4,3,4,4,3,6,Latte
+273,26,Masculino,Taboão,Fundamental,Casado(a),1300.00,D,5,202.21,Loja física,45,Não,4,2,4,5,4,5,Latte
+274,68,Feminino,Baeta Neves,Superior completo,Casado(a),3300.00,C,3,223.31,Delivery,36,Sim,4,2,4,5,4,5,Latte
+275,40,Masculino,Ferrazópolis,Fundamental,Casado(a),1760.00,D,8,237.08,Loja física,68,Não,5,2,4,3,4,9,Cappuccino
+276,43,Masculino,Ferrazópolis,Médio,Divorciado(a),1370.00,D,5,156.63,App,61,Sim,3,1,3,2,2,2,Latte
+277,42,Feminino,Ferrazópolis,Médio,Casado(a),5950.00,C,9,271.94,Delivery,3,Sim,4,4,3,2,4,5,Cappuccino
+278,59,Feminino,Bairro Assunção,Fundamental,Casado(a),2710.00,D,13,274.75,Delivery,66,Não,5,4,5,1,4,8,Gelado
+279,21,Masculino,Rudge Ramos,Pós-graduação,Solteiro(a),4050.00,C,13,259.92,Drive-thru,4,Sim,2,3,2,5,2,2,Latte
+280,22,Masculino,Centro,Superior incompleto,Solteiro(a),1890.00,D,3,199.33,Delivery,35,Não,4,2,4,4,3,6,Gelado
+281,32,Feminino,Taboão,Médio,Casado(a),3300.00,C,6,285.67,Loja física,65,Sim,5,4,3,4,4,4,Cappuccino
+282,43,Masculino,Bairro Assunção,Superior incompleto,Solteiro(a),2370.00,D,8,231.91,Delivery,71,Sim,5,4,3,4,4,5,Cappuccino
+283,53,Masculino,Demarchi,Fundamental,Solteiro(a),2020.00,D,11,252.21,Drive-thru,2,Não,5,1,3,1,4,6,Cappuccino
+284,44,Feminino,Baeta Neves,Superior incompleto,Solteiro(a),3710.00,C,6,278.38,Delivery,6,Não,5,3,4,2,4,7,Latte
+285,41,Feminino,Rudge Ramos,Superior incompleto,Solteiro(a),1340.00,D,6,193.28,Delivery,18,Sim,3,2,3,5,3,4,Coado
+286,67,Feminino,Baeta Neves,Médio,Casado(a),5620.00,C,13,321.45,Drive-thru,20,Não,5,2,5,3,4,6,Latte
+287,26,Feminino,Centro,Pós-graduação,Casado(a),3620.00,C,10,250.31,Delivery,21,Sim,3,4,2,4,3,4,Gelado
+288,48,Feminino,Rudge Ramos,Médio,Casado(a),4520.00,C,7,207.10,Drive-thru,31,Não,3,2,3,2,3,3,Latte
+289,46,Feminino,Rudge Ramos,Fundamental,Solteiro(a),1380.00,D,9,236.25,Delivery,23,Sim,4,2,3,3,2,5,Gelado
+290,43,Masculino,Taboão,Superior incompleto,Casado(a),1850.00,D,9,268.07,Loja física,42,Sim,4,2,4,5,4,7,Expresso
+291,60,Feminino,Demarchi,Pós-graduação,Solteiro(a),2260.00,D,9,283.64,Loja física,62,Sim,4,1,4,3,3,4,Cappuccino
+292,32,Masculino,Jardim do Mar,Médio,Casado(a),2670.00,D,9,203.74,App,40,Não,4,1,4,3,4,5,Coado
+293,68,Feminino,Baeta Neves,Fundamental,Casado(a),2510.00,D,16,343.64,App,24,Não,5,3,4,4,4,6,Cappuccino
+294,35,Feminino,Bairro Assunção,Pós-graduação,Casado(a),2800.00,D,8,272.60,Drive-thru,41,Não,4,2,5,5,3,4,Coado
+295,46,Masculino,Ferrazópolis,Superior incompleto,Casado(a),1800.00,D,5,110.11,Delivery,45,Sim,3,5,2,3,2,3,Latte
+296,45,Masculino,Jardim do Mar,Fundamental,Viúvo(a),1300.00,D,7,226.76,Loja física,65,Sim,5,5,4,5,4,5,Latte
+297,63,Feminino,Demarchi,Superior completo,Casado(a),3350.00,C,6,206.76,App,69,Sim,3,3,4,2,3,6,Latte
+298,41,Feminino,Centro,Médio,Casado(a),2000.00,D,6,285.48,Delivery,20,Não,5,5,4,4,5,8,Gelado
+299,33,Feminino,Nova Petrópolis,Pós-graduação,Casado(a),2520.00,D,6,210.72,Drive-thru,67,Sim,4,3,3,3,4,7,Coado
+300,19,Masculino,Jardim do Mar,Médio,Solteiro(a),4540.00,C,10,306.36,Delivery,59,Não,4,2,3,5,3,5,Gelado
+301,37,Feminino,Demarchi,Superior incompleto,União estável,2640.00,D,10,216.74,Loja física,10,Sim,2,1,2,3,1,2,Expresso
+302,61,Feminino,Jardim do Mar,Superior incompleto,Solteiro(a),5340.00,C,9,224.53,Loja física,41,Não,2,4,2,3,3,5,Gelado
+303,18,Feminino,Demarchi,Médio,Solteiro(a),1770.00,D,8,197.50,App,11,Sim,2,2,5,5,2,5,Gelado
+304,65,Feminino,Centro,Superior incompleto,Viúvo(a),3420.00,C,10,343.38,App,36,Sim,5,4,5,4,5,9,Gelado
+305,46,Masculino,Taboão,Fundamental,Casado(a),2180.00,D,7,186.73,Loja física,4,Não,3,2,3,3,4,5,Latte
+306,25,Masculino,Paulicéia,Superior completo,Solteiro(a),1370.00,D,11,264.21,Drive-thru,22,Não,5,1,3,3,4,4,Latte
+307,34,Feminino,Paulicéia,Superior completo,Solteiro(a),5810.00,C,6,294.71,Loja física,43,Não,3,3,4,3,4,8,Latte
+308,47,Feminino,Jardim do Mar,Pós-graduação,Solteiro(a),3410.00,C,12,263.73,Loja física,22,Não,4,4,3,2,3,5,Gelado
+309,34,Feminino,Rudge Ramos,Médio,Casado(a),3360.00,C,5,219.11,Loja física,1,Não,4,3,3,4,4,6,Gelado
+310,23,Feminino,Jardim do Mar,Médio,Solteiro(a),1640.00,D,11,257.57,Loja física,28,Sim,5,2,4,5,4,6,Gelado
+311,53,Masculino,Bairro Assunção,Superior incompleto,União estável,2710.00,D,10,286.52,Delivery,39,Sim,5,1,4,2,3,7,Gelado
+312,53,Masculino,Jardim do Mar,Superior completo,União estável,2230.00,D,8,232.09,Drive-thru,55,Não,4,3,4,4,3,5,Coado
+313,24,Masculino,Rudge Ramos,Pós-graduação,Casado(a),5770.00,C,10,288.78,Drive-thru,10,Não,5,2,3,5,4,5,Cappuccino
+314,32,Outro,Demarchi,Fundamental,Casado(a),2430.00,D,4,199.42,Drive-thru,35,Sim,3,3,3,3,3,4,Expresso
+315,30,Outro,Paulicéia,Médio,Solteiro(a),2790.00,D,9,217.76,Delivery,15,Sim,5,2,5,4,5,10,Gelado
+316,52,Masculino,Centro,Médio,Solteiro(a),4760.00,C,12,276.20,Delivery,12,Não,5,3,4,2,4,5,Expresso
+317,56,Feminino,Centro,Médio,Casado(a),4410.00,C,9,297.49,App,9,Sim,5,5,5,2,5,8,Expresso
+318,56,Feminino,Taboão,Superior incompleto,Solteiro(a),4170.00,C,8,330.59,App,55,Não,4,3,2,2,3,7,Latte
+319,67,Feminino,Centro,Pós-graduação,Solteiro(a),2070.00,D,4,224.48,Drive-thru,67,Não,4,2,5,2,4,8,Coado
+320,58,Masculino,Ferrazópolis,Fundamental,Solteiro(a),1710.00,D,9,172.24,Loja física,48,Sim,3,3,3,2,3,3,Coado
+321,34,Feminino,Jardim do Mar,Pós-graduação,Solteiro(a),2190.00,D,6,198.16,Drive-thru,28,Sim,3,1,4,2,3,4,Cappuccino
+322,23,Masculino,Ferrazópolis,Superior completo,Casado(a),4050.00,C,6,252.81,Drive-thru,69,Sim,3,5,4,4,3,3,Latte
+323,50,Masculino,Baeta Neves,Superior completo,Casado(a),3510.00,C,9,294.15,Loja física,36,Sim,4,4,4,4,4,7,Gelado
+324,66,Masculino,Baeta Neves,Superior completo,Divorciado(a),1860.00,D,8,195.04,Loja física,39,Não,4,3,2,2,4,6,Coado
+325,69,Feminino,Ferrazópolis,Fundamental,Casado(a),2250.00,D,6,202.82,App,46,Não,4,1,5,1,3,8,Gelado
+326,30,Feminino,Demarchi,Superior completo,Divorciado(a),1530.00,D,8,205.96,Drive-thru,48,Não,4,2,5,3,5,6,Coado
+327,30,Feminino,Demarchi,Médio,Casado(a),2310.00,D,8,228.87,App,36,Sim,3,1,4,2,2,2,Expresso
+328,19,Masculino,Rudge Ramos,Superior incompleto,Divorciado(a),1300.00,D,8,208.08,Drive-thru,35,Não,3,4,5,3,4,7,Cappuccino
+329,25,Masculino,Ferrazópolis,Superior completo,Casado(a),3740.00,C,8,214.91,Delivery,23,Sim,4,4,4,5,4,10,Expresso
+330,47,Masculino,Paulicéia,Superior completo,Solteiro(a),3810.00,C,9,202.26,Loja física,50,Não,3,4,5,1,4,8,Expresso
+331,46,Feminino,Paulicéia,Médio,União estável,5950.00,C,15,287.55,Delivery,49,Sim,3,2,3,2,3,5,Gelado
+332,37,Feminino,Centro,Médio,Solteiro(a),3560.00,C,8,298.00,Delivery,32,Não,5,5,5,4,4,6,Coado
+333,34,Feminino,Paulicéia,Superior incompleto,Solteiro(a),2240.00,D,10,180.13,Drive-thru,52,Sim,2,2,2,3,3,1,Gelado
+334,61,Masculino,Paulicéia,Fundamental,Solteiro(a),3430.00,C,10,227.42,Drive-thru,10,Sim,5,5,4,2,4,6,Cappuccino
+335,42,Masculino,Rudge Ramos,Superior completo,Solteiro(a),1680.00,D,6,245.45,Delivery,30,Não,4,3,4,5,3,5,Gelado
+336,60,Feminino,Taboão,Fundamental,Solteiro(a),1530.00,D,6,231.23,Drive-thru,72,Sim,5,3,3,3,3,4,Gelado
+337,69,Masculino,Demarchi,Superior incompleto,Casado(a),3620.00,C,16,309.60,Loja física,53,Sim,5,3,5,3,4,7,Expresso
+338,34,Feminino,Baeta Neves,Superior completo,União estável,1300.00,D,5,246.62,Delivery,52,Não,5,4,4,4,4,6,Gelado
+339,28,Masculino,Paulicéia,Fundamental,Solteiro(a),2050.00,D,8,270.14,Delivery,63,Sim,5,3,3,4,4,4,Expresso
+340,68,Feminino,Demarchi,Pós-graduação,Casado(a),2490.00,D,11,241.94,Loja física,44,Sim,3,4,3,4,3,6,Latte
+341,51,Feminino,Demarchi,Médio,Solteiro(a),2690.00,D,5,240.12,Delivery,48,Sim,4,3,4,5,4,5,Expresso
+342,33,Masculino,Nova Petrópolis,Fundamental,Divorciado(a),1310.00,D,11,169.39,Delivery,35,Sim,3,2,4,1,3,5,Latte
+343,50,Feminino,Jardim do Mar,Superior completo,Solteiro(a),3940.00,C,10,271.04,App,60,Não,2,4,3,3,3,4,Expresso
+344,45,Feminino,Jardim do Mar,Superior incompleto,Solteiro(a),2850.00,D,6,217.53,Delivery,52,Não,3,4,5,3,4,8,Gelado
+345,65,Feminino,Rudge Ramos,Superior completo,Casado(a),6490.00,B,6,307.25,Delivery,38,Sim,5,4,5,2,5,7,Latte
+346,31,Feminino,Paulicéia,Superior completo,Casado(a),3030.00,C,13,304.70,Delivery,10,Sim,4,3,3,4,3,5,Gelado
+347,70,Masculino,Centro,Superior incompleto,Divorciado(a),2210.00,D,9,291.39,App,59,Não,5,1,4,3,5,7,Latte
+348,67,Masculino,Nova Petrópolis,Pós-graduação,Casado(a),3520.00,C,11,291.29,App,24,Não,5,4,4,4,5,8,Latte
+349,27,Masculino,Jardim do Mar,Médio,Casado(a),1300.00,D,5,216.39,Delivery,26,Sim,5,1,5,5,4,9,Coado
+350,26,Feminino,Rudge Ramos,Superior incompleto,Solteiro(a),3150.00,C,7,341.22,Drive-thru,9,Não,5,3,5,5,5,7,Gelado
+351,46,Masculino,Nova Petrópolis,Fundamental,Solteiro(a),2910.00,D,9,280.95,App,16,Sim,5,2,4,2,4,7,Cappuccino
+352,20,Feminino,Bairro Assunção,Superior completo,Solteiro(a),8770.00,B,9,394.67,Delivery,10,Sim,4,2,4,3,4,8,Latte
+353,33,Feminino,Paulicéia,Médio,Solteiro(a),1810.00,D,7,213.56,Drive-thru,8,Não,4,3,4,3,4,7,Cappuccino
+354,41,Feminino,Baeta Neves,Superior completo,Solteiro(a),2780.00,D,7,248.44,App,2,Não,4,5,3,5,4,5,Expresso
+355,69,Masculino,Demarchi,Pós-graduação,Casado(a),3060.00,C,6,153.39,Drive-thru,22,Sim,4,3,4,1,3,8,Gelado
+356,70,Masculino,Jardim do Mar,Pós-graduação,Solteiro(a),4370.00,C,5,243.75,App,55,Não,4,4,3,1,3,4,Latte
+357,26,Masculino,Demarchi,Pós-graduação,Casado(a),3960.00,C,7,265.28,App,63,Não,5,5,5,3,5,9,Cappuccino
+358,65,Feminino,Paulicéia,Fundamental,Casado(a),2350.00,D,8,215.48,App,17,Não,4,3,4,5,4,6,Coado
+359,22,Feminino,Centro,Fundamental,Casado(a),3310.00,C,9,286.83,Loja física,31,Não,3,2,5,4,3,6,Gelado
+360,57,Masculino,Bairro Assunção,Pós-graduação,Casado(a),2860.00,D,7,214.71,App,60,Sim,4,3,3,3,4,7,Gelado
+361,62,Masculino,Jardim do Mar,Médio,Solteiro(a),4190.00,C,11,225.85,App,51,Não,3,4,5,1,3,6,Latte
+362,65,Feminino,Taboão,Fundamental,Solteiro(a),3070.00,C,5,187.92,Loja física,66,Sim,3,5,4,4,3,3,Expresso
+363,29,Feminino,Ferrazópolis,Médio,Casado(a),2340.00,D,5,226.92,Drive-thru,31,Sim,4,4,4,2,3,6,Latte
+364,65,Feminino,Nova Petrópolis,Pós-graduação,Casado(a),3380.00,C,6,251.89,Delivery,13,Sim,4,1,3,2,3,3,Latte
+365,24,Masculino,Rudge Ramos,Médio,Solteiro(a),6880.00,B,3,290.59,Loja física,11,Não,5,2,4,3,4,7,Cappuccino
+366,45,Feminino,Taboão,Fundamental,Solteiro(a),1540.00,D,5,208.85,Loja física,52,Sim,4,2,3,4,3,4,Latte
+367,42,Masculino,Paulicéia,Superior completo,Casado(a),3600.00,C,2,285.09,Drive-thru,2,Sim,5,2,4,2,4,8,Latte
+368,34,Feminino,Bairro Assunção,Fundamental,Casado(a),1520.00,D,10,228.07,App,34,Não,4,1,3,5,3,3,Gelado
+369,19,Masculino,Demarchi,Médio,Solteiro(a),5050.00,C,8,260.14,App,26,Sim,4,2,5,4,4,7,Expresso
+370,58,Feminino,Ferrazópolis,Fundamental,Casado(a),3490.00,C,6,259.23,Loja física,67,Sim,4,3,3,2,3,4,Coado
+371,35,Feminino,Baeta Neves,Superior completo,União estável,2260.00,D,11,222.30,Drive-thru,72,Sim,3,2,3,4,3,3,Coado
+372,53,Feminino,Jardim do Mar,Superior incompleto,Solteiro(a),3680.00,C,5,209.95,App,35,Não,4,2,5,2,4,9,Cappuccino
+373,39,Feminino,Rudge Ramos,Pós-graduação,Divorciado(a),3940.00,C,9,326.34,Delivery,42,Sim,5,3,5,3,4,5,Cappuccino
+374,37,Masculino,Bairro Assunção,Médio,Solteiro(a),1930.00,D,10,270.47,App,28,Sim,5,3,5,4,4,9,Gelado
+375,64,Feminino,Centro,Médio,Casado(a),3810.00,C,13,271.17,Drive-thru,56,Sim,3,3,4,1,3,6,Cappuccino
+376,23,Masculino,Ferrazópolis,Fundamental,Casado(a),2430.00,D,5,188.47,App,22,Não,2,4,3,5,3,4,Coado
+377,57,Feminino,Ferrazópolis,Médio,Solteiro(a),2900.00,D,16,252.20,Drive-thru,54,Não,3,2,4,2,3,6,Latte
+378,57,Feminino,Jardim do Mar,Superior incompleto,União estável,2910.00,D,11,273.81,Delivery,66,Sim,5,1,4,2,4,7,Gelado
+379,38,Masculino,Demarchi,Fundamental,Casado(a),2630.00,D,7,237.28,App,13,Não,4,1,5,5,3,5,Coado
+380,31,Feminino,Rudge Ramos,Superior incompleto,União estável,2970.00,D,10,267.46,App,17,Não,3,2,5,3,3,6,Gelado
+381,18,Outro,Baeta Neves,Pós-graduação,Solteiro(a),3320.00,C,8,248.83,Delivery,28,Não,3,4,2,5,3,4,Gelado
+382,67,Masculino,Centro,Superior completo,União estável,2610.00,D,6,168.86,Delivery,60,Sim,3,1,2,3,3,2,Expresso
+383,68,Masculino,Ferrazópolis,Superior completo,União estável,7500.00,B,7,307.53,Delivery,47,Sim,3,4,4,3,2,4,Gelado
+384,30,Feminino,Ferrazópolis,Pós-graduação,Casado(a),2110.00,D,8,214.34,Loja física,14,Não,5,3,5,3,5,5,Gelado
+385,19,Feminino,Taboão,Superior completo,Solteiro(a),3490.00,C,5,266.49,App,27,Sim,5,5,5,4,5,6,Expresso
+386,24,Masculino,Nova Petrópolis,Superior completo,Casado(a),2540.00,D,8,194.03,App,47,Sim,3,3,4,5,3,6,Latte
+387,21,Feminino,Nova Petrópolis,Pós-graduação,Casado(a),7210.00,B,10,359.50,Delivery,70,Sim,5,2,5,5,5,8,Cappuccino
+388,62,Feminino,Centro,Fundamental,União estável,1590.00,D,8,288.71,Loja física,33,Sim,5,3,5,2,4,6,Gelado
+389,65,Feminino,Baeta Neves,Pós-graduação,Casado(a),2800.00,D,6,170.16,Loja física,6,Não,3,3,5,2,4,7,Cappuccino
+390,26,Masculino,Baeta Neves,Médio,Solteiro(a),1500.00,D,11,201.70,App,8,Sim,4,2,5,3,3,5,Expresso
+391,57,Masculino,Paulicéia,Superior completo,Solteiro(a),3870.00,C,4,236.93,App,3,Não,4,2,3,3,3,3,Expresso
+392,27,Masculino,Paulicéia,Pós-graduação,Casado(a),1800.00,D,7,212.18,Delivery,10,Não,4,3,4,5,4,4,Coado
+393,37,Masculino,Rudge Ramos,Superior incompleto,Viúvo(a),2210.00,D,8,191.82,Loja física,30,Sim,2,2,3,4,2,1,Expresso
+394,49,Feminino,Bairro Assunção,Fundamental,Solteiro(a),1300.00,D,8,250.57,Drive-thru,21,Sim,4,1,4,2,3,6,Cappuccino
+395,56,Masculino,Demarchi,Médio,Casado(a),2920.00,D,7,261.58,App,22,Sim,5,3,4,3,4,6,Latte
+396,64,Feminino,Nova Petrópolis,Superior incompleto,União estável,2440.00,D,10,273.73,Delivery,56,Sim,5,2,5,4,5,10,Expresso
+397,20,Masculino,Centro,Pós-graduação,Solteiro(a),1670.00,D,5,176.58,Drive-thru,35,Não,3,1,3,4,2,2,Expresso
+398,28,Feminino,Taboão,Pós-graduação,Solteiro(a),5480.00,C,10,324.44,App,53,Não,3,3,4,5,4,7,Gelado
+399,32,Outro,Paulicéia,Superior incompleto,Casado(a),1490.00,D,4,187.33,App,40,Não,4,4,4,2,4,6,Latte
+400,34,Feminino,Demarchi,Pós-graduação,Casado(a),4930.00,C,10,311.28,App,15,Não,4,5,3,4,4,6,Cappuccino
+401,70,Feminino,Nova Petrópolis,Superior incompleto,Solteiro(a),2280.00,D,9,246.42,Delivery,69,Sim,4,3,3,2,4,6,Gelado
+402,59,Feminino,Taboão,Superior incompleto,Divorciado(a),6150.00,B,10,362.10,Drive-thru,35,Não,5,3,3,4,3,4,Expresso
+403,34,Feminino,Centro,Pós-graduação,Casado(a),4820.00,C,5,256.36,Delivery,61,Sim,3,4,4,4,3,4,Cappuccino
+404,69,Feminino,Baeta Neves,Superior completo,União estável,2230.00,D,12,268.40,Loja física,7,Sim,4,3,4,5,3,6,Gelado
+405,44,Masculino,Taboão,Superior incompleto,União estável,1870.00,D,11,228.97,Drive-thru,62,Sim,3,1,3,3,3,6,Coado
+406,44,Feminino,Jardim do Mar,Superior incompleto,Divorciado(a),3700.00,C,7,268.19,Loja física,52,Sim,4,2,2,3,3,5,Latte
+407,40,Masculino,Bairro Assunção,Superior completo,Casado(a),2780.00,D,5,175.93,App,18,Não,5,2,5,3,4,7,Gelado
+408,25,Feminino,Ferrazópolis,Superior completo,Solteiro(a),2730.00,D,7,211.67,Loja física,58,Não,3,4,3,4,3,3,Latte
+409,67,Masculino,Rudge Ramos,Superior incompleto,Casado(a),5480.00,C,9,260.14,Loja física,54,Sim,4,4,3,2,3,4,Coado
+410,18,Feminino,Rudge Ramos,Fundamental,Solteiro(a),1430.00,D,12,244.51,Drive-thru,65,Sim,3,1,2,5,2,2,Gelado
+411,27,Masculino,Nova Petrópolis,Fundamental,Casado(a),2160.00,D,12,292.18,Loja física,16,Não,4,2,4,5,4,6,Latte
+412,30,Masculino,Taboão,Fundamental,Solteiro(a),3220.00,C,5,311.22,Drive-thru,64,Não,5,3,5,2,5,7,Latte
+413,32,Feminino,Ferrazópolis,Superior incompleto,Casado(a),3870.00,C,9,211.73,Delivery,55,Não,4,3,4,3,5,6,Coado
+414,24,Masculino,Baeta Neves,Superior completo,Solteiro(a),2730.00,D,7,239.05,App,25,Sim,4,2,3,4,3,4,Expresso
+415,18,Feminino,Bairro Assunção,Pós-graduação,Solteiro(a),2840.00,D,10,284.93,Drive-thru,26,Sim,5,4,4,3,5,3,Latte
+416,53,Feminino,Rudge Ramos,Médio,Solteiro(a),1300.00,D,6,206.71,Loja física,19,Não,4,2,5,3,4,7,Coado
+417,69,Masculino,Bairro Assunção,Superior completo,Casado(a),2180.00,D,8,261.36,Delivery,35,Não,5,3,4,4,5,7,Cappuccino
+418,24,Masculino,Rudge Ramos,Superior completo,Divorciado(a),3390.00,C,12,306.91,Drive-thru,65,Sim,5,3,4,5,5,9,Coado
+419,33,Feminino,Rudge Ramos,Fundamental,Solteiro(a),1990.00,D,7,180.42,App,61,Sim,1,1,2,5,1,2,Latte
+420,44,Feminino,Ferrazópolis,Médio,Divorciado(a),2590.00,D,7,241.38,App,11,Sim,4,3,3,3,4,7,Expresso
+421,67,Masculino,Rudge Ramos,Médio,União estável,4380.00,C,5,223.31,Loja física,10,Não,3,4,2,2,3,3,Expresso
+422,54,Masculino,Centro,Pós-graduação,Solteiro(a),2190.00,D,9,205.42,Loja física,5,Sim,3,4,2,2,3,2,Latte
+423,58,Outro,Demarchi,Pós-graduação,Casado(a),3410.00,C,10,276.28,Loja física,45,Não,5,2,5,3,3,5,Expresso
+424,48,Masculino,Bairro Assunção,Pós-graduação,Casado(a),3960.00,C,7,228.11,App,23,Não,4,2,4,3,2,4,Cappuccino
+425,40,Masculino,Baeta Neves,Superior incompleto,Solteiro(a),2020.00,D,11,335.66,Delivery,55,Sim,5,2,5,4,4,5,Latte
+426,28,Feminino,Rudge Ramos,Superior incompleto,Casado(a),5030.00,C,10,311.89,App,55,Sim,3,4,3,5,2,5,Expresso
+427,63,Masculino,Bairro Assunção,Médio,Solteiro(a),4060.00,C,10,262.90,Delivery,15,Sim,3,4,4,3,3,5,Latte
+428,60,Feminino,Baeta Neves,Superior completo,União estável,3860.00,C,10,278.28,App,50,Sim,5,4,4,2,4,7,Cappuccino
+429,19,Masculino,Ferrazópolis,Fundamental,União estável,4500.00,C,5,245.93,Drive-thru,56,Não,4,2,3,3,3,2,Cappuccino
+430,55,Feminino,Baeta Neves,Médio,Divorciado(a),1330.00,D,7,222.66,Delivery,72,Não,4,2,4,3,3,4,Gelado
+431,22,Masculino,Demarchi,Fundamental,Casado(a),2020.00,D,7,178.65,Drive-thru,53,Sim,4,1,5,5,3,4,Gelado
+432,57,Masculino,Demarchi,Superior incompleto,Casado(a),3500.00,C,8,212.37,Delivery,26,Não,4,3,5,2,4,8,Cappuccino
+433,61,Feminino,Bairro Assunção,Médio,Viúvo(a),1770.00,D,7,186.75,Loja física,72,Sim,4,1,4,1,3,5,Gelado
+434,24,Masculino,Bairro Assunção,Fundamental,Solteiro(a),2340.00,D,5,206.51,Delivery,20,Não,4,4,5,5,3,7,Cappuccino
+435,40,Feminino,Baeta Neves,Médio,Solteiro(a),1500.00,D,7,223.18,Delivery,58,Não,5,4,5,4,4,7,Cappuccino
+436,24,Masculino,Centro,Pós-graduação,Casado(a),4510.00,C,7,284.32,Loja física,28,Sim,5,3,3,4,3,5,Gelado
+437,48,Feminino,Ferrazópolis,Superior incompleto,Solteiro(a),4610.00,C,10,321.31,Loja física,68,Sim,4,2,4,2,3,5,Expresso
+438,67,Feminino,Ferrazópolis,Pós-graduação,Solteiro(a),4440.00,C,13,313.31,Loja física,57,Não,4,4,4,3,4,6,Cappuccino
+439,22,Feminino,Nova Petrópolis,Pós-graduação,Solteiro(a),1430.00,D,7,189.03,Loja física,44,Sim,3,4,4,5,4,6,Gelado
+440,39,Feminino,Nova Petrópolis,Pós-graduação,Casado(a),2270.00,D,7,238.06,Drive-thru,16,Não,5,3,4,4,4,7,Gelado
+441,69,Feminino,Nova Petrópolis,Médio,Solteiro(a),3560.00,C,15,306.28,Loja física,14,Sim,5,5,4,2,4,7,Gelado
+442,33,Masculino,Ferrazópolis,Pós-graduação,Solteiro(a),3460.00,C,9,169.47,Loja física,69,Sim,2,3,2,3,2,6,Gelado
+443,25,Masculino,Paulicéia,Pós-graduação,Solteiro(a),1300.00,D,6,157.32,App,58,Não,2,1,4,3,2,6,Gelado
+444,43,Masculino,Rudge Ramos,Pós-graduação,Solteiro(a),6240.00,B,12,349.50,App,37,Sim,3,3,2,5,2,0,Latte
+445,44,Feminino,Baeta Neves,Médio,União estável,2660.00,D,10,254.91,Drive-thru,64,Sim,4,1,4,4,3,5,Cappuccino
+446,53,Feminino,Centro,Médio,Solteiro(a),1790.00,D,9,230.20,Loja física,57,Sim,4,5,2,2,3,3,Cappuccino
+447,34,Feminino,Baeta Neves,Superior incompleto,Casado(a),4240.00,C,6,263.17,Drive-thru,28,Sim,5,3,3,2,5,8,Expresso
+448,68,Masculino,Bairro Assunção,Pós-graduação,Casado(a),2910.00,D,7,208.01,Loja física,60,Sim,4,3,4,3,3,5,Expresso
+449,45,Masculino,Nova Petrópolis,Pós-graduação,Solteiro(a),2640.00,D,4,226.45,App,58,Sim,5,2,5,3,4,8,Gelado
+450,33,Feminino,Baeta Neves,Superior incompleto,Divorciado(a),3170.00,C,17,313.81,App,35,Sim,5,2,4,3,4,4,Expresso
+451,68,Masculino,Nova Petrópolis,Fundamental,Casado(a),5440.00,C,4,210.90,Drive-thru,2,Sim,4,5,5,1,5,7,Coado
+452,67,Feminino,Nova Petrópolis,Superior incompleto,Casado(a),6420.00,B,10,295.46,Loja física,54,Não,5,2,5,2,4,10,Cappuccino
+453,44,Feminino,Paulicéia,Superior completo,Solteiro(a),3740.00,C,9,235.00,App,25,Não,2,4,3,3,3,4,Coado
+454,19,Feminino,Taboão,Superior incompleto,Solteiro(a),3140.00,C,6,282.26,Delivery,27,Sim,4,4,4,4,4,5,Latte
+455,49,Feminino,Centro,Médio,Viúvo(a),3640.00,C,10,315.91,Delivery,52,Não,4,3,4,5,5,8,Expresso
+456,47,Masculino,Nova Petrópolis,Médio,Divorciado(a),1440.00,D,11,290.71,App,59,Não,5,2,5,4,4,6,Cappuccino
+457,25,Masculino,Taboão,Fundamental,União estável,2750.00,D,5,151.96,Loja física,7,Não,2,2,2,3,1,1,Coado
+458,51,Feminino,Demarchi,Médio,União estável,1850.00,D,7,229.42,Drive-thru,60,Não,4,1,5,1,3,4,Gelado
+459,62,Masculino,Bairro Assunção,Superior completo,Solteiro(a),3940.00,C,7,214.25,Drive-thru,22,Sim,4,4,5,3,5,8,Cappuccino
+460,23,Masculino,Demarchi,Médio,Divorciado(a),2070.00,D,6,231.70,Delivery,41,Sim,4,3,3,4,4,5,Cappuccino
+461,56,Masculino,Rudge Ramos,Pós-graduação,Casado(a),4710.00,C,7,329.53,Drive-thru,63,Não,5,3,4,4,4,8,Coado
+462,25,Masculino,Centro,Fundamental,Divorciado(a),2170.00,D,9,266.02,App,16,Sim,5,2,5,4,4,8,Latte
+463,57,Feminino,Ferrazópolis,Superior incompleto,Solteiro(a),1300.00,D,9,252.61,Drive-thru,16,Não,4,5,4,1,4,7,Expresso
+464,40,Masculino,Demarchi,Superior incompleto,Solteiro(a),3010.00,C,9,232.61,Drive-thru,70,Não,5,2,5,2,4,7,Expresso
+465,18,Feminino,Paulicéia,Pós-graduação,Casado(a),4310.00,C,9,290.09,Drive-thru,27,Sim,4,2,3,4,3,5,Cappuccino
+466,69,Masculino,Nova Petrópolis,Pós-graduação,Divorciado(a),4840.00,C,8,241.31,Drive-thru,69,Sim,4,3,5,3,5,7,Cappuccino
+467,26,Feminino,Taboão,Superior incompleto,Casado(a),2500.00,D,10,277.90,App,26,Não,5,2,4,3,3,4,Expresso
+468,49,Masculino,Baeta Neves,Superior completo,Solteiro(a),6790.00,B,11,325.23,Loja física,45,Sim,4,4,5,3,4,8,Coado
+469,27,Feminino,Paulicéia,Superior completo,Solteiro(a),3420.00,C,12,286.24,Delivery,37,Não,4,4,5,3,4,7,Latte
+470,67,Feminino,Rudge Ramos,Superior incompleto,Viúvo(a),3760.00,C,10,287.35,Delivery,71,Não,5,3,3,3,4,6,Coado
+471,57,Masculino,Centro,Fundamental,Casado(a),3740.00,C,3,222.56,Delivery,40,Sim,5,4,5,3,4,7,Expresso
+472,60,Masculino,Paulicéia,Superior incompleto,Casado(a),3540.00,C,7,274.69,Delivery,37,Sim,5,4,5,4,4,9,Latte
+473,40,Feminino,Taboão,Médio,Casado(a),1640.00,D,6,243.38,Loja física,34,Sim,5,5,5,4,5,10,Latte
+474,42,Masculino,Jardim do Mar,Superior incompleto,Casado(a),1300.00,D,10,193.45,Delivery,28,Não,5,3,5,2,4,6,Latte
+475,51,Masculino,Nova Petrópolis,Superior completo,Casado(a),2640.00,D,4,162.19,App,32,Sim,4,2,3,4,2,1,Gelado
+476,59,Feminino,Centro,Médio,Casado(a),3740.00,C,5,253.84,Loja física,34,Sim,5,3,3,3,4,5,Latte
+477,62,Masculino,Jardim do Mar,Médio,Divorciado(a),2290.00,D,10,195.28,Drive-thru,55,Sim,4,1,4,3,3,4,Latte
+478,18,Feminino,Ferrazópolis,Pós-graduação,União estável,4630.00,C,3,261.62,Loja física,4,Sim,5,3,5,4,5,9,Gelado
+479,53,Masculino,Bairro Assunção,Médio,União estável,2770.00,D,15,268.85,Loja física,37,Sim,5,4,5,2,4,8,Cappuccino
+480,23,Feminino,Paulicéia,Fundamental,Casado(a),3640.00,C,7,215.72,App,40,Sim,2,4,4,3,3,4,Cappuccino
+481,33,Feminino,Jardim do Mar,Superior completo,Casado(a),2660.00,D,8,260.56,Drive-thru,55,Não,5,3,5,4,4,6,Expresso
+482,61,Masculino,Bairro Assunção,Superior completo,Casado(a),4200.00,C,9,336.57,Loja física,48,Sim,5,4,5,3,4,5,Coado
+483,31,Masculino,Paulicéia,Pós-graduação,Divorciado(a),4270.00,C,9,248.07,App,32,Não,5,4,5,3,4,7,Expresso
+484,60,Masculino,Paulicéia,Superior completo,Casado(a),6660.00,B,3,309.32,App,8,Não,5,5,5,2,4,7,Cappuccino
+485,42,Masculino,Demarchi,Pós-graduação,Casado(a),1650.00,D,4,179.47,App,27,Não,4,3,4,3,3,6,Latte
+486,30,Masculino,Ferrazópolis,Superior incompleto,Casado(a),2170.00,D,8,189.96,Drive-thru,19,Não,4,2,4,2,4,7,Latte
+487,35,Masculino,Bairro Assunção,Médio,Casado(a),3530.00,C,7,250.82,App,15,Sim,5,1,4,1,3,6,Expresso
+488,46,Masculino,Jardim do Mar,Pós-graduação,Casado(a),7240.00,B,2,280.55,App,52,Não,5,4,2,3,3,2,Latte
+489,58,Feminino,Jardim do Mar,Médio,Solteiro(a),2950.00,D,10,264.12,App,35,Sim,5,3,5,3,4,6,Gelado
+490,50,Feminino,Jardim do Mar,Médio,Casado(a),2240.00,D,7,300.86,App,58,Sim,5,3,5,3,4,8,Expresso
+491,67,Feminino,Paulicéia,Pós-graduação,Casado(a),5520.00,C,10,274.30,Drive-thru,10,Não,5,2,5,3,4,7,Latte
+492,63,Masculino,Centro,Pós-graduação,Solteiro(a),5720.00,C,5,276.59,App,71,Sim,5,4,5,3,5,7,Latte
+493,57,Feminino,Nova Petrópolis,Médio,Divorciado(a),2240.00,D,6,213.26,Loja física,35,Sim,3,2,3,3,3,5,Cappuccino
+494,49,Feminino,Baeta Neves,Superior completo,Casado(a),3760.00,C,5,296.29,App,19,Não,5,3,3,2,5,6,Latte
+495,33,Masculino,Jardim do Mar,Pós-graduação,Solteiro(a),5830.00,C,7,276.58,Loja física,27,Sim,5,3,5,2,5,10,Cappuccino
+496,39,Feminino,Demarchi,Superior completo,Divorciado(a),7290.00,B,8,410.41,Drive-thru,61,Sim,4,4,4,4,3,5,Expresso
+497,24,Feminino,Demarchi,Fundamental,Casado(a),2860.00,D,9,307.22,Drive-thru,52,Sim,5,1,4,4,3,5,Gelado
+498,37,Masculino,Rudge Ramos,Superior completo,Casado(a),3150.00,C,15,185.15,Drive-thru,13,Sim,3,4,5,2,3,8,Gelado
+499,67,Masculino,Paulicéia,Fundamental,Solteiro(a),2370.00,D,8,172.86,Drive-thru,72,Sim,4,2,5,2,4,6,Cappuccino
+500,40,Feminino,Nova Petrópolis,Pós-graduação,Divorciado(a),4530.00,C,5,259.70,App,10,Sim,3,2,4,4,3,7,Expresso
+501,24,Feminino,Centro,Fundamental,Casado(a),1940.00,D,6,223.18,Delivery,20,Sim,5,3,5,4,4,6,Expresso
+502,52,Feminino,Jardim do Mar,Pós-graduação,Casado(a),4030.00,C,10,318.78,App,53,Não,5,2,3,3,3,4,Gelado
+503,69,Masculino,Rudge Ramos,Fundamental,Solteiro(a),1520.00,D,8,193.56,Drive-thru,39,Não,4,3,4,3,3,5,Gelado
+504,63,Masculino,Centro,Superior incompleto,Casado(a),5450.00,C,11,273.00,Loja física,33,Não,5,3,5,2,4,7,Latte
+505,32,Feminino,Centro,Médio,Casado(a),1430.00,D,2,194.66,Loja física,67,Sim,5,1,4,4,3,4,Gelado
+506,42,Masculino,Baeta Neves,Pós-graduação,Casado(a),2930.00,D,8,252.89,Drive-thru,58,Não,4,4,3,3,3,4,Cappuccino
+507,46,Feminino,Rudge Ramos,Médio,Casado(a),2630.00,D,5,186.74,App,70,Não,4,3,4,4,4,5,Latte
+508,31,Feminino,Taboão,Superior completo,Divorciado(a),7390.00,B,9,366.20,App,21,Não,5,4,4,1,4,9,Expresso
+509,32,Outro,Demarchi,Fundamental,Casado(a),1750.00,D,6,195.44,Delivery,62,Sim,3,4,4,2,3,5,Latte
+510,30,Feminino,Nova Petrópolis,Superior incompleto,Solteiro(a),1970.00,D,6,204.84,App,16,Sim,4,4,3,2,3,6,Coado
+511,70,Feminino,Centro,Pós-graduação,União estável,3100.00,C,8,229.28,Delivery,59,Sim,5,3,2,2,3,5,Gelado
+512,57,Feminino,Baeta Neves,Pós-graduação,Casado(a),7960.00,B,8,337.73,App,40,Não,3,4,4,3,4,7,Coado
+513,62,Masculino,Rudge Ramos,Médio,Viúvo(a),1300.00,D,7,202.75,Drive-thru,44,Sim,5,3,3,3,5,7,Coado
+514,61,Masculino,Jardim do Mar,Médio,Viúvo(a),1700.00,D,11,207.21,Loja física,9,Não,5,2,4,3,4,7,Coado
+515,68,Outro,Bairro Assunção,Superior incompleto,União estável,10600.00,B,10,420.44,Delivery,64,Sim,4,1,2,2,2,3,Coado
+516,23,Feminino,Baeta Neves,Superior incompleto,Casado(a),3380.00,C,5,239.85,App,21,Não,4,3,5,5,4,7,Latte
+517,64,Feminino,Centro,Superior incompleto,Casado(a),1860.00,D,11,253.20,App,44,Sim,5,4,5,5,4,5,Latte
+518,21,Masculino,Rudge Ramos,Fundamental,Solteiro(a),1980.00,D,8,251.05,Drive-thru,12,Sim,5,3,5,4,4,5,Expresso
+519,43,Feminino,Bairro Assunção,Superior completo,Casado(a),3260.00,C,11,294.92,App,67,Sim,5,2,5,3,5,10,Expresso
+520,49,Masculino,Centro,Médio,Casado(a),3730.00,C,6,281.78,Loja física,24,Não,5,4,3,2,4,2,Coado
+521,36,Masculino,Paulicéia,Médio,Casado(a),5540.00,C,12,291.83,App,55,Sim,4,3,3,3,4,6,Latte
+522,25,Feminino,Jardim do Mar,Pós-graduação,União estável,3960.00,C,4,227.66,Loja física,56,Sim,3,1,3,4,2,3,Gelado
+523,28,Masculino,Jardim do Mar,Superior completo,Solteiro(a),2340.00,D,7,232.84,App,40,Não,5,4,4,2,4,7,Expresso
+524,61,Feminino,Bairro Assunção,Médio,Solteiro(a),3810.00,C,3,223.77,Loja física,9,Não,4,2,4,1,3,4,Cappuccino
+525,34,Feminino,Paulicéia,Pós-graduação,Casado(a),2510.00,D,8,281.16,Delivery,21,Não,5,4,5,4,5,9,Cappuccino
+526,34,Masculino,Demarchi,Médio,Casado(a),1510.00,D,4,178.25,Loja física,45,Não,3,4,4,4,3,5,Gelado
+527,66,Feminino,Centro,Superior incompleto,Solteiro(a),1390.00,D,5,221.30,App,39,Sim,4,2,3,4,3,8,Cappuccino
+528,25,Masculino,Centro,Médio,Solteiro(a),1300.00,D,5,162.57,Drive-thru,43,Não,3,3,3,4,3,4,Coado
+529,66,Masculino,Demarchi,Fundamental,Divorciado(a),1620.00,D,8,208.81,Delivery,18,Sim,4,5,5,1,4,9,Expresso
+530,66,Outro,Baeta Neves,Superior incompleto,Casado(a),1810.00,D,9,177.22,Delivery,39,Não,3,4,3,2,3,3,Latte
+531,49,Outro,Centro,Superior incompleto,Solteiro(a),3310.00,C,7,222.49,Drive-thru,7,Não,3,3,3,2,2,4,Latte
+532,26,Feminino,Jardim do Mar,Pós-graduação,Solteiro(a),1940.00,D,4,247.00,Drive-thru,35,Sim,4,5,4,3,5,8,Coado
+533,26,Feminino,Paulicéia,Médio,Casado(a),1300.00,D,6,163.78,Drive-thru,7,Sim,2,3,3,4,1,2,Latte
+534,33,Masculino,Demarchi,Pós-graduação,Solteiro(a),2140.00,D,2,233.04,Drive-thru,48,Não,3,3,4,4,3,5,Expresso
+535,48,Masculino,Jardim do Mar,Superior completo,Casado(a),2610.00,D,12,270.45,App,41,Não,5,1,4,5,4,8,Expresso
+536,26,Feminino,Jardim do Mar,Fundamental,Divorciado(a),1570.00,D,4,195.92,Delivery,62,Não,4,1,4,4,3,5,Expresso
+537,42,Feminino,Jardim do Mar,Superior completo,Solteiro(a),6250.00,B,5,278.54,Drive-thru,34,Não,3,3,2,2,2,1,Cappuccino
+538,24,Feminino,Bairro Assunção,Superior incompleto,Casado(a),1970.00,D,9,282.94,Delivery,12,Sim,5,2,4,4,3,4,Coado
+539,46,Feminino,Taboão,Médio,Solteiro(a),3750.00,C,7,243.37,Loja física,17,Sim,3,4,3,3,3,5,Cappuccino
+540,19,Masculino,Demarchi,Superior incompleto,Solteiro(a),2530.00,D,5,246.81,Delivery,59,Não,5,1,3,3,4,6,Gelado
+541,55,Feminino,Paulicéia,Médio,União estável,2560.00,D,6,240.65,Loja física,69,Sim,4,3,4,3,3,3,Expresso
+542,20,Masculino,Taboão,Superior completo,Casado(a),1980.00,D,13,297.35,Delivery,5,Não,4,1,5,3,4,8,Latte
+543,28,Masculino,Rudge Ramos,Superior incompleto,União estável,2570.00,D,9,238.88,Drive-thru,49,Não,4,3,3,4,3,3,Coado
+544,27,Masculino,Baeta Neves,Superior incompleto,Solteiro(a),1870.00,D,5,211.44,Delivery,35,Sim,5,3,4,5,4,7,Expresso
+545,62,Feminino,Rudge Ramos,Médio,Solteiro(a),2900.00,D,11,245.86,Delivery,19,Não,3,2,3,4,2,2,Latte
+546,20,Feminino,Bairro Assunção,Médio,Casado(a),2040.00,D,10,280.97,Delivery,37,Não,4,1,3,5,3,4,Expresso
+547,40,Masculino,Baeta Neves,Superior incompleto,Casado(a),1810.00,D,8,253.21,Delivery,68,Sim,5,4,5,4,4,7,Coado
+548,49,Masculino,Taboão,Superior incompleto,Viúvo(a),4490.00,C,13,274.19,App,15,Não,3,4,3,3,4,7,Latte
+549,45,Feminino,Taboão,Médio,Solteiro(a),3040.00,C,2,156.63,Loja física,61,Não,2,3,2,3,3,4,Gelado
+550,54,Masculino,Nova Petrópolis,Superior incompleto,Divorciado(a),2400.00,D,6,228.02,Delivery,7,Sim,3,4,3,4,3,6,Coado
+551,60,Feminino,Nova Petrópolis,Médio,União estável,2850.00,D,11,319.66,App,52,Sim,5,2,4,1,4,10,Cappuccino
+552,38,Masculino,Demarchi,Superior incompleto,Casado(a),2650.00,D,14,262.46,Loja física,6,Sim,4,2,3,3,4,6,Expresso
+553,61,Feminino,Jardim do Mar,Fundamental,Solteiro(a),1610.00,D,8,286.06,Drive-thru,5,Não,4,1,5,4,4,9,Expresso
+554,34,Feminino,Jardim do Mar,Superior incompleto,Casado(a),2800.00,D,4,268.92,Delivery,3,Sim,5,2,3,3,4,5,Expresso
+555,70,Masculino,Bairro Assunção,Superior completo,Solteiro(a),2670.00,D,6,241.75,Delivery,58,Sim,3,3,2,2,2,4,Cappuccino
+556,44,Feminino,Rudge Ramos,Pós-graduação,Divorciado(a),2340.00,D,11,272.41,Delivery,42,Não,4,4,4,3,4,5,Coado
+557,57,Feminino,Paulicéia,Superior completo,Casado(a),1610.00,D,8,192.53,Loja física,50,Não,2,2,3,3,3,4,Cappuccino
+558,64,Feminino,Nova Petrópolis,Superior completo,União estável,2930.00,D,7,278.64,Delivery,12,Não,4,4,4,4,3,6,Expresso
+559,60,Feminino,Rudge Ramos,Fundamental,Casado(a),3050.00,C,6,241.63,Delivery,67,Não,4,3,5,4,4,8,Expresso
+560,63,Masculino,Centro,Médio,Casado(a),1970.00,D,7,228.05,Delivery,59,Sim,5,2,5,2,5,7,Latte
+561,46,Feminino,Baeta Neves,Superior completo,Casado(a),9960.00,B,6,391.88,Loja física,36,Sim,3,2,3,4,3,3,Cappuccino
+562,20,Masculino,Nova Petrópolis,Pós-graduação,Casado(a),4850.00,C,12,320.61,Drive-thru,65,Não,4,3,3,4,2,4,Coado
+563,44,Masculino,Demarchi,Superior incompleto,União estável,5070.00,C,6,246.46,Delivery,11,Sim,3,2,2,4,3,3,Cappuccino
+564,27,Feminino,Bairro Assunção,Pós-graduação,Solteiro(a),4790.00,C,9,297.43,Drive-thru,22,Sim,4,5,3,3,5,5,Expresso
+565,65,Feminino,Paulicéia,Médio,Viúvo(a),6260.00,B,8,362.38,Delivery,4,Não,5,4,4,4,4,6,Cappuccino
+566,30,Masculino,Ferrazópolis,Fundamental,Divorciado(a),1470.00,D,10,235.30,App,12,Sim,4,2,4,3,4,6,Latte
+567,30,Masculino,Baeta Neves,Fundamental,União estável,1300.00,D,8,180.90,Drive-thru,61,Sim,3,4,1,1,2,2,Expresso
+568,31,Masculino,Rudge Ramos,Superior incompleto,Casado(a),2190.00,D,11,244.25,App,30,Não,3,1,3,5,3,5,Expresso
+569,52,Masculino,Demarchi,Superior completo,Divorciado(a),4220.00,C,5,164.52,App,47,Não,2,3,3,2,2,4,Gelado
+570,48,Feminino,Ferrazópolis,Médio,Solteiro(a),2720.00,D,7,205.67,Loja física,64,Sim,3,5,3,3,2,2,Cappuccino
+571,68,Feminino,Nova Petrópolis,Superior completo,Casado(a),3960.00,C,11,311.27,Loja física,56,Sim,5,3,5,2,5,8,Coado
+572,40,Masculino,Bairro Assunção,Superior completo,Solteiro(a),5670.00,C,6,269.68,Loja física,29,Não,3,5,3,3,2,4,Gelado
+573,32,Feminino,Demarchi,Médio,Solteiro(a),2830.00,D,13,289.19,App,26,Não,4,3,4,2,4,6,Expresso
+574,20,Masculino,Nova Petrópolis,Médio,Casado(a),3250.00,C,7,212.94,App,8,Sim,4,5,5,3,4,7,Coado
+575,18,Feminino,Baeta Neves,Superior completo,Solteiro(a),1880.00,D,10,231.91,App,60,Sim,3,4,3,4,4,4,Gelado
+576,37,Masculino,Nova Petrópolis,Superior completo,Solteiro(a),1890.00,D,10,193.49,Drive-thru,71,Não,4,2,5,3,4,7,Expresso
+577,67,Feminino,Nova Petrópolis,Fundamental,Divorciado(a),5030.00,C,10,236.36,Delivery,37,Sim,3,3,3,2,3,5,Cappuccino
+578,45,Feminino,Paulicéia,Médio,Solteiro(a),2630.00,D,10,291.46,Drive-thru,36,Sim,5,2,4,4,4,4,Expresso
+579,65,Feminino,Baeta Neves,Superior incompleto,Casado(a),2320.00,D,10,269.07,Drive-thru,62,Sim,3,1,3,3,3,3,Expresso
+580,23,Feminino,Baeta Neves,Superior incompleto,Solteiro(a),1960.00,D,11,275.87,Loja física,25,Sim,4,2,4,5,3,3,Cappuccino
+581,22,Masculino,Ferrazópolis,Fundamental,Casado(a),1520.00,D,6,242.97,Delivery,30,Sim,3,2,3,5,3,5,Expresso
+582,62,Feminino,Nova Petrópolis,Pós-graduação,Divorciado(a),2800.00,D,14,302.13,Drive-thru,65,Sim,5,4,4,3,4,4,Gelado
+583,23,Feminino,Rudge Ramos,Médio,Casado(a),1300.00,D,8,244.21,App,28,Não,5,3,5,3,5,8,Cappuccino
+584,20,Feminino,Taboão,Médio,Casado(a),1300.00,D,11,175.63,App,67,Sim,1,5,3,5,3,5,Coado
+585,39,Feminino,Centro,Fundamental,União estável,1990.00,D,8,236.79,Delivery,12,Sim,4,1,5,4,4,7,Expresso
+586,67,Masculino,Demarchi,Pós-graduação,Divorciado(a),3010.00,C,15,213.24,Drive-thru,36,Sim,2,2,2,4,2,2,Coado
+587,54,Feminino,Bairro Assunção,Médio,Solteiro(a),4280.00,C,9,252.86,Loja física,36,Não,4,3,3,4,3,5,Coado
+588,23,Outro,Bairro Assunção,Pós-graduação,Casado(a),3760.00,C,11,233.18,App,23,Sim,4,5,4,3,4,8,Expresso
+589,62,Feminino,Centro,Superior incompleto,Casado(a),3410.00,C,5,225.60,Loja física,70,Sim,4,3,4,1,3,5,Latte
+590,62,Masculino,Jardim do Mar,Pós-graduação,Solteiro(a),2760.00,D,9,214.53,Delivery,35,Não,5,1,4,1,4,4,Gelado
+591,60,Feminino,Baeta Neves,Fundamental,Divorciado(a),2240.00,D,7,241.32,Loja física,64,Não,5,2,4,3,3,6,Coado
+592,65,Feminino,Nova Petrópolis,Fundamental,Solteiro(a),2840.00,D,10,253.78,App,16,Não,3,1,5,3,4,8,Gelado
+593,30,Masculino,Paulicéia,Pós-graduação,Divorciado(a),4680.00,C,10,213.97,App,26,Sim,3,2,4,3,3,5,Latte
+594,69,Masculino,Centro,Pós-graduação,Solteiro(a),3800.00,C,9,234.51,Loja física,35,Sim,4,5,5,1,4,5,Cappuccino
+595,34,Masculino,Demarchi,Superior incompleto,Solteiro(a),4400.00,C,9,245.25,Delivery,41,Sim,2,3,3,3,3,4,Latte
+596,60,Feminino,Baeta Neves,Fundamental,Viúvo(a),2370.00,D,7,250.96,App,17,Não,4,3,3,2,3,3,Latte
+597,48,Feminino,Demarchi,Pós-graduação,União estável,5200.00,C,8,327.03,App,23,Sim,5,3,5,3,4,6,Gelado
+598,59,Masculino,Rudge Ramos,Médio,União estável,2130.00,D,7,168.98,Delivery,45,Sim,2,2,3,3,3,4,Latte
+599,51,Feminino,Jardim do Mar,Pós-graduação,União estável,1630.00,D,8,203.12,Drive-thru,21,Sim,4,1,3,2,3,4,Coado
+600,52,Masculino,Bairro Assunção,Pós-graduação,Casado(a),4170.00,C,7,204.92,Drive-thru,55,Não,3,3,3,1,3,4,Latte
+601,50,Masculino,Ferrazópolis,Pós-graduação,Solteiro(a),5090.00,C,8,332.61,Loja física,35,Sim,5,4,4,3,4,7,Cappuccino
+602,59,Masculino,Paulicéia,Superior completo,Solteiro(a),4370.00,C,6,231.76,Delivery,70,Sim,3,5,4,3,4,7,Cappuccino
+603,57,Masculino,Nova Petrópolis,Superior completo,Casado(a),4050.00,C,10,250.12,App,18,Não,4,4,2,2,3,3,Gelado
+604,25,Masculino,Rudge Ramos,Superior incompleto,Solteiro(a),2230.00,D,12,256.80,Drive-thru,61,Não,3,1,4,5,3,4,Cappuccino
+605,61,Feminino,Bairro Assunção,Fundamental,União estável,1650.00,D,4,186.99,App,36,Não,4,3,3,1,4,5,Latte
+606,46,Feminino,Taboão,Médio,Solteiro(a),3230.00,C,10,266.01,Loja física,7,Não,4,4,4,2,3,5,Coado
+607,35,Masculino,Jardim do Mar,Superior completo,Solteiro(a),3710.00,C,10,210.37,Drive-thru,51,Sim,3,3,3,1,3,5,Expresso
+608,45,Feminino,Jardim do Mar,Pós-graduação,Solteiro(a),2800.00,D,8,249.61,Drive-thru,16,Não,5,3,4,2,4,5,Coado
+609,69,Feminino,Bairro Assunção,Superior incompleto,Solteiro(a),5130.00,C,5,300.24,App,10,Sim,4,4,4,3,4,8,Gelado
+610,63,Feminino,Ferrazópolis,Superior completo,Solteiro(a),2300.00,D,7,194.69,Drive-thru,39,Não,5,2,4,2,5,8,Latte
+611,62,Masculino,Rudge Ramos,Fundamental,Casado(a),1830.00,D,6,191.38,App,57,Sim,4,3,3,1,4,2,Latte
+612,42,Masculino,Paulicéia,Superior incompleto,Solteiro(a),5840.00,C,10,282.72,App,19,Não,4,2,5,3,4,7,Latte
+613,59,Masculino,Baeta Neves,Superior incompleto,Casado(a),4420.00,C,12,232.02,App,45,Sim,4,5,4,3,5,9,Coado
+614,38,Feminino,Paulicéia,Pós-graduação,União estável,2980.00,D,17,312.30,App,2,Sim,5,1,4,4,4,7,Expresso
+615,54,Feminino,Ferrazópolis,Médio,Casado(a),2960.00,D,13,292.34,Drive-thru,14,Sim,4,3,3,4,4,5,Coado
+616,51,Masculino,Jardim do Mar,Médio,Casado(a),2760.00,D,7,204.32,Loja física,55,Não,4,3,4,1,3,5,Latte
+617,31,Feminino,Baeta Neves,Médio,Solteiro(a),1300.00,D,9,258.64,Delivery,1,Sim,4,3,3,4,3,5,Expresso
+618,32,Masculino,Nova Petrópolis,Fundamental,Solteiro(a),1410.00,D,11,222.39,Loja física,26,Não,3,2,4,3,2,5,Gelado
+619,21,Masculino,Demarchi,Superior incompleto,Solteiro(a),2510.00,D,12,206.97,Loja física,37,Sim,4,4,3,3,4,4,Expresso
+620,25,Feminino,Rudge Ramos,Superior completo,Viúvo(a),2510.00,D,9,291.00,Loja física,5,Não,5,2,2,4,3,3,Latte
+621,40,Feminino,Rudge Ramos,Pós-graduação,Casado(a),3940.00,C,14,295.86,App,71,Não,3,2,4,2,3,7,Gelado
+622,43,Feminino,Demarchi,Pós-graduação,Solteiro(a),5930.00,C,9,318.43,Delivery,37,Sim,4,2,4,3,3,5,Gelado
+623,26,Masculino,Taboão,Fundamental,Casado(a),1790.00,D,7,227.28,Delivery,25,Não,4,3,4,4,4,8,Coado
+624,40,Masculino,Demarchi,Médio,Divorciado(a),1530.00,D,7,169.29,Drive-thru,71,Não,4,1,5,5,4,10,Coado
+625,50,Feminino,Paulicéia,Médio,Casado(a),2960.00,D,8,197.53,Loja física,41,Não,2,4,1,4,3,2,Latte
+626,30,Masculino,Rudge Ramos,Médio,Casado(a),2040.00,D,13,270.24,Loja física,49,Não,3,4,5,4,4,6,Coado
+627,35,Feminino,Baeta Neves,Pós-graduação,União estável,3220.00,C,5,212.69,Drive-thru,7,Não,3,5,4,3,3,5,Gelado
+628,37,Feminino,Ferrazópolis,Fundamental,Casado(a),1890.00,D,9,297.82,Drive-thru,12,Sim,4,4,3,3,3,6,Latte
+629,44,Masculino,Nova Petrópolis,Fundamental,Casado(a),6080.00,B,8,224.20,Delivery,4,Sim,3,3,3,2,3,6,Latte
+630,37,Feminino,Centro,Pós-graduação,Solteiro(a),1300.00,D,9,260.06,Drive-thru,38,Sim,4,1,4,2,3,8,Expresso
+631,57,Feminino,Centro,Pós-graduação,Solteiro(a),3170.00,C,5,193.18,Drive-thru,61,Não,3,1,4,2,2,4,Gelado
+632,35,Masculino,Jardim do Mar,Médio,Viúvo(a),2410.00,D,10,265.80,Delivery,65,Não,4,2,3,4,3,5,Gelado
+633,40,Feminino,Ferrazópolis,Médio,Casado(a),1730.00,D,4,189.46,App,42,Sim,3,4,2,4,3,3,Coado
+634,38,Masculino,Bairro Assunção,Superior incompleto,Casado(a),4130.00,C,6,273.35,Drive-thru,4,Sim,5,2,5,4,4,4,Coado
+635,27,Feminino,Bairro Assunção,Superior incompleto,Casado(a),3800.00,C,10,315.88,Delivery,46,Sim,4,3,5,5,4,7,Cappuccino
+636,54,Feminino,Centro,Pós-graduação,Solteiro(a),3650.00,C,13,279.75,Drive-thru,46,Não,4,3,4,3,3,4,Gelado
+637,30,Feminino,Jardim do Mar,Superior incompleto,Divorciado(a),2360.00,D,4,229.31,Loja física,43,Não,4,3,4,2,4,7,Expresso
+638,33,Feminino,Rudge Ramos,Fundamental,Solteiro(a),2020.00,D,9,195.45,Loja física,52,Não,2,4,3,3,3,2,Coado
+639,60,Feminino,Paulicéia,Superior incompleto,Divorciado(a),2870.00,D,3,216.29,Delivery,41,Não,4,1,4,2,3,4,Cappuccino
+640,68,Feminino,Bairro Assunção,Superior incompleto,Casado(a),3000.00,C,5,147.23,Drive-thru,51,Não,3,2,2,3,2,3,Latte
+641,53,Masculino,Nova Petrópolis,Superior incompleto,Solteiro(a),2680.00,D,8,207.47,Delivery,36,Sim,4,4,4,2,3,6,Expresso
+642,66,Feminino,Bairro Assunção,Superior incompleto,Solteiro(a),3450.00,C,7,308.95,App,11,Sim,5,4,4,3,5,8,Expresso
+643,63,Feminino,Taboão,Pós-graduação,Divorciado(a),5430.00,C,7,309.80,Loja física,6,Sim,4,3,4,3,3,7,Cappuccino
+644,43,Feminino,Centro,Pós-graduação,Solteiro(a),2050.00,D,10,291.95,Loja física,66,Não,5,4,5,3,5,10,Cappuccino
+645,58,Feminino,Nova Petrópolis,Médio,Solteiro(a),1650.00,D,10,233.09,Loja física,32,Não,3,1,2,4,3,3,Gelado
+646,35,Feminino,Bairro Assunção,Médio,Casado(a),1300.00,D,5,218.98,Loja física,24,Sim,3,3,2,2,3,5,Latte
+647,42,Masculino,Bairro Assunção,Superior completo,Solteiro(a),4660.00,C,6,277.38,Delivery,22,Sim,5,3,4,3,4,9,Expresso
+648,46,Feminino,Rudge Ramos,Superior incompleto,Solteiro(a),3180.00,C,7,234.08,Delivery,4,Sim,4,4,4,3,4,6,Gelado
+649,68,Masculino,Jardim do Mar,Superior incompleto,Solteiro(a),3890.00,C,4,246.25,App,69,Não,4,1,5,3,3,6,Coado
+650,62,Masculino,Nova Petrópolis,Fundamental,Divorciado(a),1300.00,D,6,213.39,Drive-thru,6,Sim,5,2,5,1,4,7,Gelado
+651,43,Feminino,Baeta Neves,Médio,Solteiro(a),5560.00,C,13,356.45,App,16,Não,5,4,4,2,4,6,Gelado
+652,52,Feminino,Nova Petrópolis,Superior completo,Solteiro(a),2490.00,D,9,240.34,App,33,Sim,4,2,5,3,4,7,Latte
+653,28,Feminino,Jardim do Mar,Pós-graduação,Solteiro(a),3630.00,C,6,250.66,Delivery,26,Não,3,5,4,4,4,8,Expresso
+654,60,Masculino,Nova Petrópolis,Superior completo,Solteiro(a),4980.00,C,4,289.87,Delivery,3,Não,5,5,5,2,5,9,Latte
+655,47,Feminino,Nova Petrópolis,Médio,Solteiro(a),1620.00,D,8,241.58,Loja física,24,Sim,4,1,4,3,3,4,Coado
+656,46,Masculino,Nova Petrópolis,Fundamental,Solteiro(a),1750.00,D,5,163.08,App,57,Não,4,3,4,4,4,5,Expresso
+657,58,Masculino,Nova Petrópolis,Fundamental,Solteiro(a),2540.00,D,7,221.37,Delivery,19,Sim,5,1,3,3,3,3,Gelado
+658,51,Masculino,Centro,Médio,Casado(a),9300.00,B,7,341.84,Drive-thru,63,Não,5,3,3,3,4,5,Cappuccino
+659,21,Masculino,Ferrazópolis,Superior incompleto,União estável,2940.00,D,4,207.31,App,26,Sim,5,3,5,3,4,8,Coado
+660,33,Outro,Centro,Pós-graduação,Solteiro(a),7060.00,B,10,292.19,Loja física,1,Não,5,2,4,4,5,7,Gelado
+661,27,Feminino,Bairro Assunção,Pós-graduação,Solteiro(a),5760.00,C,7,346.84,Drive-thru,8,Sim,4,4,4,3,5,9,Gelado
+662,56,Feminino,Bairro Assunção,Fundamental,União estável,2750.00,D,7,230.72,Delivery,59,Não,5,2,5,2,3,6,Coado
+663,19,Feminino,Bairro Assunção,Superior completo,União estável,1840.00,D,6,180.22,App,30,Sim,3,2,3,3,3,4,Cappuccino
+664,28,Masculino,Paulicéia,Médio,Casado(a),3780.00,C,12,249.56,Delivery,71,Não,5,4,4,4,4,8,Latte
+665,49,Masculino,Demarchi,Fundamental,Solteiro(a),1300.00,D,7,207.93,Drive-thru,57,Sim,3,1,3,4,2,4,Latte
+666,54,Masculino,Jardim do Mar,Superior incompleto,Casado(a),6030.00,B,13,314.18,Loja física,3,Sim,4,2,5,3,4,6,Gelado
+667,44,Feminino,Nova Petrópolis,Fundamental,Solteiro(a),2430.00,D,6,202.62,App,23,Não,3,4,2,3,2,1,Expresso
+668,63,Masculino,Jardim do Mar,Médio,Solteiro(a),1300.00,D,8,193.65,Drive-thru,53,Sim,4,3,4,3,4,6,Expresso
+669,66,Feminino,Centro,Superior incompleto,Solteiro(a),2640.00,D,4,218.80,App,5,Sim,3,1,4,3,3,6,Expresso
+670,25,Feminino,Demarchi,Médio,Casado(a),3110.00,C,8,253.50,Drive-thru,72,Não,4,4,3,4,4,7,Gelado
+671,68,Masculino,Paulicéia,Superior incompleto,Solteiro(a),2790.00,D,3,146.51,App,12,Sim,4,2,4,3,4,6,Latte
+672,50,Feminino,Demarchi,Superior incompleto,Casado(a),3980.00,C,5,190.06,App,58,Não,3,2,2,2,2,4,Coado
+673,51,Feminino,Jardim do Mar,Superior completo,Solteiro(a),2230.00,D,8,205.21,Loja física,61,Sim,4,1,4,3,3,4,Expresso
+674,23,Masculino,Nova Petrópolis,Fundamental,Solteiro(a),1300.00,D,2,182.56,Delivery,37,Não,5,3,3,2,5,6,Expresso
+675,50,Feminino,Centro,Fundamental,Divorciado(a),2200.00,D,12,277.78,Loja física,58,Não,3,1,4,4,3,5,Coado
+676,56,Feminino,Paulicéia,Superior incompleto,União estável,3000.00,C,3,232.11,Drive-thru,64,Sim,3,2,3,2,3,3,Coado
+677,48,Feminino,Centro,Médio,Solteiro(a),2170.00,D,6,214.55,Loja física,53,Sim,5,3,4,4,4,8,Latte
+678,22,Feminino,Paulicéia,Superior completo,Casado(a),5060.00,C,7,291.21,Loja física,51,Não,4,4,5,2,4,4,Expresso
+679,45,Masculino,Paulicéia,Fundamental,Solteiro(a),1520.00,D,9,215.37,App,28,Não,4,2,3,5,3,4,Latte
+680,67,Masculino,Taboão,Superior incompleto,Solteiro(a),3560.00,C,5,300.09,Loja física,22,Sim,5,4,4,1,5,9,Coado
+681,56,Feminino,Baeta Neves,Pós-graduação,Casado(a),3880.00,C,8,275.81,App,63,Sim,3,5,2,2,4,4,Cappuccino
+682,25,Feminino,Taboão,Fundamental,Solteiro(a),1300.00,D,8,257.65,Delivery,17,Sim,3,4,5,4,4,8,Cappuccino
+683,68,Feminino,Rudge Ramos,Médio,Casado(a),1520.00,D,10,240.22,Delivery,30,Não,3,4,5,3,5,10,Coado
+684,68,Masculino,Baeta Neves,Pós-graduação,Casado(a),3970.00,C,10,261.39,Delivery,37,Não,4,4,2,2,4,5,Cappuccino
+685,26,Masculino,Rudge Ramos,Superior incompleto,Solteiro(a),6400.00,B,12,346.73,Loja física,29,Sim,5,3,4,5,4,8,Expresso
+686,60,Masculino,Paulicéia,Fundamental,Solteiro(a),3070.00,C,11,185.68,Delivery,27,Sim,2,3,3,2,2,6,Coado
+687,39,Feminino,Paulicéia,Médio,Solteiro(a),1300.00,D,7,176.60,Loja física,44,Não,3,3,3,3,3,5,Expresso
+688,49,Feminino,Taboão,Superior completo,União estável,1300.00,D,6,207.46,Delivery,24,Não,3,1,3,3,3,4,Latte
+689,41,Feminino,Paulicéia,Pós-graduação,Casado(a),4920.00,C,6,337.13,Drive-thru,72,Sim,5,2,4,3,4,7,Latte
+690,59,Masculino,Nova Petrópolis,Médio,Solteiro(a),2540.00,D,6,162.44,Delivery,13,Sim,3,1,4,1,3,7,Expresso
+691,70,Feminino,Centro,Superior incompleto,Solteiro(a),5230.00,C,8,275.36,App,29,Sim,4,3,3,3,3,4,Coado
+692,60,Masculino,Jardim do Mar,Superior completo,Casado(a),2280.00,D,8,130.47,Loja física,61,Não,2,2,3,2,3,4,Gelado
+693,67,Masculino,Baeta Neves,Fundamental,Solteiro(a),2850.00,D,11,253.66,Drive-thru,35,Sim,4,2,3,3,3,6,Gelado
+694,68,Feminino,Centro,Médio,Casado(a),4030.00,C,9,310.50,Loja física,51,Sim,5,4,4,1,4,6,Cappuccino
+695,22,Feminino,Jardim do Mar,Superior completo,Casado(a),2380.00,D,12,310.10,App,47,Não,4,1,3,4,3,6,Cappuccino
+696,31,Feminino,Jardim do Mar,Fundamental,Casado(a),1740.00,D,5,269.16,Loja física,24,Sim,4,2,3,5,3,5,Coado
+697,56,Feminino,Baeta Neves,Superior completo,Solteiro(a),3370.00,C,11,249.46,Loja física,54,Sim,2,4,2,3,2,4,Latte
+698,49,Feminino,Paulicéia,Superior incompleto,Solteiro(a),3670.00,C,9,284.40,App,18,Sim,4,4,5,4,5,7,Coado
+699,20,Masculino,Centro,Pós-graduação,Solteiro(a),3230.00,C,9,285.48,Delivery,54,Sim,4,2,4,4,4,5,Cappuccino
+700,23,Feminino,Centro,Fundamental,Casado(a),3160.00,C,6,216.02,Drive-thru,10,Sim,3,3,3,5,4,7,Expresso
+701,45,Feminino,Bairro Assunção,Pós-graduação,União estável,2920.00,D,9,287.10,Delivery,50,Sim,5,2,4,5,4,5,Expresso
+702,50,Masculino,Ferrazópolis,Médio,Solteiro(a),1410.00,D,8,267.86,Drive-thru,9,Sim,5,2,3,3,4,6,Gelado
+703,26,Masculino,Rudge Ramos,Fundamental,Casado(a),5020.00,C,13,250.42,Drive-thru,63,Sim,3,3,2,3,3,5,Latte
+704,27,Feminino,Centro,Superior completo,Casado(a),2260.00,D,11,297.78,App,46,Não,5,3,4,5,4,4,Latte
+705,24,Masculino,Ferrazópolis,Superior incompleto,Solteiro(a),2010.00,D,5,212.59,App,3,Não,4,3,4,3,4,7,Coado
+706,47,Masculino,Paulicéia,Pós-graduação,Solteiro(a),3520.00,C,5,245.51,Delivery,8,Sim,5,4,4,3,4,8,Cappuccino
+707,18,Masculino,Paulicéia,Fundamental,Solteiro(a),2060.00,D,4,250.96,App,14,Não,5,1,4,4,3,5,Cappuccino
+708,48,Masculino,Paulicéia,Fundamental,Casado(a),1890.00,D,8,221.69,App,70,Sim,3,3,3,2,3,3,Latte
+709,43,Feminino,Taboão,Superior incompleto,Casado(a),2790.00,D,11,300.69,Loja física,43,Não,5,3,4,3,5,7,Expresso
+710,42,Masculino,Ferrazópolis,Pós-graduação,Casado(a),3490.00,C,10,308.96,App,21,Não,5,4,5,3,4,6,Coado
+711,54,Feminino,Demarchi,Superior incompleto,União estável,3170.00,C,11,220.91,App,20,Não,3,2,4,2,2,4,Expresso
+712,45,Masculino,Taboão,Superior completo,Casado(a),1300.00,D,8,187.30,Drive-thru,2,Não,3,3,3,4,3,4,Expresso
+713,56,Masculino,Nova Petrópolis,Pós-graduação,Viúvo(a),8760.00,B,10,370.21,Drive-thru,15,Sim,3,2,4,1,3,4,Coado
+714,58,Feminino,Centro,Pós-graduação,Casado(a),3550.00,C,9,310.42,App,62,Sim,4,3,4,2,4,7,Cappuccino
+715,66,Feminino,Paulicéia,Superior incompleto,Divorciado(a),4000.00,C,6,246.80,Loja física,44,Sim,4,3,4,5,4,8,Coado
+716,60,Masculino,Bairro Assunção,Superior completo,Divorciado(a),1820.00,D,12,214.43,Drive-thru,27,Sim,4,1,5,1,4,8,Latte
+717,45,Masculino,Jardim do Mar,Superior incompleto,Casado(a),2290.00,D,3,212.76,App,2,Não,5,2,4,3,4,8,Expresso
+718,44,Feminino,Baeta Neves,Superior completo,Divorciado(a),2350.00,D,4,209.13,Loja física,25,Sim,2,3,4,5,3,7,Coado
+719,30,Masculino,Taboão,Superior incompleto,União estável,5160.00,C,10,296.01,Drive-thru,28,Sim,3,1,2,3,3,3,Expresso
+720,49,Masculino,Centro,Superior incompleto,Casado(a),2210.00,D,5,277.60,App,9,Não,5,2,4,4,4,7,Cappuccino
+721,25,Feminino,Ferrazópolis,Superior incompleto,Casado(a),3670.00,C,7,301.03,Loja física,44,Não,5,1,2,5,3,3,Coado
+722,67,Feminino,Baeta Neves,Superior completo,Casado(a),2600.00,D,18,315.97,Delivery,48,Não,3,5,3,3,3,3,Latte
+723,62,Feminino,Baeta Neves,Superior completo,Divorciado(a),2790.00,D,11,305.07,Drive-thru,72,Sim,5,3,5,3,4,8,Cappuccino
+724,24,Masculino,Bairro Assunção,Pós-graduação,Casado(a),2960.00,D,10,252.73,Drive-thru,26,Não,5,3,2,2,3,2,Cappuccino
+725,59,Feminino,Jardim do Mar,Superior completo,Divorciado(a),6010.00,B,10,266.03,App,20,Sim,4,3,4,2,4,7,Latte
+726,24,Masculino,Nova Petrópolis,Fundamental,Divorciado(a),1300.00,D,7,211.88,Delivery,60,Não,3,3,4,4,3,3,Cappuccino
+727,56,Feminino,Taboão,Superior incompleto,Viúvo(a),1640.00,D,7,259.26,App,26,Sim,5,3,5,3,3,6,Gelado
+728,22,Masculino,Baeta Neves,Médio,Solteiro(a),1300.00,D,5,233.53,Drive-thru,46,Sim,5,1,3,5,4,4,Coado
+729,43,Feminino,Centro,Fundamental,Casado(a),1350.00,D,7,182.79,Loja física,54,Não,3,4,4,4,4,7,Gelado
+730,52,Feminino,Taboão,Fundamental,Casado(a),1590.00,D,8,279.56,Drive-thru,64,Sim,4,4,4,3,3,5,Cappuccino
+731,56,Masculino,Rudge Ramos,Superior incompleto,União estável,1430.00,D,7,231.70,App,23,Sim,5,2,5,4,4,7,Gelado
+732,40,Feminino,Bairro Assunção,Pós-graduação,União estável,2530.00,D,8,225.86,Delivery,45,Sim,4,2,4,4,3,6,Cappuccino
+733,66,Masculino,Taboão,Superior incompleto,Casado(a),1300.00,D,7,111.54,Delivery,10,Não,2,1,3,2,3,4,Cappuccino
+734,59,Masculino,Taboão,Superior incompleto,Casado(a),1890.00,D,6,207.63,App,57,Não,4,1,5,2,4,7,Cappuccino
+735,29,Masculino,Jardim do Mar,Fundamental,Solteiro(a),3580.00,C,8,250.83,Loja física,4,Sim,3,4,3,4,3,4,Latte
+736,53,Masculino,Baeta Neves,Superior completo,Viúvo(a),3950.00,C,7,211.06,App,51,Não,3,5,3,3,3,5,Coado
+737,56,Feminino,Paulicéia,Fundamental,Solteiro(a),2530.00,D,8,217.57,Delivery,16,Sim,2,3,4,3,4,8,Expresso
+738,35,Masculino,Nova Petrópolis,Pós-graduação,Casado(a),2200.00,D,11,282.96,Delivery,34,Não,5,2,4,4,4,7,Latte
+739,57,Masculino,Paulicéia,Pós-graduação,Divorciado(a),1890.00,D,7,169.66,Delivery,6,Sim,3,5,2,1,3,3,Gelado
+740,65,Feminino,Demarchi,Pós-graduação,Casado(a),2330.00,D,9,229.71,Delivery,50,Sim,4,4,5,3,4,9,Latte
+741,61,Feminino,Centro,Médio,Solteiro(a),2620.00,D,8,302.16,Loja física,35,Não,5,2,5,4,4,6,Coado
+742,58,Masculino,Baeta Neves,Fundamental,Solteiro(a),3470.00,C,8,252.24,App,48,Não,4,5,5,2,5,8,Coado
+743,51,Feminino,Baeta Neves,Médio,Divorciado(a),3860.00,C,8,304.24,App,26,Sim,4,2,5,5,4,7,Gelado
+744,32,Masculino,Bairro Assunção,Superior completo,Casado(a),4020.00,C,8,228.68,App,1,Sim,4,2,2,3,2,3,Coado
+745,60,Outro,Nova Petrópolis,Médio,Solteiro(a),1910.00,D,9,173.77,App,42,Não,4,2,3,2,3,3,Latte
+746,37,Masculino,Demarchi,Pós-graduação,Casado(a),3520.00,C,14,259.35,Loja física,51,Sim,3,2,3,3,3,5,Expresso
+747,46,Feminino,Centro,Fundamental,Solteiro(a),1930.00,D,6,226.91,Drive-thru,48,Sim,3,2,3,3,2,3,Gelado
+748,34,Feminino,Rudge Ramos,Fundamental,União estável,1950.00,D,9,248.15,Loja física,19,Sim,4,3,5,1,4,7,Cappuccino
+749,34,Feminino,Paulicéia,Médio,Solteiro(a),6010.00,B,6,321.37,Delivery,52,Sim,4,3,3,4,4,7,Gelado
+750,26,Feminino,Nova Petrópolis,Superior completo,Solteiro(a),1340.00,D,12,256.41,App,40,Sim,4,2,5,5,3,5,Cappuccino
+751,68,Masculino,Ferrazópolis,Superior completo,Solteiro(a),3150.00,C,7,227.79,Delivery,16,Sim,5,3,4,3,4,9,Latte
+752,25,Masculino,Demarchi,Médio,Casado(a),4000.00,C,4,235.56,Drive-thru,9,Sim,4,1,3,4,3,4,Gelado
+753,22,Feminino,Demarchi,Superior completo,Casado(a),1500.00,D,5,198.81,Delivery,24,Sim,3,1,4,4,3,5,Expresso
+754,67,Feminino,Baeta Neves,Superior completo,Casado(a),2610.00,D,12,269.77,Drive-thru,2,Não,2,2,3,4,2,5,Cappuccino
+755,47,Masculino,Baeta Neves,Superior incompleto,Casado(a),2250.00,D,12,210.03,App,52,Sim,3,1,4,3,3,5,Coado
+756,41,Feminino,Taboão,Superior incompleto,Solteiro(a),2520.00,D,7,219.05,Drive-thru,2,Não,3,2,2,4,2,4,Cappuccino
+757,57,Masculino,Jardim do Mar,Fundamental,Solteiro(a),1300.00,D,12,238.83,Loja física,4,Sim,3,4,4,1,4,4,Gelado
+758,38,Feminino,Bairro Assunção,Médio,Solteiro(a),3190.00,C,7,291.75,Delivery,12,Sim,4,3,3,3,4,5,Latte
+759,24,Masculino,Ferrazópolis,Superior incompleto,União estável,3510.00,C,3,198.23,Loja física,24,Sim,4,2,3,4,3,5,Gelado
+760,56,Feminino,Jardim do Mar,Fundamental,Solteiro(a),2920.00,D,7,314.75,Loja física,2,Sim,5,2,4,4,4,8,Latte
+761,27,Masculino,Centro,Superior incompleto,Viúvo(a),1780.00,D,5,182.87,Drive-thru,46,Não,4,4,3,5,4,7,Expresso
+762,47,Feminino,Paulicéia,Fundamental,Solteiro(a),2330.00,D,8,240.65,Delivery,10,Sim,5,4,5,2,5,9,Gelado
+763,68,Masculino,Baeta Neves,Superior completo,Solteiro(a),2330.00,D,12,235.61,Delivery,58,Não,5,3,4,1,4,8,Latte
+764,67,Feminino,Jardim do Mar,Fundamental,Solteiro(a),2090.00,D,6,243.60,Drive-thru,41,Não,5,1,4,3,5,8,Cappuccino
+765,37,Feminino,Demarchi,Fundamental,Solteiro(a),5680.00,C,11,336.35,App,7,Sim,4,4,3,3,3,2,Coado
+766,59,Masculino,Taboão,Superior completo,Divorciado(a),3520.00,C,10,236.13,Delivery,29,Não,3,4,4,3,3,7,Cappuccino
+767,50,Feminino,Rudge Ramos,Médio,Casado(a),1500.00,D,6,220.98,Loja física,11,Sim,4,2,3,2,3,3,Latte
+768,43,Feminino,Rudge Ramos,Médio,Solteiro(a),2700.00,D,6,226.15,App,71,Sim,4,2,5,3,3,6,Coado
+769,25,Feminino,Jardim do Mar,Médio,Casado(a),1300.00,D,9,229.13,App,43,Sim,3,2,5,4,3,6,Latte
+770,37,Feminino,Demarchi,Médio,Casado(a),1420.00,D,12,241.61,Delivery,59,Não,3,2,3,4,3,4,Coado
+771,52,Feminino,Demarchi,Superior completo,União estável,2050.00,D,10,202.80,Loja física,27,Não,4,1,4,2,4,5,Expresso
+772,70,Masculino,Rudge Ramos,Superior completo,Viúvo(a),2890.00,D,3,172.58,Loja física,11,Não,3,4,3,1,3,2,Gelado
+773,18,Feminino,Bairro Assunção,Médio,Casado(a),3430.00,C,9,240.24,Loja física,17,Não,2,4,3,4,3,3,Coado
+774,56,Masculino,Taboão,Superior completo,Divorciado(a),4330.00,C,8,217.38,App,31,Sim,3,3,3,3,3,5,Coado
+775,62,Masculino,Nova Petrópolis,Superior completo,Divorciado(a),4320.00,C,8,244.71,Delivery,56,Não,4,4,3,3,3,3,Gelado
+776,68,Feminino,Demarchi,Superior incompleto,Casado(a),1890.00,D,13,223.61,Loja física,32,Não,3,3,3,2,3,3,Latte
+777,40,Masculino,Nova Petrópolis,Superior incompleto,Casado(a),2170.00,D,5,202.69,Drive-thru,67,Não,4,5,2,4,3,4,Expresso
+778,24,Masculino,Bairro Assunção,Pós-graduação,Solteiro(a),3740.00,C,8,321.05,App,27,Não,5,4,4,4,5,6,Expresso
+779,32,Masculino,Rudge Ramos,Superior incompleto,Casado(a),2020.00,D,6,286.71,App,17,Não,5,3,5,4,5,8,Gelado
+780,63,Feminino,Jardim do Mar,Médio,Viúvo(a),2380.00,D,10,163.96,Drive-thru,36,Sim,3,2,4,3,2,4,Gelado
+781,64,Feminino,Jardim do Mar,Superior incompleto,Solteiro(a),3720.00,C,11,257.65,Loja física,9,Não,3,3,4,1,3,5,Expresso
+782,51,Feminino,Rudge Ramos,Pós-graduação,Divorciado(a),3150.00,C,6,249.53,Loja física,49,Não,3,5,3,3,4,4,Coado
+783,24,Masculino,Nova Petrópolis,Superior completo,União estável,3250.00,C,6,248.88,App,8,Não,5,4,4,4,4,7,Coado
+784,24,Outro,Demarchi,Fundamental,Solteiro(a),4190.00,C,10,319.55,Loja física,47,Sim,5,2,3,4,3,5,Expresso
+785,43,Masculino,Nova Petrópolis,Superior incompleto,Casado(a),2600.00,D,2,211.81,Delivery,28,Sim,4,3,4,1,4,5,Coado
+786,49,Feminino,Paulicéia,Superior completo,União estável,5510.00,C,10,295.51,Drive-thru,26,Não,5,4,5,3,5,9,Latte
+787,19,Masculino,Bairro Assunção,Médio,Viúvo(a),2910.00,D,8,273.86,App,44,Não,5,1,5,5,4,6,Cappuccino
+788,54,Feminino,Centro,Pós-graduação,Solteiro(a),1930.00,D,7,279.62,Drive-thru,51,Não,4,1,3,3,2,3,Latte
+789,46,Masculino,Nova Petrópolis,Pós-graduação,Solteiro(a),2200.00,D,8,205.42,Loja física,67,Não,5,3,4,3,3,6,Gelado
+790,18,Feminino,Demarchi,Pós-graduação,Casado(a),2220.00,D,8,256.96,Delivery,21,Sim,4,1,2,5,3,3,Cappuccino
+791,23,Masculino,Rudge Ramos,Fundamental,Solteiro(a),1390.00,D,10,223.36,Delivery,59,Não,5,1,4,3,3,6,Coado
+792,42,Masculino,Taboão,Superior incompleto,Solteiro(a),2680.00,D,8,283.59,App,61,Sim,5,2,5,4,5,9,Coado
+793,56,Feminino,Centro,Superior incompleto,Solteiro(a),3900.00,C,8,271.17,Drive-thru,72,Sim,2,4,2,4,1,2,Coado
+794,61,Feminino,Centro,Superior completo,Solteiro(a),5980.00,C,12,305.86,App,70,Sim,3,4,2,2,3,4,Coado
+795,40,Masculino,Demarchi,Pós-graduação,Casado(a),4050.00,C,7,225.74,Drive-thru,57,Sim,3,5,2,3,3,5,Coado
+796,33,Feminino,Demarchi,Médio,Casado(a),1960.00,D,16,198.58,Delivery,22,Sim,2,2,3,3,2,3,Cappuccino
+797,69,Masculino,Bairro Assunção,Superior incompleto,Casado(a),1300.00,D,9,264.40,Loja física,51,Não,5,2,4,3,4,4,Expresso
+798,42,Masculino,Bairro Assunção,Superior completo,Casado(a),3250.00,C,13,267.32,Drive-thru,57,Sim,5,2,4,2,4,5,Gelado
+799,34,Masculino,Centro,Superior completo,Casado(a),3090.00,C,8,229.92,Loja física,21,Não,4,3,3,3,4,5,Cappuccino
+800,41,Feminino,Ferrazópolis,Superior completo,Solteiro(a),3410.00,C,9,312.64,Loja física,59,Sim,5,4,5,3,5,8,Gelado
+801,18,Feminino,Nova Petrópolis,Médio,Solteiro(a),5810.00,C,5,321.72,Drive-thru,51,Não,5,4,5,4,4,8,Cappuccino
+802,34,Feminino,Rudge Ramos,Pós-graduação,Solteiro(a),6020.00,B,11,352.46,Drive-thru,36,Sim,4,3,5,3,5,8,Cappuccino
+803,45,Masculino,Nova Petrópolis,Fundamental,Solteiro(a),3170.00,C,8,230.75,App,63,Não,4,4,2,1,4,7,Expresso
+804,66,Feminino,Jardim do Mar,Superior incompleto,Solteiro(a),2000.00,D,6,229.30,Delivery,7,Não,4,4,4,3,3,5,Latte
+805,57,Feminino,Bairro Assunção,Superior completo,Solteiro(a),2660.00,D,4,241.95,Delivery,50,Sim,5,2,4,2,4,6,Gelado
+806,59,Feminino,Taboão,Fundamental,Solteiro(a),2260.00,D,9,217.49,Delivery,57,Sim,5,4,5,1,4,6,Gelado
+807,46,Masculino,Bairro Assunção,Superior incompleto,Casado(a),2000.00,D,13,240.13,Drive-thru,3,Sim,4,2,5,3,4,6,Cappuccino
+808,23,Feminino,Rudge Ramos,Superior incompleto,Casado(a),3250.00,C,7,290.69,Loja física,30,Sim,4,3,4,4,3,5,Latte
+809,38,Masculino,Bairro Assunção,Superior completo,União estável,3640.00,C,5,212.16,Loja física,38,Sim,4,3,3,4,3,4,Coado
+810,70,Masculino,Nova Petrópolis,Fundamental,Divorciado(a),1510.00,D,8,136.58,Drive-thru,15,Sim,2,3,2,2,1,1,Gelado
+811,20,Masculino,Rudge Ramos,Médio,Casado(a),3890.00,C,11,283.15,Delivery,64,Não,5,2,5,5,4,9,Coado
+812,64,Masculino,Demarchi,Médio,Solteiro(a),2840.00,D,7,217.11,Delivery,46,Sim,3,2,4,4,3,5,Cappuccino
+813,54,Masculino,Nova Petrópolis,Superior completo,Casado(a),1520.00,D,9,257.83,App,20,Sim,5,1,4,2,4,6,Cappuccino
+814,33,Masculino,Paulicéia,Médio,Solteiro(a),2340.00,D,7,248.35,App,32,Sim,5,3,4,3,4,7,Coado
+815,59,Feminino,Baeta Neves,Superior incompleto,Casado(a),3400.00,C,5,176.60,Loja física,9,Sim,3,5,3,4,3,4,Expresso
+816,62,Masculino,Baeta Neves,Superior completo,Solteiro(a),5290.00,C,4,246.08,App,7,Sim,3,4,4,3,3,6,Latte
+817,20,Masculino,Baeta Neves,Superior completo,Casado(a),2480.00,D,11,259.15,Loja física,54,Não,5,3,5,4,4,6,Coado
+818,23,Masculino,Rudge Ramos,Fundamental,Solteiro(a),2960.00,D,2,208.52,App,71,Não,4,3,4,3,4,5,Cappuccino
+819,53,Masculino,Paulicéia,Pós-graduação,Casado(a),4040.00,C,7,220.83,Drive-thru,20,Sim,3,4,3,3,3,4,Latte
+820,70,Masculino,Rudge Ramos,Fundamental,Divorciado(a),1360.00,D,9,196.11,Loja física,18,Sim,5,3,4,2,5,7,Coado
+821,19,Masculino,Paulicéia,Fundamental,Casado(a),1300.00,D,8,169.54,Delivery,50,Sim,3,3,3,2,4,5,Latte
+822,53,Feminino,Jardim do Mar,Fundamental,Casado(a),3810.00,C,9,213.10,Loja física,37,Não,2,2,2,2,2,2,Expresso
+823,25,Feminino,Paulicéia,Médio,Casado(a),3970.00,C,8,299.46,Delivery,11,Sim,5,3,4,3,3,5,Latte
+824,52,Feminino,Baeta Neves,Pós-graduação,Solteiro(a),4280.00,C,6,222.00,App,49,Não,3,3,4,3,3,4,Cappuccino
+825,51,Feminino,Nova Petrópolis,Médio,Casado(a),5040.00,C,8,251.48,Delivery,16,Não,4,3,3,2,5,6,Coado
+826,22,Feminino,Taboão,Superior completo,Casado(a),4680.00,C,10,315.27,App,9,Não,3,1,4,5,3,5,Cappuccino
+827,54,Feminino,Bairro Assunção,Superior incompleto,Solteiro(a),3990.00,C,5,302.65,Drive-thru,34,Sim,5,2,4,3,4,5,Gelado
+828,65,Feminino,Baeta Neves,Fundamental,Solteiro(a),1600.00,D,7,217.88,Delivery,54,Não,4,3,5,1,3,5,Expresso
+829,63,Masculino,Paulicéia,Superior incompleto,União estável,6630.00,B,12,234.47,Delivery,38,Sim,1,4,3,2,2,4,Gelado
+830,19,Feminino,Jardim do Mar,Fundamental,Casado(a),2550.00,D,12,270.66,Delivery,47,Sim,4,2,5,5,4,7,Expresso
+831,31,Masculino,Jardim do Mar,Superior incompleto,Casado(a),2250.00,D,4,186.76,Drive-thru,18,Não,4,5,3,4,4,5,Coado
+832,30,Masculino,Centro,Superior incompleto,Casado(a),1970.00,D,10,258.61,Delivery,36,Não,5,1,5,2,4,6,Cappuccino
+833,42,Feminino,Taboão,Superior incompleto,Casado(a),3140.00,C,4,201.07,Loja física,52,Sim,4,4,5,2,4,6,Expresso
+834,25,Feminino,Rudge Ramos,Médio,Casado(a),1300.00,D,12,310.39,Loja física,39,Sim,5,4,3,5,4,5,Cappuccino
+835,63,Feminino,Demarchi,Superior completo,Solteiro(a),4700.00,C,9,287.16,Delivery,18,Sim,3,4,5,3,4,10,Expresso
+836,59,Masculino,Jardim do Mar,Superior incompleto,Casado(a),1950.00,D,9,221.28,App,69,Não,3,3,5,2,4,8,Expresso
+837,60,Feminino,Ferrazópolis,Médio,Casado(a),3150.00,C,8,274.34,Delivery,5,Sim,4,4,5,2,4,6,Cappuccino
+838,28,Feminino,Jardim do Mar,Superior incompleto,Solteiro(a),2090.00,D,6,249.73,Delivery,66,Sim,4,2,4,4,3,6,Expresso
+839,18,Masculino,Nova Petrópolis,Fundamental,Divorciado(a),1770.00,D,7,205.67,Loja física,53,Sim,5,4,5,5,5,8,Gelado
+840,66,Masculino,Nova Petrópolis,Pós-graduação,Solteiro(a),2780.00,D,6,231.90,Delivery,9,Não,4,4,4,3,4,6,Gelado
+841,33,Feminino,Nova Petrópolis,Superior completo,Casado(a),2830.00,D,12,267.94,Drive-thru,19,Não,3,1,3,4,2,2,Latte
+842,52,Feminino,Nova Petrópolis,Médio,Casado(a),6040.00,B,10,291.02,App,27,Sim,3,4,4,3,4,9,Expresso
+843,66,Feminino,Ferrazópolis,Superior completo,Casado(a),6470.00,B,9,367.88,Drive-thru,69,Não,5,1,4,2,4,5,Gelado
+844,19,Feminino,Baeta Neves,Superior completo,Casado(a),3370.00,C,5,248.73,Drive-thru,38,Sim,4,5,3,4,4,6,Coado
+845,18,Feminino,Paulicéia,Superior completo,União estável,2830.00,D,3,207.17,App,19,Não,4,3,3,3,3,3,Expresso
+846,18,Masculino,Baeta Neves,Fundamental,Casado(a),2920.00,D,14,325.79,Drive-thru,67,Não,5,4,5,4,5,9,Expresso
+847,26,Masculino,Nova Petrópolis,Pós-graduação,Casado(a),5540.00,C,6,255.19,Drive-thru,9,Sim,3,3,3,5,2,3,Coado
+848,20,Masculino,Rudge Ramos,Pós-graduação,Casado(a),2240.00,D,8,173.25,Drive-thru,59,Não,2,1,2,4,2,4,Expresso
+849,61,Masculino,Demarchi,Pós-graduação,Solteiro(a),3700.00,C,7,179.29,App,60,Não,3,5,3,2,4,6,Coado
+850,50,Feminino,Taboão,Pós-graduação,Solteiro(a),1620.00,D,8,207.84,Delivery,28,Sim,4,3,3,3,4,5,Latte
+851,69,Masculino,Taboão,Pós-graduação,Casado(a),6560.00,B,12,300.99,Delivery,4,Sim,4,2,2,3,3,7,Gelado
+852,60,Masculino,Bairro Assunção,Superior completo,Solteiro(a),8580.00,B,6,276.59,App,64,Não,2,4,2,1,3,4,Cappuccino
+853,69,Masculino,Baeta Neves,Fundamental,Solteiro(a),2540.00,D,9,203.22,Delivery,70,Sim,5,5,5,1,4,7,Latte
+854,30,Masculino,Paulicéia,Superior incompleto,Solteiro(a),1300.00,D,2,127.10,Drive-thru,28,Sim,4,2,4,4,3,5,Latte
+855,33,Feminino,Ferrazópolis,Médio,Casado(a),3150.00,C,11,282.58,Loja física,14,Sim,4,3,5,3,4,8,Gelado
+856,63,Feminino,Centro,Médio,Solteiro(a),1800.00,D,8,205.92,Drive-thru,20,Não,4,3,5,2,4,8,Coado
+857,30,Feminino,Demarchi,Pós-graduação,Divorciado(a),2510.00,D,6,212.76,App,10,Não,3,1,3,3,3,5,Coado
+858,21,Feminino,Centro,Pós-graduação,Casado(a),4330.00,C,5,313.28,Drive-thru,44,Não,4,2,3,5,3,5,Cappuccino
+859,53,Masculino,Rudge Ramos,Superior incompleto,Casado(a),3280.00,C,11,276.90,Loja física,38,Sim,5,5,5,3,5,10,Latte
+860,60,Feminino,Ferrazópolis,Superior completo,Solteiro(a),2720.00,D,4,274.21,Drive-thru,26,Não,5,2,4,2,4,5,Expresso
+861,69,Masculino,Rudge Ramos,Fundamental,Casado(a),1830.00,D,8,219.17,App,47,Sim,5,1,5,2,4,10,Cappuccino
+862,67,Masculino,Nova Petrópolis,Médio,Solteiro(a),2900.00,D,6,254.38,Drive-thru,45,Não,5,2,5,2,3,8,Gelado
+863,24,Feminino,Demarchi,Pós-graduação,Casado(a),2750.00,D,6,203.27,App,1,Não,2,4,4,5,3,6,Expresso
+864,58,Feminino,Ferrazópolis,Superior incompleto,Solteiro(a),1810.00,D,7,229.38,Delivery,30,Sim,4,1,3,3,3,4,Expresso
+865,62,Masculino,Baeta Neves,Superior incompleto,União estável,2610.00,D,5,152.72,Delivery,63,Não,3,3,4,2,4,6,Latte
+866,55,Masculino,Centro,Superior incompleto,Solteiro(a),3430.00,C,11,246.57,Loja física,58,Sim,5,5,5,2,5,8,Coado
+867,61,Feminino,Paulicéia,Médio,Casado(a),2470.00,D,11,276.62,Loja física,62,Sim,5,5,5,3,5,8,Gelado
+868,62,Feminino,Jardim do Mar,Pós-graduação,Solteiro(a),2040.00,D,10,184.18,Delivery,69,Não,3,3,4,2,3,2,Latte
+869,41,Masculino,Taboão,Superior completo,Casado(a),4900.00,C,6,268.34,App,5,Sim,4,5,3,4,4,7,Coado
+870,20,Feminino,Paulicéia,Superior completo,Casado(a),1300.00,D,7,219.53,Delivery,20,Não,4,4,5,4,5,10,Cappuccino
+871,42,Masculino,Baeta Neves,Médio,Solteiro(a),2030.00,D,6,228.64,Drive-thru,34,Sim,5,2,5,3,4,5,Latte
+872,28,Feminino,Taboão,Superior completo,Solteiro(a),2260.00,D,7,150.54,Drive-thru,37,Sim,2,3,2,2,3,5,Cappuccino
+873,24,Feminino,Baeta Neves,Pós-graduação,Solteiro(a),3540.00,C,12,275.97,Loja física,57,Não,2,5,3,4,2,3,Expresso
+874,24,Feminino,Rudge Ramos,Superior completo,Solteiro(a),3780.00,C,3,282.18,App,53,Sim,4,2,4,3,4,6,Cappuccino
+875,54,Feminino,Taboão,Superior incompleto,Viúvo(a),4870.00,C,10,268.31,Loja física,51,Não,1,4,3,2,2,4,Cappuccino
+876,44,Feminino,Nova Petrópolis,Médio,Casado(a),1810.00,D,12,326.08,Delivery,12,Não,4,3,5,5,4,5,Latte
+877,46,Feminino,Jardim do Mar,Superior incompleto,Solteiro(a),3700.00,C,4,273.70,Delivery,49,Sim,5,3,5,4,4,7,Coado
+878,57,Outro,Nova Petrópolis,Médio,União estável,2880.00,D,6,238.68,Drive-thru,58,Sim,5,2,4,4,4,6,Gelado
+879,47,Feminino,Taboão,Superior completo,Solteiro(a),1490.00,D,7,223.50,App,55,Sim,3,3,4,4,3,5,Gelado
+880,51,Feminino,Demarchi,Fundamental,Casado(a),5360.00,C,6,288.29,App,42,Não,4,4,5,4,4,6,Cappuccino
+881,22,Feminino,Baeta Neves,Fundamental,Casado(a),1300.00,D,5,190.15,Delivery,7,Sim,5,4,4,4,4,7,Gelado
+882,63,Feminino,Bairro Assunção,Superior completo,União estável,4140.00,C,3,255.82,Loja física,11,Não,3,4,3,4,3,6,Gelado
+883,41,Masculino,Taboão,Médio,Casado(a),2940.00,D,13,284.83,Loja física,54,Não,5,2,3,4,4,6,Latte
+884,26,Feminino,Centro,Superior incompleto,Casado(a),2970.00,D,3,195.31,Delivery,63,Sim,4,1,5,4,4,7,Cappuccino
+885,61,Masculino,Baeta Neves,Superior incompleto,Viúvo(a),2410.00,D,7,182.16,App,60,Não,3,2,5,3,4,10,Coado
+886,56,Feminino,Nova Petrópolis,Superior incompleto,Solteiro(a),4290.00,C,9,277.72,App,31,Sim,4,3,4,3,4,5,Expresso
+887,20,Outro,Demarchi,Superior completo,Viúvo(a),1430.00,D,5,196.05,Drive-thru,43,Sim,4,2,4,4,3,6,Cappuccino
+888,28,Feminino,Bairro Assunção,Médio,Divorciado(a),2280.00,D,9,277.66,Loja física,13,Sim,5,3,4,4,3,5,Latte
+889,18,Masculino,Ferrazópolis,Superior completo,União estável,2220.00,D,7,257.55,Drive-thru,43,Não,4,3,3,4,3,7,Gelado
+890,32,Feminino,Nova Petrópolis,Médio,Solteiro(a),1760.00,D,6,206.18,Delivery,15,Sim,4,4,4,5,3,6,Gelado
+891,23,Feminino,Rudge Ramos,Médio,Solteiro(a),2790.00,D,8,226.26,App,58,Não,3,2,3,3,3,5,Gelado
+892,55,Masculino,Rudge Ramos,Superior incompleto,Casado(a),4780.00,C,14,267.19,Drive-thru,57,Sim,3,2,3,4,3,5,Latte
+893,45,Masculino,Ferrazópolis,Pós-graduação,Casado(a),3080.00,C,5,248.10,Delivery,4,Não,4,4,3,3,4,4,Expresso
+894,69,Masculino,Bairro Assunção,Médio,Casado(a),3930.00,C,7,218.14,App,68,Não,3,3,4,4,4,5,Coado
+895,57,Feminino,Nova Petrópolis,Superior incompleto,União estável,3040.00,C,9,261.78,App,58,Não,5,3,5,2,4,7,Gelado
+896,50,Masculino,Ferrazópolis,Fundamental,Casado(a),1520.00,D,5,234.65,App,28,Sim,5,3,4,3,3,6,Latte
+897,44,Masculino,Nova Petrópolis,Fundamental,Solteiro(a),1970.00,D,6,215.90,Drive-thru,33,Sim,3,3,3,3,3,5,Latte
+898,20,Masculino,Nova Petrópolis,Superior completo,Casado(a),2520.00,D,9,257.65,App,6,Sim,4,1,4,2,3,5,Gelado
+899,21,Feminino,Bairro Assunção,Superior completo,Solteiro(a),2120.00,D,7,189.44,Loja física,68,Sim,3,4,4,5,3,7,Expresso
+900,50,Masculino,Nova Petrópolis,Médio,Solteiro(a),3110.00,C,10,208.54,Delivery,8,Não,2,3,3,2,2,1,Gelado
+901,18,Masculino,Ferrazópolis,Superior completo,Solteiro(a),3180.00,C,6,220.26,Drive-thru,67,Sim,3,5,4,4,4,5,Latte
+902,20,Masculino,Demarchi,Médio,Divorciado(a),1300.00,D,8,200.07,App,48,Sim,4,1,3,3,2,0,Coado
+903,29,Feminino,Jardim do Mar,Médio,Casado(a),1300.00,D,8,245.13,Drive-thru,67,Não,5,3,5,3,4,9,Expresso
+904,64,Feminino,Paulicéia,Superior incompleto,Casado(a),3700.00,C,7,284.03,App,27,Sim,4,3,5,2,4,7,Coado
+905,42,Masculino,Centro,Médio,Solteiro(a),1720.00,D,9,251.96,App,65,Não,5,1,5,2,4,8,Cappuccino
+906,55,Feminino,Nova Petrópolis,Pós-graduação,Casado(a),4290.00,C,7,264.54,Delivery,31,Sim,3,4,5,2,4,7,Latte
+907,39,Masculino,Bairro Assunção,Superior incompleto,Divorciado(a),3930.00,C,8,254.12,Loja física,26,Sim,4,1,4,3,3,6,Latte
+908,27,Feminino,Demarchi,Médio,União estável,1320.00,D,9,308.80,Drive-thru,25,Não,5,2,5,3,4,7,Gelado
+909,37,Feminino,Bairro Assunção,Superior incompleto,Casado(a),1450.00,D,14,211.68,Delivery,69,Sim,2,4,4,3,4,7,Coado
+910,22,Masculino,Jardim do Mar,Superior completo,Divorciado(a),6180.00,B,9,263.23,App,34,Não,4,3,3,4,2,3,Latte
+911,58,Feminino,Bairro Assunção,Médio,Casado(a),3100.00,C,7,202.90,Loja física,35,Sim,3,2,3,1,2,3,Latte
+912,27,Feminino,Demarchi,Pós-graduação,Casado(a),2770.00,D,5,243.36,Delivery,47,Sim,4,3,2,4,3,6,Cappuccino
+913,37,Masculino,Rudge Ramos,Superior incompleto,União estável,1800.00,D,8,244.28,Delivery,41,Sim,4,2,5,3,4,5,Coado
+914,69,Masculino,Jardim do Mar,Superior completo,Solteiro(a),2790.00,D,11,232.93,Drive-thru,39,Sim,5,2,3,1,4,6,Gelado
+915,49,Masculino,Jardim do Mar,Pós-graduação,Solteiro(a),2140.00,D,5,221.29,App,28,Não,4,4,2,4,4,5,Latte
+916,42,Feminino,Paulicéia,Superior incompleto,Solteiro(a),4160.00,C,6,214.47,Loja física,12,Sim,3,2,2,4,2,2,Coado
+917,46,Feminino,Nova Petrópolis,Fundamental,Casado(a),1580.00,D,8,226.56,App,72,Não,3,2,2,2,2,2,Cappuccino
+918,59,Masculino,Centro,Superior completo,Casado(a),5520.00,C,8,269.14,Drive-thru,36,Não,4,4,4,2,4,6,Latte
+919,31,Feminino,Paulicéia,Fundamental,Casado(a),1760.00,D,14,290.39,Drive-thru,71,Sim,5,1,3,4,3,6,Latte
+920,51,Feminino,Baeta Neves,Superior incompleto,Casado(a),1810.00,D,4,274.00,App,34,Não,5,4,3,2,5,7,Coado
+921,64,Feminino,Jardim do Mar,Pós-graduação,Solteiro(a),3200.00,C,5,277.42,Loja física,44,Sim,5,3,4,2,4,9,Cappuccino
+922,48,Masculino,Ferrazópolis,Superior incompleto,União estável,1300.00,D,4,140.36,Loja física,40,Não,3,3,3,4,2,4,Cappuccino
+923,41,Masculino,Demarchi,Superior completo,Solteiro(a),2970.00,D,5,200.62,Delivery,70,Sim,4,3,2,2,4,4,Cappuccino
+924,25,Masculino,Jardim do Mar,Superior incompleto,União estável,2420.00,D,5,284.70,Loja física,8,Não,4,2,3,4,4,6,Latte
+925,31,Masculino,Taboão,Médio,Solteiro(a),3440.00,C,8,261.37,Delivery,38,Sim,3,3,4,2,3,5,Cappuccino
+926,68,Feminino,Baeta Neves,Médio,Casado(a),1300.00,D,7,241.40,Loja física,12,Sim,4,2,4,3,4,8,Expresso
+927,46,Feminino,Centro,Superior incompleto,Casado(a),4790.00,C,10,220.20,App,63,Sim,2,4,2,4,3,2,Latte
+928,33,Feminino,Centro,Fundamental,Divorciado(a),3070.00,C,15,331.90,Drive-thru,39,Sim,5,2,5,1,3,4,Gelado
+929,40,Feminino,Baeta Neves,Superior incompleto,Solteiro(a),4870.00,C,9,277.15,App,67,Não,4,2,5,3,4,8,Expresso
+930,48,Feminino,Demarchi,Superior incompleto,União estável,2800.00,D,9,300.81,Delivery,20,Sim,4,4,4,4,4,7,Coado
+931,46,Feminino,Centro,Pós-graduação,Casado(a),5700.00,C,11,331.81,App,12,Não,5,2,3,4,4,6,Gelado
+932,55,Feminino,Rudge Ramos,Fundamental,Casado(a),1300.00,D,7,200.11,Drive-thru,46,Sim,3,3,3,2,3,5,Gelado
+933,31,Masculino,Paulicéia,Pós-graduação,Casado(a),4690.00,C,7,229.77,App,11,Sim,4,3,4,2,4,7,Gelado
+934,52,Masculino,Paulicéia,Superior incompleto,Solteiro(a),2060.00,D,8,225.63,Drive-thru,27,Sim,5,2,4,3,4,5,Cappuccino
+935,41,Feminino,Centro,Superior completo,Casado(a),1490.00,D,6,231.00,Drive-thru,23,Sim,4,4,5,3,4,8,Expresso
+936,67,Feminino,Demarchi,Superior incompleto,Solteiro(a),1860.00,D,13,189.19,App,16,Não,2,2,5,3,3,7,Gelado
+937,26,Masculino,Centro,Médio,Solteiro(a),2330.00,D,4,287.62,Loja física,10,Sim,5,2,3,4,3,5,Coado
+938,25,Masculino,Paulicéia,Pós-graduação,Casado(a),2290.00,D,13,222.51,Drive-thru,48,Não,4,2,3,3,2,1,Cappuccino
+939,42,Masculino,Taboão,Médio,Casado(a),2940.00,D,8,192.76,Delivery,55,Sim,3,2,5,4,3,5,Gelado
+940,44,Feminino,Taboão,Fundamental,Solteiro(a),1300.00,D,10,251.65,Drive-thru,29,Sim,4,2,3,3,3,5,Cappuccino
+941,54,Masculino,Demarchi,Superior completo,Solteiro(a),1300.00,D,10,256.99,App,21,Sim,4,2,4,4,3,7,Coado
+942,39,Feminino,Ferrazópolis,Superior completo,Solteiro(a),5780.00,C,11,313.62,App,12,Não,3,5,4,5,3,3,Gelado
+943,66,Feminino,Jardim do Mar,Pós-graduação,Solteiro(a),5880.00,C,10,299.98,Loja física,49,Sim,4,4,5,4,5,9,Coado
+944,43,Feminino,Ferrazópolis,Superior incompleto,Casado(a),1750.00,D,8,187.52,Drive-thru,59,Não,3,2,5,3,3,5,Coado
+945,24,Feminino,Baeta Neves,Fundamental,Solteiro(a),2040.00,D,4,225.94,Drive-thru,40,Sim,5,3,5,5,4,8,Expresso
+946,24,Feminino,Paulicéia,Fundamental,União estável,3240.00,C,12,320.33,Drive-thru,32,Sim,5,1,3,4,3,5,Gelado
+947,69,Feminino,Demarchi,Superior incompleto,Solteiro(a),3760.00,C,14,321.86,App,47,Não,5,5,4,3,5,7,Latte
+948,25,Masculino,Taboão,Médio,Solteiro(a),2480.00,D,5,225.71,App,66,Não,4,4,5,4,5,9,Coado
+949,68,Feminino,Demarchi,Pós-graduação,União estável,6460.00,B,14,331.77,App,72,Não,3,5,2,2,4,6,Coado
+950,32,Feminino,Taboão,Fundamental,Solteiro(a),1520.00,D,10,260.79,Loja física,14,Sim,3,4,3,5,2,3,Cappuccino
+951,22,Feminino,Centro,Pós-graduação,Casado(a),3330.00,C,13,309.28,Loja física,35,Não,5,4,2,4,4,3,Coado
+952,34,Feminino,Centro,Médio,União estável,2380.00,D,4,229.65,App,64,Sim,5,4,3,4,4,7,Cappuccino
+953,50,Feminino,Centro,Fundamental,União estável,2010.00,D,7,224.24,Delivery,46,Não,3,2,4,4,3,6,Cappuccino
+954,40,Feminino,Demarchi,Médio,Casado(a),2060.00,D,14,301.65,Drive-thru,59,Sim,5,2,5,4,4,8,Gelado
+955,59,Feminino,Paulicéia,Fundamental,Solteiro(a),2430.00,D,10,272.32,Drive-thru,72,Não,5,2,4,2,5,7,Coado
+956,50,Masculino,Bairro Assunção,Superior incompleto,Casado(a),2930.00,D,13,222.24,Delivery,8,Sim,3,4,2,3,3,5,Latte
+957,39,Masculino,Rudge Ramos,Médio,Viúvo(a),1530.00,D,11,200.24,Drive-thru,45,Não,3,1,2,1,2,5,Expresso
+958,51,Feminino,Taboão,Superior incompleto,União estável,4160.00,C,7,238.24,Drive-thru,39,Não,4,2,4,3,4,6,Coado
+959,69,Masculino,Paulicéia,Superior incompleto,Solteiro(a),2010.00,D,12,206.73,Delivery,21,Não,3,3,3,3,3,4,Coado
+960,39,Masculino,Ferrazópolis,Fundamental,Solteiro(a),1970.00,D,8,242.82,Drive-thru,48,Sim,4,3,2,3,2,1,Expresso
+961,26,Outro,Baeta Neves,Fundamental,Solteiro(a),1810.00,D,4,177.17,Drive-thru,8,Sim,5,2,4,3,3,4,Coado
+962,39,Masculino,Baeta Neves,Fundamental,Solteiro(a),2550.00,D,7,225.21,Loja física,36,Não,3,3,4,3,3,4,Cappuccino
+963,62,Masculino,Centro,Fundamental,Casado(a),1300.00,D,10,186.76,App,30,Não,4,4,4,4,4,7,Coado
+964,29,Masculino,Rudge Ramos,Fundamental,Solteiro(a),3120.00,C,9,228.94,Drive-thru,29,Não,5,5,5,4,4,7,Gelado
+965,68,Masculino,Taboão,Médio,Solteiro(a),2030.00,D,6,173.70,Loja física,45,Sim,4,3,4,4,4,7,Coado
+966,49,Feminino,Nova Petrópolis,Superior incompleto,Solteiro(a),4980.00,C,16,340.68,Delivery,68,Sim,4,3,3,3,4,5,Gelado
+967,49,Feminino,Paulicéia,Médio,Casado(a),2060.00,D,13,276.05,App,69,Sim,3,4,4,4,3,5,Expresso
+968,34,Feminino,Paulicéia,Médio,Solteiro(a),2350.00,D,14,331.91,Delivery,51,Não,5,2,5,3,4,6,Cappuccino
+969,66,Feminino,Nova Petrópolis,Superior incompleto,Casado(a),7280.00,B,11,380.57,Drive-thru,24,Sim,3,4,4,5,4,7,Expresso
+970,19,Feminino,Bairro Assunção,Superior incompleto,Solteiro(a),2250.00,D,10,284.93,App,70,Sim,4,5,5,4,4,5,Expresso
+971,33,Feminino,Ferrazópolis,Médio,União estável,4180.00,C,15,315.61,Loja física,72,Não,4,4,3,5,3,4,Cappuccino
+972,40,Masculino,Centro,Médio,Solteiro(a),2500.00,D,6,209.15,App,61,Sim,5,1,5,3,4,7,Expresso
+973,43,Masculino,Baeta Neves,Superior incompleto,Casado(a),3380.00,C,6,247.32,Delivery,63,Não,3,2,4,5,3,5,Cappuccino
+974,43,Masculino,Taboão,Fundamental,Solteiro(a),2280.00,D,8,255.99,App,59,Sim,4,2,3,3,2,1,Expresso
+975,25,Feminino,Paulicéia,Superior incompleto,Solteiro(a),3830.00,C,9,248.13,Delivery,55,Sim,3,4,3,5,4,6,Expresso
+976,29,Feminino,Paulicéia,Pós-graduação,Solteiro(a),2480.00,D,4,254.28,App,53,Sim,4,3,5,3,4,7,Gelado
+977,23,Masculino,Centro,Médio,Solteiro(a),1480.00,D,4,140.71,Delivery,46,Sim,4,5,5,4,3,6,Coado
+978,48,Masculino,Rudge Ramos,Fundamental,Solteiro(a),1690.00,D,6,176.56,Loja física,47,Não,3,3,2,2,2,0,Latte
+979,36,Outro,Bairro Assunção,Superior completo,Casado(a),3220.00,C,9,219.26,App,29,Sim,3,3,5,3,4,6,Latte
+980,47,Masculino,Bairro Assunção,Fundamental,Casado(a),2030.00,D,14,245.23,App,64,Sim,5,1,5,1,3,5,Cappuccino
+981,49,Masculino,Rudge Ramos,Fundamental,Solteiro(a),3110.00,C,7,208.79,Delivery,46,Sim,3,4,3,3,4,7,Latte
+982,55,Feminino,Jardim do Mar,Fundamental,Casado(a),4170.00,C,9,248.86,Delivery,45,Não,3,3,3,4,4,6,Coado
+983,46,Feminino,Rudge Ramos,Pós-graduação,Casado(a),2330.00,D,10,295.54,Delivery,54,Não,5,1,5,4,4,7,Latte
+984,52,Feminino,Paulicéia,Pós-graduação,Solteiro(a),2660.00,D,10,241.46,Drive-thru,6,Sim,4,2,3,1,3,3,Coado
+985,49,Masculino,Demarchi,Superior incompleto,Solteiro(a),1510.00,D,8,229.50,Drive-thru,67,Sim,5,1,4,1,4,5,Latte
+986,52,Masculino,Ferrazópolis,Superior completo,Solteiro(a),8180.00,B,4,342.59,Loja física,42,Sim,4,3,2,3,3,4,Cappuccino
+987,50,Feminino,Bairro Assunção,Superior completo,Solteiro(a),3730.00,C,8,290.44,Delivery,68,Não,4,3,2,5,4,6,Gelado
+988,34,Masculino,Nova Petrópolis,Superior completo,Casado(a),3790.00,C,6,202.93,Loja física,8,Sim,4,2,5,2,4,7,Gelado
+989,31,Feminino,Ferrazópolis,Superior incompleto,Viúvo(a),1460.00,D,8,236.69,App,17,Sim,5,2,5,5,5,10,Cappuccino
+990,59,Feminino,Bairro Assunção,Pós-graduação,Viúvo(a),3800.00,C,13,362.55,Delivery,69,Não,5,2,5,3,4,6,Latte
+991,36,Feminino,Ferrazópolis,Superior completo,Viúvo(a),3870.00,C,9,316.49,App,50,Sim,5,2,4,1,4,7,Coado
+992,47,Feminino,Centro,Fundamental,Casado(a),2000.00,D,5,211.07,Delivery,47,Não,3,1,3,2,3,2,Cappuccino
+993,28,Masculino,Centro,Médio,Solteiro(a),3800.00,C,8,247.96,Drive-thru,30,Sim,3,3,3,5,2,3,Coado
+994,40,Feminino,Paulicéia,Pós-graduação,Solteiro(a),9980.00,B,12,444.83,Delivery,41,Não,5,2,4,3,3,7,Gelado
+995,46,Masculino,Ferrazópolis,Superior incompleto,Solteiro(a),1860.00,D,1,233.40,Delivery,40,Sim,5,3,4,4,4,5,Cappuccino
+996,51,Masculino,Centro,Médio,Solteiro(a),1620.00,D,11,209.09,Drive-thru,15,Sim,5,3,4,1,4,7,Expresso
+997,45,Feminino,Taboão,Pós-graduação,Solteiro(a),2420.00,D,7,238.33,Delivery,41,Sim,4,4,4,3,3,7,Gelado
+998,37,Feminino,Centro,Superior completo,Casado(a),6370.00,B,8,305.90,Loja física,38,Sim,5,5,5,3,4,6,Gelado
+999,68,Masculino,Jardim do Mar,Superior incompleto,Solteiro(a),4960.00,C,11,291.92,Delivery,23,Não,5,4,5,2,5,9,Gelado
+1000,45,Feminino,Paulicéia,Superior incompleto,Solteiro(a),2660.00,D,10,300.03,App,25,Sim,4,3,5,3,3,8,Coado
+1001,60,Masculino,Jardim do Mar,Fundamental,Casado(a),2400.00,D,7,233.24,Loja física,56,Sim,4,3,4,2,4,7,Expresso
+1002,57,Feminino,Jardim do Mar,Médio,Solteiro(a),1820.00,D,6,224.27,Drive-thru,49,Não,4,3,4,3,3,6,Gelado
+1003,47,Masculino,Nova Petrópolis,Superior incompleto,Divorciado(a),4260.00,C,10,176.66,Drive-thru,34,Sim,3,3,5,3,3,4,Expresso
+1004,64,Masculino,Paulicéia,Pós-graduação,Solteiro(a),3270.00,C,13,229.81,Delivery,44,Não,3,3,3,3,3,5,Expresso
+1005,24,Feminino,Bairro Assunção,Médio,Casado(a),2050.00,D,13,269.56,Delivery,18,Não,3,1,2,5,3,4,Coado
+1006,66,Feminino,Baeta Neves,Fundamental,Solteiro(a),3180.00,C,10,203.63,Delivery,36,Sim,2,4,3,1,3,3,Cappuccino
+1007,63,Masculino,Bairro Assunção,Superior incompleto,Casado(a),2790.00,D,6,197.07,App,41,Não,4,2,3,1,3,3,Gelado
+1008,44,Feminino,Baeta Neves,Pós-graduação,Solteiro(a),3220.00,C,11,292.27,Drive-thru,19,Não,4,5,3,4,3,5,Gelado
+1009,56,Feminino,Taboão,Superior incompleto,Solteiro(a),2970.00,D,3,219.58,Delivery,13,Não,5,3,5,2,5,8,Gelado
+1010,45,Feminino,Baeta Neves,Médio,Casado(a),3590.00,C,7,278.42,App,38,Sim,5,3,4,3,3,6,Gelado
+1011,32,Feminino,Centro,Superior completo,Solteiro(a),6350.00,B,13,360.41,Delivery,68,Sim,5,5,3,3,5,7,Latte
+1012,60,Masculino,Nova Petrópolis,Superior completo,Solteiro(a),4410.00,C,5,231.10,Loja física,34,Não,5,1,5,2,4,7,Gelado
+1013,31,Masculino,Paulicéia,Médio,União estável,3410.00,C,10,269.38,App,65,Não,3,5,2,2,3,3,Gelado
+1014,34,Feminino,Demarchi,Pós-graduação,Solteiro(a),3150.00,C,15,266.31,Loja física,62,Sim,3,2,3,3,3,5,Cappuccino
+1015,45,Masculino,Demarchi,Superior incompleto,Casado(a),2060.00,D,5,168.47,Loja física,54,Sim,5,3,3,4,3,5,Latte
+1016,62,Feminino,Baeta Neves,Fundamental,Casado(a),3200.00,C,7,317.96,Drive-thru,65,Não,5,4,5,3,4,8,Coado
+1017,38,Feminino,Bairro Assunção,Superior incompleto,Solteiro(a),2970.00,D,11,279.46,App,30,Não,5,4,4,4,4,6,Gelado
+1018,44,Masculino,Demarchi,Pós-graduação,Casado(a),1890.00,D,12,259.42,Drive-thru,55,Não,4,2,5,3,5,10,Cappuccino
+1019,20,Outro,Ferrazópolis,Médio,Solteiro(a),1960.00,D,9,181.58,Delivery,11,Não,2,1,3,5,1,2,Cappuccino
+1020,24,Feminino,Taboão,Superior incompleto,Casado(a),2510.00,D,9,275.98,Loja física,24,Sim,4,2,5,4,4,8,Cappuccino
+1021,20,Feminino,Ferrazópolis,Superior completo,Solteiro(a),2290.00,D,5,231.97,Loja física,41,Não,5,2,4,2,3,5,Coado
+1022,21,Feminino,Jardim do Mar,Superior completo,Solteiro(a),5650.00,C,7,361.71,App,3,Sim,5,1,3,5,3,5,Latte
+1023,64,Masculino,Taboão,Pós-graduação,Solteiro(a),4820.00,C,14,315.20,Loja física,56,Sim,5,3,5,3,4,5,Cappuccino
+1024,62,Feminino,Centro,Fundamental,União estável,4420.00,C,9,278.52,Delivery,67,Sim,5,2,4,2,5,8,Coado
+1025,61,Feminino,Nova Petrópolis,Superior incompleto,Divorciado(a),3400.00,C,4,233.88,App,8,Não,3,4,2,4,3,5,Coado
+1026,20,Masculino,Nova Petrópolis,Superior incompleto,União estável,2660.00,D,7,189.94,Loja física,72,Sim,3,2,2,3,2,2,Latte
+1027,22,Feminino,Centro,Fundamental,Casado(a),1330.00,D,7,207.78,Delivery,7,Sim,5,5,4,5,4,7,Coado
+1028,32,Feminino,Rudge Ramos,Superior completo,Casado(a),3050.00,C,9,245.26,Drive-thru,10,Sim,3,3,5,5,3,5,Cappuccino
+1029,47,Feminino,Paulicéia,Fundamental,Casado(a),2260.00,D,15,377.27,Drive-thru,55,Sim,5,3,5,3,4,8,Expresso
+1030,35,Feminino,Nova Petrópolis,Superior incompleto,União estável,1470.00,D,8,139.10,App,50,Sim,2,2,3,3,3,4,Gelado
+1031,43,Feminino,Rudge Ramos,Médio,Casado(a),1950.00,D,6,249.37,Loja física,68,Sim,5,1,5,3,4,9,Coado
+1032,27,Masculino,Bairro Assunção,Fundamental,Solteiro(a),1790.00,D,8,223.90,Drive-thru,31,Sim,4,2,2,5,4,4,Gelado
+1033,56,Masculino,Bairro Assunção,Pós-graduação,Casado(a),4530.00,C,6,295.29,Delivery,42,Sim,4,4,3,3,3,4,Gelado
+1034,34,Masculino,Rudge Ramos,Médio,Casado(a),2960.00,D,14,238.39,Drive-thru,11,Não,3,3,4,5,3,4,Cappuccino
+1035,21,Outro,Rudge Ramos,Médio,Solteiro(a),1760.00,D,6,170.31,Loja física,50,Não,2,2,3,4,2,5,Latte
+1036,57,Feminino,Paulicéia,Pós-graduação,Solteiro(a),4660.00,C,4,247.72,App,72,Não,3,2,3,2,2,3,Gelado
+1037,65,Feminino,Taboão,Pós-graduação,Solteiro(a),3590.00,C,4,205.96,App,43,Sim,3,4,4,2,4,6,Expresso
+1038,18,Masculino,Baeta Neves,Fundamental,Divorciado(a),1300.00,D,9,217.44,Delivery,68,Sim,5,3,5,4,5,6,Gelado
+1039,41,Feminino,Ferrazópolis,Médio,Solteiro(a),1990.00,D,11,213.24,Delivery,29,Sim,3,3,3,1,3,3,Expresso
+1040,61,Masculino,Jardim do Mar,Superior completo,Divorciado(a),5530.00,C,4,235.49,Delivery,71,Não,4,3,5,2,4,8,Cappuccino
+1041,55,Masculino,Taboão,Superior completo,Casado(a),1560.00,D,4,143.96,App,39,Sim,3,1,3,2,3,5,Latte
+1042,63,Feminino,Centro,Pós-graduação,Casado(a),4070.00,C,10,309.46,App,11,Sim,4,4,5,3,4,6,Coado
+1043,40,Feminino,Jardim do Mar,Superior incompleto,Solteiro(a),5660.00,C,6,280.36,Loja física,27,Não,2,3,4,5,2,3,Cappuccino
+1044,37,Feminino,Centro,Fundamental,União estável,1530.00,D,2,225.89,App,36,Não,5,4,5,3,5,10,Gelado
+1045,55,Feminino,Centro,Pós-graduação,Casado(a),3750.00,C,12,280.09,Loja física,5,Sim,4,3,5,1,3,9,Coado
+1046,26,Feminino,Baeta Neves,Fundamental,Solteiro(a),1300.00,D,10,200.36,Drive-thru,65,Não,1,2,2,3,1,2,Coado
+1047,30,Feminino,Paulicéia,Fundamental,Solteiro(a),4360.00,C,6,290.39,Delivery,18,Sim,3,4,2,4,2,4,Coado
+1048,49,Masculino,Centro,Superior completo,Solteiro(a),3120.00,C,8,206.71,Delivery,49,Sim,3,3,3,3,3,6,Expresso
+1049,53,Masculino,Bairro Assunção,Superior completo,Solteiro(a),3360.00,C,6,237.79,Drive-thru,67,Sim,3,2,3,4,4,8,Gelado
+1050,24,Masculino,Bairro Assunção,Fundamental,Casado(a),3760.00,C,9,237.98,Delivery,32,Não,4,3,5,5,3,6,Coado
+1051,44,Feminino,Nova Petrópolis,Fundamental,União estável,2990.00,D,8,185.24,App,44,Sim,3,1,3,4,3,3,Expresso
+1052,37,Feminino,Jardim do Mar,Superior incompleto,Casado(a),1850.00,D,5,242.79,App,38,Não,3,2,3,3,3,7,Coado
+1053,44,Feminino,Nova Petrópolis,Médio,Casado(a),1870.00,D,6,202.99,Loja física,56,Sim,3,5,4,4,3,4,Expresso
+1054,68,Feminino,Bairro Assunção,Superior completo,Casado(a),4370.00,C,10,307.22,Delivery,3,Não,5,4,5,2,4,6,Coado
+1055,22,Masculino,Rudge Ramos,Superior incompleto,Divorciado(a),1950.00,D,6,209.24,Drive-thru,26,Não,5,3,4,5,5,6,Latte
+1056,70,Feminino,Rudge Ramos,Superior incompleto,Divorciado(a),1300.00,D,14,216.35,Delivery,45,Não,4,4,4,2,4,6,Expresso
+1057,41,Feminino,Rudge Ramos,Superior incompleto,Solteiro(a),2720.00,D,11,238.42,App,7,Não,4,1,5,2,3,4,Cappuccino
+1058,58,Masculino,Demarchi,Médio,União estável,1360.00,D,8,199.20,App,62,Não,3,5,5,3,5,7,Expresso
+1059,40,Feminino,Baeta Neves,Médio,Solteiro(a),5090.00,C,7,292.19,App,46,Não,4,3,4,5,4,6,Gelado
+1060,34,Feminino,Baeta Neves,Superior completo,Divorciado(a),3310.00,C,9,256.85,App,1,Sim,4,5,3,3,4,4,Gelado
+1061,58,Feminino,Taboão,Superior incompleto,Viúvo(a),1980.00,D,13,256.28,Loja física,1,Não,4,5,5,4,5,10,Gelado
+1062,54,Masculino,Demarchi,Superior incompleto,Casado(a),2140.00,D,4,202.83,App,12,Sim,4,1,3,1,3,4,Latte
+1063,25,Masculino,Rudge Ramos,Superior incompleto,Solteiro(a),1300.00,D,8,223.98,Loja física,48,Sim,4,4,5,3,5,9,Cappuccino
+1064,55,Feminino,Nova Petrópolis,Médio,Casado(a),1590.00,D,16,244.03,Delivery,38,Sim,3,2,4,3,3,6,Gelado
+1065,57,Masculino,Nova Petrópolis,Pós-graduação,Solteiro(a),5960.00,C,6,301.07,Drive-thru,35,Sim,5,3,5,2,5,8,Cappuccino
+1066,38,Masculino,Taboão,Superior incompleto,Divorciado(a),7510.00,B,10,308.80,Loja física,41,Não,4,4,4,2,4,8,Latte
+1067,67,Masculino,Nova Petrópolis,Superior completo,Solteiro(a),4830.00,C,9,282.16,Loja física,36,Sim,5,2,3,3,3,5,Expresso
+1068,51,Feminino,Rudge Ramos,Pós-graduação,Casado(a),3540.00,C,12,276.43,Drive-thru,25,Sim,4,4,3,2,4,5,Gelado
+1069,35,Feminino,Paulicéia,Pós-graduação,União estável,2850.00,D,10,300.02,App,1,Não,5,1,5,3,4,5,Expresso
+1070,18,Masculino,Baeta Neves,Superior completo,Solteiro(a),1860.00,D,7,212.28,App,3,Não,5,3,4,4,4,7,Expresso
+1071,53,Feminino,Centro,Superior completo,Solteiro(a),8320.00,B,9,358.82,Drive-thru,50,Sim,4,5,4,2,4,5,Gelado
+1072,29,Masculino,Ferrazópolis,Superior incompleto,Casado(a),2440.00,D,8,276.86,Drive-thru,54,Não,3,3,4,4,4,7,Gelado
+1073,58,Masculino,Bairro Assunção,Superior completo,Casado(a),8710.00,B,8,309.54,Delivery,18,Sim,3,3,3,2,3,4,Gelado
+1074,45,Feminino,Taboão,Médio,Solteiro(a),4700.00,C,8,295.53,Loja física,18,Sim,5,4,3,2,5,5,Gelado
+1075,42,Masculino,Taboão,Superior completo,Solteiro(a),1440.00,D,7,205.73,Delivery,30,Não,4,1,5,4,4,8,Expresso
+1076,26,Masculino,Nova Petrópolis,Fundamental,Casado(a),1530.00,D,8,217.97,Delivery,47,Não,3,1,4,5,3,5,Cappuccino
+1077,55,Masculino,Demarchi,Pós-graduação,Casado(a),2770.00,D,8,205.99,App,43,Não,5,2,4,3,4,7,Coado
+1078,26,Feminino,Demarchi,Médio,Casado(a),2240.00,D,6,292.55,Delivery,41,Sim,4,3,5,5,5,9,Cappuccino
+1079,40,Masculino,Ferrazópolis,Superior completo,Solteiro(a),3040.00,C,7,262.23,Delivery,3,Sim,5,4,5,2,4,6,Coado
+1080,62,Masculino,Centro,Fundamental,Casado(a),9180.00,B,10,308.48,Delivery,32,Sim,3,4,5,2,4,8,Gelado
+1081,66,Masculino,Nova Petrópolis,Fundamental,Solteiro(a),1490.00,D,9,231.64,Delivery,55,Não,5,2,5,3,4,6,Gelado
+1082,70,Masculino,Rudge Ramos,Pós-graduação,Solteiro(a),4410.00,C,9,248.89,Drive-thru,43,Sim,5,2,5,1,4,6,Coado
+1083,68,Masculino,Ferrazópolis,Pós-graduação,Casado(a),5210.00,C,10,301.56,Loja física,59,Sim,5,5,3,2,4,6,Coado
+1084,47,Feminino,Centro,Médio,Solteiro(a),2530.00,D,11,295.14,Loja física,51,Sim,5,2,5,4,4,8,Latte
+1085,28,Feminino,Demarchi,Fundamental,Casado(a),2190.00,D,5,227.36,Loja física,65,Não,4,3,4,3,3,6,Expresso
+1086,62,Feminino,Paulicéia,Pós-graduação,União estável,2410.00,D,6,204.64,Loja física,42,Sim,4,2,3,3,4,5,Latte
+1087,60,Feminino,Jardim do Mar,Pós-graduação,Casado(a),4010.00,C,3,249.66,App,41,Não,5,4,5,3,4,5,Gelado
+1088,70,Feminino,Bairro Assunção,Fundamental,Casado(a),3100.00,C,7,259.60,Loja física,41,Sim,4,3,5,1,3,8,Gelado
+1089,52,Masculino,Centro,Superior completo,Solteiro(a),3800.00,C,10,254.52,Loja física,20,Sim,5,4,3,2,4,3,Cappuccino
+1090,25,Feminino,Paulicéia,Médio,Solteiro(a),2990.00,D,8,195.09,Delivery,32,Sim,4,4,4,4,5,8,Coado
+1091,44,Masculino,Centro,Superior completo,Solteiro(a),6000.00,B,5,224.08,Drive-thru,13,Sim,2,4,3,3,2,6,Cappuccino
+1092,41,Masculino,Centro,Superior incompleto,Casado(a),4250.00,C,10,319.20,Drive-thru,31,Não,3,3,3,4,3,4,Latte
+1093,62,Feminino,Jardim do Mar,Fundamental,Divorciado(a),2460.00,D,6,254.35,Loja física,11,Não,4,2,3,3,4,6,Coado
+1094,38,Masculino,Taboão,Médio,Solteiro(a),1440.00,D,6,196.73,Loja física,36,Sim,5,5,3,3,4,6,Latte
+1095,35,Masculino,Paulicéia,Superior incompleto,Solteiro(a),2080.00,D,5,196.12,Delivery,69,Sim,4,1,4,3,4,7,Coado
+1096,22,Masculino,Taboão,Superior completo,Solteiro(a),2640.00,D,5,245.20,Drive-thru,33,Sim,5,3,4,3,4,9,Expresso
+1097,62,Feminino,Centro,Fundamental,Casado(a),2670.00,D,9,208.40,Drive-thru,54,Não,4,3,5,3,4,6,Cappuccino
+1098,58,Masculino,Centro,Pós-graduação,Casado(a),3060.00,C,6,168.82,App,32,Não,3,3,4,2,3,4,Gelado
+1099,20,Masculino,Nova Petrópolis,Superior completo,Casado(a),1890.00,D,13,292.38,Loja física,66,Não,5,3,3,5,3,4,Coado
+1100,40,Masculino,Centro,Pós-graduação,União estável,2070.00,D,6,254.72,Drive-thru,16,Sim,4,2,4,4,4,8,Gelado
+1101,43,Masculino,Taboão,Pós-graduação,Solteiro(a),1700.00,D,8,187.18,App,61,Sim,3,3,3,4,3,4,Gelado
+1102,42,Outro,Centro,Fundamental,Casado(a),1980.00,D,7,268.38,App,53,Não,4,3,3,5,3,5,Cappuccino
+1103,66,Feminino,Demarchi,Fundamental,Casado(a),1300.00,D,10,205.79,App,64,Sim,4,5,3,2,5,8,Cappuccino
+1104,25,Masculino,Taboão,Superior completo,Solteiro(a),1880.00,D,8,103.82,Drive-thru,10,Não,3,4,4,3,4,7,Cappuccino
+1105,34,Feminino,Paulicéia,Fundamental,União estável,1780.00,D,4,227.38,App,65,Não,4,3,4,3,4,8,Latte
+1106,27,Outro,Bairro Assunção,Fundamental,Solteiro(a),1300.00,D,5,207.45,Delivery,66,Não,5,3,5,2,4,9,Cappuccino
+1107,30,Feminino,Baeta Neves,Superior incompleto,Casado(a),3160.00,C,10,298.02,Delivery,22,Não,5,5,4,2,4,7,Cappuccino
+1108,66,Feminino,Demarchi,Pós-graduação,Casado(a),5460.00,C,12,340.40,Drive-thru,45,Sim,4,2,4,3,3,5,Expresso
+1109,67,Masculino,Paulicéia,Superior completo,União estável,2720.00,D,9,217.95,Drive-thru,43,Não,4,2,3,1,3,4,Cappuccino
+1110,20,Feminino,Baeta Neves,Superior incompleto,Casado(a),2100.00,D,7,205.07,Delivery,4,Sim,3,1,2,3,2,2,Gelado
+1111,51,Masculino,Bairro Assunção,Fundamental,Solteiro(a),2900.00,D,8,234.46,Loja física,38,Não,5,3,5,2,4,10,Latte
+1112,30,Feminino,Paulicéia,Médio,Divorciado(a),1710.00,D,5,220.81,App,48,Sim,5,3,5,3,3,5,Coado
+1113,28,Masculino,Taboão,Superior completo,Casado(a),2100.00,D,5,227.39,Delivery,15,Não,5,1,3,5,3,5,Latte
+1114,33,Masculino,Baeta Neves,Fundamental,Casado(a),3640.00,C,9,162.43,Drive-thru,27,Não,2,5,2,3,1,0,Latte
+1115,28,Feminino,Centro,Superior incompleto,Casado(a),3940.00,C,10,251.35,Drive-thru,43,Não,4,2,4,3,3,5,Coado
+1116,43,Masculino,Demarchi,Fundamental,Solteiro(a),2890.00,D,7,229.77,App,67,Sim,4,2,5,4,4,7,Expresso
+1117,70,Feminino,Taboão,Médio,Casado(a),4210.00,C,6,225.52,Delivery,5,Sim,5,3,4,3,3,6,Cappuccino
+1118,49,Masculino,Jardim do Mar,Médio,União estável,1300.00,D,10,151.20,App,68,Não,4,4,4,2,3,6,Expresso
+1119,56,Masculino,Baeta Neves,Superior completo,Solteiro(a),6130.00,B,8,279.65,Delivery,59,Não,4,2,4,3,3,7,Expresso
+1120,44,Masculino,Rudge Ramos,Pós-graduação,Casado(a),4270.00,C,13,291.52,App,61,Sim,5,4,4,2,4,8,Coado
+1121,18,Feminino,Demarchi,Fundamental,União estável,3150.00,C,9,234.55,Delivery,4,Não,3,4,4,3,3,5,Expresso
+1122,22,Feminino,Taboão,Superior completo,Divorciado(a),3460.00,C,2,164.40,Drive-thru,41,Não,3,4,2,5,2,1,Cappuccino
+1123,32,Masculino,Jardim do Mar,Superior completo,União estável,3100.00,C,9,280.16,Drive-thru,27,Não,4,4,3,3,4,5,Latte
+1124,30,Masculino,Centro,Pós-graduação,Solteiro(a),2990.00,D,6,202.48,Delivery,67,Não,5,3,5,3,4,8,Cappuccino
+1125,62,Feminino,Bairro Assunção,Pós-graduação,Viúvo(a),4540.00,C,3,250.45,Drive-thru,54,Não,5,3,5,3,4,7,Expresso
+1126,62,Feminino,Baeta Neves,Fundamental,Solteiro(a),2070.00,D,4,210.45,Loja física,47,Não,5,4,5,4,5,9,Gelado
+1127,63,Feminino,Centro,Superior completo,Casado(a),5070.00,C,6,303.03,Loja física,3,Sim,4,3,5,2,4,7,Gelado
+1128,51,Masculino,Taboão,Superior incompleto,Casado(a),1420.00,D,7,218.52,Drive-thru,64,Não,5,2,3,2,4,7,Latte
+1129,47,Feminino,Rudge Ramos,Fundamental,Divorciado(a),1760.00,D,6,177.38,Delivery,36,Sim,2,4,2,4,2,0,Latte
+1130,52,Feminino,Ferrazópolis,Médio,União estável,6480.00,B,8,302.50,App,12,Não,5,3,4,1,4,6,Gelado
+1131,39,Masculino,Jardim do Mar,Pós-graduação,Casado(a),2650.00,D,11,278.37,Delivery,63,Não,5,3,5,4,4,6,Gelado
+1132,53,Feminino,Ferrazópolis,Superior incompleto,Casado(a),2620.00,D,4,170.75,Loja física,66,Não,4,2,4,1,4,6,Expresso
+1133,60,Masculino,Paulicéia,Médio,Casado(a),1790.00,D,10,242.12,Loja física,36,Sim,5,5,5,2,5,10,Expresso
+1134,58,Feminino,Bairro Assunção,Médio,Casado(a),3080.00,C,14,257.18,Loja física,48,Sim,4,5,4,1,4,6,Cappuccino
+1135,50,Masculino,Taboão,Pós-graduação,Casado(a),2640.00,D,7,223.03,Delivery,44,Sim,4,2,4,2,3,5,Cappuccino
+1136,21,Masculino,Baeta Neves,Médio,Solteiro(a),2100.00,D,7,222.43,Loja física,22,Não,3,3,4,5,3,6,Gelado
+1137,56,Masculino,Centro,Fundamental,Casado(a),3410.00,C,8,223.95,Loja física,54,Não,4,3,3,3,3,4,Latte
+1138,37,Feminino,Nova Petrópolis,Superior incompleto,Divorciado(a),2000.00,D,7,206.63,Delivery,72,Sim,5,2,2,4,3,4,Gelado
+1139,57,Masculino,Nova Petrópolis,Pós-graduação,Casado(a),5380.00,C,6,236.42,Delivery,68,Sim,4,3,5,1,4,8,Coado
+1140,46,Masculino,Demarchi,Fundamental,Divorciado(a),3240.00,C,11,226.63,App,50,Não,5,3,4,2,5,6,Coado
+1141,64,Feminino,Bairro Assunção,Médio,Solteiro(a),4350.00,C,14,316.34,Delivery,26,Sim,4,2,2,3,4,4,Gelado
+1142,35,Feminino,Baeta Neves,Superior incompleto,Casado(a),2900.00,D,8,235.53,Loja física,66,Sim,3,3,3,4,2,3,Latte
+1143,67,Feminino,Baeta Neves,Fundamental,Solteiro(a),10450.00,B,10,394.81,App,67,Sim,5,3,5,2,4,9,Coado
+1144,62,Masculino,Nova Petrópolis,Superior completo,Solteiro(a),5490.00,C,7,207.14,App,1,Não,3,4,4,2,4,8,Cappuccino
+1145,35,Masculino,Ferrazópolis,Médio,Casado(a),2790.00,D,4,205.08,App,25,Não,3,2,5,2,3,8,Cappuccino
+1146,43,Masculino,Nova Petrópolis,Fundamental,Solteiro(a),1490.00,D,4,189.02,Drive-thru,40,Não,4,2,3,5,3,5,Latte
+1147,46,Masculino,Paulicéia,Médio,Solteiro(a),2410.00,D,6,270.57,Loja física,42,Sim,4,3,3,3,5,6,Gelado
+1148,58,Masculino,Bairro Assunção,Pós-graduação,Casado(a),7200.00,B,7,272.51,Delivery,52,Sim,3,4,3,2,3,4,Expresso
+1149,54,Feminino,Taboão,Pós-graduação,Casado(a),8050.00,B,11,352.04,App,37,Não,3,5,4,3,4,6,Latte
+1150,63,Feminino,Nova Petrópolis,Superior incompleto,Casado(a),5920.00,C,9,303.58,App,1,Não,3,4,1,4,3,2,Cappuccino
+1151,37,Masculino,Centro,Superior incompleto,Solteiro(a),3900.00,C,9,273.08,Loja física,12,Sim,5,3,4,2,4,7,Gelado
+1152,44,Feminino,Rudge Ramos,Pós-graduação,Casado(a),2040.00,D,11,313.13,Delivery,55,Não,5,3,5,4,4,8,Latte
+1153,40,Masculino,Taboão,Fundamental,Casado(a),2720.00,D,8,225.67,Loja física,50,Não,3,1,4,2,2,2,Expresso
+1154,66,Masculino,Taboão,Superior completo,Casado(a),1980.00,D,7,191.71,Loja física,47,Não,5,5,5,4,4,9,Expresso
+1155,34,Feminino,Bairro Assunção,Superior completo,Casado(a),1560.00,D,14,296.32,App,32,Sim,5,3,5,2,5,6,Coado
+1156,49,Masculino,Ferrazópolis,Superior completo,Solteiro(a),3610.00,C,7,229.91,Drive-thru,20,Sim,3,5,1,3,3,2,Cappuccino
+1157,24,Feminino,Demarchi,Médio,União estável,2920.00,D,10,245.49,Loja física,23,Sim,2,1,4,5,2,5,Expresso
+1158,63,Masculino,Rudge Ramos,Superior completo,Solteiro(a),5150.00,C,8,295.23,Loja física,50,Não,3,2,4,3,4,7,Expresso
+1159,38,Masculino,Baeta Neves,Superior completo,Casado(a),3880.00,C,7,267.41,App,37,Não,3,4,5,3,4,7,Expresso
+1160,36,Masculino,Ferrazópolis,Pós-graduação,Solteiro(a),4410.00,C,6,278.90,Loja física,10,Sim,5,4,3,2,5,9,Cappuccino
+1161,48,Feminino,Jardim do Mar,Fundamental,Casado(a),1450.00,D,9,217.97,Delivery,29,Sim,4,3,2,3,3,3,Coado
+1162,44,Feminino,Taboão,Superior completo,Solteiro(a),3030.00,C,4,199.54,App,60,Sim,3,3,5,5,4,5,Gelado
+1163,62,Feminino,Centro,Pós-graduação,União estável,1950.00,D,10,266.71,Delivery,44,Não,4,2,3,3,4,6,Latte
+1164,46,Feminino,Bairro Assunção,Médio,Solteiro(a),1300.00,D,3,218.75,Loja física,63,Não,3,1,3,4,2,1,Gelado
+1165,45,Feminino,Baeta Neves,Superior completo,Casado(a),4450.00,C,9,253.35,Loja física,37,Sim,5,4,5,3,4,6,Coado
+1166,23,Feminino,Rudge Ramos,Fundamental,Solteiro(a),1450.00,D,5,226.34,Loja física,35,Não,3,1,4,4,3,6,Expresso
+1167,19,Outro,Demarchi,Superior completo,Solteiro(a),4260.00,C,10,260.05,Delivery,69,Sim,3,2,4,5,3,5,Coado
+1168,39,Feminino,Centro,Superior completo,Casado(a),5130.00,C,8,255.31,Delivery,37,Não,4,3,4,4,3,6,Cappuccino
+1169,70,Feminino,Rudge Ramos,Fundamental,Casado(a),1860.00,D,8,265.68,Loja física,10,Não,5,3,4,3,4,5,Gelado
+1170,66,Masculino,Centro,Fundamental,Casado(a),3160.00,C,6,246.52,App,29,Sim,5,5,5,1,4,8,Gelado
+1171,51,Masculino,Bairro Assunção,Superior completo,Viúvo(a),2430.00,D,6,180.60,Delivery,47,Não,3,3,4,3,3,3,Expresso
+1172,51,Masculino,Paulicéia,Médio,Casado(a),1300.00,D,8,153.91,Loja física,25,Não,3,4,2,3,3,5,Expresso
+1173,38,Masculino,Rudge Ramos,Superior incompleto,Viúvo(a),2910.00,D,9,290.89,Loja física,30,Não,5,3,5,2,4,7,Latte
+1174,27,Masculino,Jardim do Mar,Fundamental,Solteiro(a),1680.00,D,3,200.86,Delivery,63,Não,5,3,2,5,3,5,Coado
+1175,18,Masculino,Bairro Assunção,Pós-graduação,Divorciado(a),2650.00,D,16,273.85,Delivery,32,Sim,2,5,4,4,4,5,Latte
+1176,35,Masculino,Centro,Superior incompleto,Casado(a),6610.00,B,8,257.64,Delivery,22,Não,4,2,3,3,4,8,Expresso
+1177,34,Masculino,Nova Petrópolis,Pós-graduação,Casado(a),1730.00,D,16,277.96,App,8,Não,4,2,4,4,4,5,Coado
+1178,28,Feminino,Paulicéia,Fundamental,Viúvo(a),2470.00,D,8,234.54,Drive-thru,30,Sim,2,2,3,5,2,1,Coado
+1179,31,Feminino,Rudge Ramos,Médio,Casado(a),1520.00,D,3,210.07,Loja física,56,Não,3,3,3,4,3,4,Gelado
+1180,19,Feminino,Centro,Superior completo,União estável,4330.00,C,5,288.76,Loja física,22,Sim,3,2,4,4,3,7,Cappuccino
+1181,50,Feminino,Taboão,Superior completo,Casado(a),3720.00,C,8,265.81,Delivery,34,Não,4,4,4,5,4,7,Expresso
+1182,67,Masculino,Demarchi,Superior completo,Solteiro(a),4130.00,C,5,257.88,Drive-thru,48,Sim,5,4,5,2,5,10,Coado
+1183,54,Feminino,Nova Petrópolis,Pós-graduação,Casado(a),2440.00,D,9,214.39,Loja física,67,Sim,4,3,5,3,4,8,Coado
+1184,41,Feminino,Paulicéia,Pós-graduação,Casado(a),2510.00,D,10,241.35,Delivery,59,Sim,5,3,3,3,3,3,Latte
+1185,40,Feminino,Taboão,Fundamental,União estável,3310.00,C,8,254.54,Drive-thru,21,Não,4,5,1,4,3,4,Coado
+1186,34,Masculino,Nova Petrópolis,Médio,Divorciado(a),5330.00,C,8,274.58,Delivery,12,Não,3,3,3,4,2,3,Expresso
+1187,25,Feminino,Demarchi,Pós-graduação,Solteiro(a),4120.00,C,9,333.76,Drive-thru,49,Sim,4,4,3,4,3,3,Expresso
+1188,49,Masculino,Centro,Superior incompleto,Solteiro(a),1920.00,D,6,278.89,App,19,Sim,5,2,4,4,3,5,Latte
+1189,48,Masculino,Nova Petrópolis,Pós-graduação,Solteiro(a),4240.00,C,10,277.09,Drive-thru,29,Não,5,2,4,3,4,6,Gelado
+1190,18,Feminino,Demarchi,Superior incompleto,Casado(a),7570.00,B,5,336.20,App,8,Não,4,5,5,4,3,8,Latte
+1191,40,Masculino,Rudge Ramos,Fundamental,Solteiro(a),2280.00,D,7,227.56,App,56,Sim,3,2,2,4,3,3,Coado
+1192,32,Feminino,Jardim do Mar,Superior incompleto,Casado(a),5190.00,C,10,335.32,Loja física,12,Não,4,4,5,4,3,5,Gelado
+1193,27,Feminino,Jardim do Mar,Pós-graduação,Casado(a),2400.00,D,6,236.79,Drive-thru,28,Sim,4,3,5,4,4,6,Cappuccino
+1194,55,Masculino,Bairro Assunção,Superior completo,Divorciado(a),3260.00,C,9,274.66,Delivery,30,Sim,5,4,5,4,4,9,Latte
+1195,45,Masculino,Nova Petrópolis,Fundamental,Solteiro(a),2940.00,D,7,192.06,Drive-thru,4,Sim,3,1,4,2,3,4,Coado
+1196,51,Feminino,Rudge Ramos,Médio,Casado(a),3070.00,C,3,199.84,Delivery,56,Não,3,4,4,3,4,8,Expresso
+1197,55,Masculino,Demarchi,Pós-graduação,Solteiro(a),2650.00,D,14,262.82,App,45,Sim,5,2,4,2,5,6,Latte
+1198,70,Feminino,Rudge Ramos,Pós-graduação,União estável,2760.00,D,8,246.57,Loja física,39,Não,4,2,3,3,3,5,Latte
+1199,60,Masculino,Nova Petrópolis,Superior completo,Solteiro(a),5290.00,C,6,240.67,Delivery,13,Sim,4,3,4,2,3,5,Cappuccino
+1200,50,Masculino,Demarchi,Fundamental,Solteiro(a),3880.00,C,7,242.32,App,4,Não,5,4,5,4,5,10,Cappuccino

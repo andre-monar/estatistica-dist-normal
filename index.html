@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gasto mensal e a lei binomial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<style>
+  :root {
+    --bg: #ffffff;
+    --ink: #111111;
+    --muted: #6b6b6b;
+    --rule: #111111;
+    --hair: #d9d9d9;
+    --serif: "EB Garamond", "Cormorant Garamond", Georgia, serif;
+    --display: "Cormorant Garamond", "EB Garamond", Georgia, serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 23px;
+    line-height: 1.65;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 72px 16px 96px; }
+
+  header { text-align: center; padding-bottom: 40px; border-bottom: 1px solid var(--rule); }
+  .eyebrow { font-size: 14px; letter-spacing: .45em; text-indent: .45em; text-transform: uppercase; color: var(--muted); margin: 0 0 32px; }
+  h1 { font-family: var(--display); font-weight: 300; font-style: italic; font-size: clamp(44px, 9vw, 78px); line-height: 1.02; margin: 0 0 28px; letter-spacing: -.015em; }
+  .hero-math { font-size: 1.25em; margin: 0; }
+  .hero-math .katex { font-size: 1em; }
+
+  section { padding-top: 48px; }
+  h2 { font-family: var(--display); font-weight: 500; font-size: 36px; line-height: 1.2; margin: 0 0 16px; display: flex; gap: 14px; align-items: baseline; }
+  h2 .num { font-style: italic; color: var(--muted); min-width: 1.4em; }
+  p { margin: 0 0 16px; }
+  .small { font-size: 19px; color: var(--muted); }
+  code { font-family: ui-monospace, "SF Mono", Consolas, monospace; font-size: .8em; background: #f3f3f3; padding: 1px 5px; }
+
+  .math-block { text-align: center; margin: 28px 0; overflow-x: auto; overflow-y: hidden; padding: 4px 0; }
+
+  dl.facts { display: grid; grid-template-columns: max-content 1fr; gap: 6px 24px; margin: 0; }
+  dl.facts dt { color: var(--muted); font-style: italic; }
+  dl.facts dd { margin: 0; }
+
+  table { width: 100%; border-collapse: collapse; margin: 24px 0; font-variant-numeric: tabular-nums; }
+  caption { caption-side: bottom; text-align: left; font-size: 18px; color: var(--muted); padding-top: 10px; }
+  th, td { padding: 10px 8px; text-align: right; }
+  th:first-child, td:first-child { text-align: left; }
+  thead th { font-weight: 600; border-top: 1.5px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  tbody td { border-bottom: 1px solid var(--hair); }
+  tbody tr:last-child td { border-bottom: 1.5px solid var(--rule); }
+  tfoot td { font-weight: 600; }
+
+  /* ---------- roleta ---------- */
+  .wheels { display: flex; gap: 48px; justify-content: center; flex-wrap: wrap; margin: 24px 0 8px; }
+  .wheel-field { text-align: center; }
+  .wheel-field label { display: block; font-family: var(--display); font-style: italic; font-size: 34px; line-height: 1.1; margin-bottom: 6px; }
+  .wheel-field .hint { display: block; font-size: 16px; color: var(--muted); margin-top: 8px; }
+
+  .wheel-wrap { position: relative; width: 168px; height: 192px; margin: 0 auto; }
+  .wheel-wrap::before, .wheel-wrap::after {
+    content: ""; position: absolute; left: 0; right: 0; height: 0;
+    border-top: 1px solid var(--ink); pointer-events: none; z-index: 2; transition: border-top-width .12s;
+  }
+  .wheel-wrap::before { top: 72px; }
+  .wheel-wrap::after { top: 120px; }
+  .wheel-wrap:focus-within::before, .wheel-wrap:focus-within::after { border-top-width: 2px; }
+  .wheel {
+    position: absolute; inset: 0; overflow: hidden; cursor: grab;
+    touch-action: none; user-select: none; -webkit-user-select: none;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 30%, #000 70%, transparent 100%);
+            mask-image: linear-gradient(to bottom, transparent 0, #000 30%, #000 70%, transparent 100%);
+  }
+  .wheel.grabbing { cursor: grabbing; }
+  .wheel .row {
+    position: absolute; left: 0; right: 0; top: 0; height: 48px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--display); font-style: italic; font-size: 42px; line-height: 1;
+    font-variant-numeric: lining-nums tabular-nums;
+    will-change: transform, opacity; pointer-events: none;
+  }
+  .wheel input {
+    position: absolute; left: 0; right: 0; top: 72px; height: 48px; width: 100%;
+    margin: 0; padding: 0; border: 0; border-radius: 0; outline: none; background: transparent;
+    text-align: center; color: var(--ink); pointer-events: none;
+    font-family: var(--display); font-style: italic; font-size: 42px; line-height: 1;
+    font-variant-numeric: lining-nums tabular-nums;
+    -moz-appearance: textfield; appearance: textfield;
+  }
+
+  .calc { margin-top: 32px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 28px 0; }
+  .vigente { text-align: center; font-size: 19px; color: var(--muted); margin: 8px 0 0; }
+  .msg { text-align: center; min-height: 1.6em; font-size: 18px; color: var(--muted); margin: 8px 0; }
+  .steps { overflow: hidden; white-space: nowrap; text-align: center; margin: 8px 0; }
+  .steps .katex-display { margin: .3em 0; }
+  .result { text-align: center; margin: 20px 0 8px; }
+  .result .big { font-family: var(--display); font-weight: 300; font-style: italic; line-height: 1.15; overflow: hidden; white-space: nowrap; }
+  .result .pct { color: var(--muted); font-size: 20px; margin-top: 4px; }
+
+  figure { margin: 28px 0 0; }
+  figure svg { width: 100%; height: auto; display: block; }
+  figcaption { font-size: 18px; color: var(--muted); margin-top: 8px; }
+
+  .erro { border: 1px solid var(--ink); padding: 12px 16px; margin: 24px 0; font-size: 18px; }
+
+  footer { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--rule); font-size: 16px; color: var(--muted); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+  @media (max-width: 520px) {
+    body { font-size: 20px; }
+    main { padding-top: 48px; }
+    .wheels { gap: 28px; }
+    .wheel-wrap { width: 148px; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <p class="eyebrow">Estatística · Distribuição binomial</p>
+  <h1>Gasto mensal dos clientes</h1>
+  <p class="hero-math" id="hero-math" aria-label="P(X = k) igual a n sobre k vezes p elevado a k vezes (1 − p) elevado a n − k"></p>
+</header>
+
+<section>
+  <h2><span class="num">1.</span> Base de dados</h2>
+  <dl class="facts">
+    <dt>Arquivo</dt><dd><code>01_cafeterias.csv</code></dd>
+    <dt>Clientes</dt><dd>1.200, com 20 variáveis e sem valores ausentes</dd>
+    <dt>Variável</dt><dd><code>gasto_mensal</code> (R$), quantitativa contínua</dd>
+    <dt>Amplitude</dt><dd>de R$ 103,82 a R$ 444,83</dd>
+  </dl>
+</section>
+
+<section>
+  <h2><span class="num">2.</span> Critério de sucesso</h2>
+  <p>Consideramos <em>sucesso</em> o cliente cujo gasto mensal <em>G</em> é maior que um limite <em>L</em>, em reais. O fracasso é o evento complementar. Você escolhe o limite: arraste a roleta, ou clique no número e digite.</p>
+  <div class="wheels">
+    <div class="wheel-field">
+      <label for="limite-input">L (R$)</label>
+      <div id="w-limite"></div>
+      <span class="hint">de 0 a 500</span>
+    </div>
+  </div>
+  <div class="math-block" id="criterio"></div>
+  <p class="small" id="nota-limite"></p>
+</section>
+
+<section>
+  <h2><span class="num">3.</span> Sucessos e fracassos</h2>
+  <table>
+    <thead><tr><th>Resultado</th><th>Quantidade</th><th>Proporção</th></tr></thead>
+    <tbody>
+      <tr><td>Sucesso (<em>p</em>)</td><td id="t-s">–</td><td id="t-ps">–</td></tr>
+      <tr><td>Fracasso (<em>q</em>)</td><td id="t-f">–</td><td id="t-pf">–</td></tr>
+    </tbody>
+    <tfoot><tr><td>Total (<em>n</em>)</td><td id="t-n">–</td><td>1,0000</td></tr></tfoot>
+    <caption>Como <em>q</em> é o complementar de <em>p</em>, vale <em>p</em> + <em>q</em> = 1. A tabela acompanha o limite escolhido acima.</caption>
+  </table>
+</section>
+
+<section>
+  <h2><span class="num">4.</span> Lei binomial</h2>
+  <p>Para <em>n</em> ensaios independentes, cada um com probabilidade de sucesso <em>p</em>, a probabilidade de obter exatamente <em>k</em> sucessos é:</p>
+  <div class="math-block" id="formula"></div>
+  <p>Aqui, <em>n</em> clientes sorteados ao acaso, com o <em>p</em> do limite escolhido na seção 2. Gire as roletas ou digite os valores de <em>n</em> e <em>k</em>.</p>
+
+  <div class="calc">
+    <div class="wheels">
+      <div class="wheel-field">
+        <label for="n-input">n</label>
+        <div id="w-n"></div>
+        <span class="hint">de 0 a 10.000</span>
+      </div>
+      <div class="wheel-field">
+        <label for="k-input">k</label>
+        <div id="w-k"></div>
+        <span class="hint" id="k-hint">de 0 a n</span>
+      </div>
+    </div>
+    <p class="vigente" id="vigente"></p>
+    <p class="msg" id="msg" role="status" aria-live="polite"></p>
+    <div class="steps" id="steps"></div>
+    <div class="result" aria-live="polite">
+      <div class="big" id="res"></div>
+      <div class="pct" id="pct"></div>
+    </div>
+    <figure>
+      <svg id="chart" viewBox="0 0 640 230" role="img" aria-labelledby="chart-title"></svg>
+      <figcaption id="chart-title"></figcaption>
+    </figure>
+  </div>
+  <p class="small">Dica: arraste a roleta para cima ou para baixo. Quanto mais forte e rápido o impulso, mais ela gira. Ao passar do limite, ela volta ao 0. Clique no número para digitar, ou use as setas do teclado.</p>
+</section>
+
+<footer>
+  <span>Cálculos em <code>01_gasto_sucesso.py</code>, <code>02_binomial.py</code> e <code>03_exportar_gastos.py</code></span>
+  <span>Fórmulas: KaTeX · Texto: Cormorant Garamond e EB Garamond</span>
+</footer>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script src="gastos.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  /* =====================================================================
+   * Roleta numérica: arrastável (com inércia), digitável e circular.
+   * Passou do máximo -> volta ao 0 (e o inverso ao descer abaixo de 0).
+   * ===================================================================== */
+  function Roulette(host, opts) {
+    var ITEM = 48, H = 192, CY = H / 2, OFFS = 3;
+    var TAU = 0.9;          // constante de tempo do atrito da inércia (s)
+    var SNAP_V = 2.5;       // abaixo disso (unid/s) a roleta assenta no inteiro
+    var max = opts.max, pos = opts.value, lastVal = opts.value, gain = 1;
+    var dragging = false, mode = "none", raf = 0, lastT = 0, vel = 0;
+    var samples = [], startY = 0, lastY = 0, startT = 0;
+
+    // ---- DOM ----
+    var wrap = document.createElement("div"); wrap.className = "wheel-wrap";
+    var wheel = document.createElement("div"); wheel.className = "wheel";
+    var rows = [];
+    for (var o = -OFFS; o <= OFFS; o++) {
+      var r = document.createElement("div"); r.className = "row"; r.setAttribute("aria-hidden", "true");
+      wheel.appendChild(r); rows.push(r);
+    }
+    var input = document.createElement("input");
+    input.type = "text"; input.id = opts.id; input.inputMode = "numeric";
+    input.autocomplete = "off"; input.spellcheck = false;
+    input.setAttribute("role", "spinbutton");
+    input.setAttribute("aria-valuemin", "0");
+    wheel.appendChild(input);
+    wrap.appendChild(wheel); host.appendChild(wrap);
+
+    function mod(x) { var m = max + 1; return ((x % m) + m) % m; }
+    function value() { return mod(Math.round(pos)); }
+    function setGain() { gain = Math.max(1, Math.sqrt(max) / 8); }
+
+    function render() {
+      var base = Math.round(pos), idle = !dragging && mode === "none";
+      for (var o = -OFFS; o <= OFFS; o++) {
+        var idx = base + o, d = Math.abs(idx - pos), row = rows[o + OFFS], v = mod(idx);
+        if (row._v !== v) { row.textContent = v; row._v = v; }
+        var s = 1 - 0.14 * Math.min(d, 2.5);
+        row.style.transform = "translateY(" + (CY - ITEM / 2 + (idx - pos) * ITEM) + "px) scale(" + s.toFixed(3) + ")";
+        var op = Math.max(0, 1 - d * 0.38);
+        if (max === 0 && o !== 0) op = 0;
+        if (o === 0 && idle) op = 0;
+        row.style.opacity = op;
+      }
+      input.style.opacity = idle ? 1 : 0;
+      input.setAttribute("aria-valuemax", max);
+      input.setAttribute("aria-valuenow", value());
+      if (document.activeElement !== input) input.value = String(value());
+    }
+
+    function emit() {
+      var v = value();
+      if (v !== lastVal) { lastVal = v; opts.onChange(v); }
+    }
+
+    function stop() { if (raf) cancelAnimationFrame(raf); raf = 0; mode = "none"; }
+
+    function frame(t) {
+      var dt = Math.min((t - lastT) / 1000, 0.05); lastT = t;
+      if (mode === "inertia") {
+        pos += vel * dt; vel *= Math.exp(-dt / TAU);
+        if (Math.abs(vel) < SNAP_V) mode = "snap";
+      } else if (mode === "snap") {
+        var target = Math.round(pos);
+        pos += (target - pos) * (1 - Math.exp(-dt / 0.07));
+        if (Math.abs(target - pos) < 0.002) { pos = target; mode = "none"; }
+      }
+      render(); emit();
+      raf = mode === "none" ? 0 : requestAnimationFrame(frame);
+    }
+    function start(m) { mode = m; lastT = performance.now(); if (!raf) raf = requestAnimationFrame(frame); }
+
+    function commitTo(v, silent) {
+      stop(); pos = Math.max(0, Math.min(max, v)); render();
+      if (!silent) emit(); else lastVal = value();
+    }
+
+    // ---- arrastar ----
+    wheel.addEventListener("pointerdown", function (e) {
+      if (e.pointerType === "mouse" && e.button !== 0) return;
+      stop(); dragging = true; startY = lastY = e.clientY; startT = performance.now();
+      samples = [{ t: startT, p: pos }];
+      wheel.classList.add("grabbing");
+      try { wheel.setPointerCapture(e.pointerId); } catch (err) {}
+      render();
+    });
+    wheel.addEventListener("pointermove", function (e) {
+      if (!dragging) return;
+      var dy = e.clientY - lastY; lastY = e.clientY;
+      if (max > 0) pos += (-dy / ITEM) * gain;     // arrastar para cima aumenta o valor
+      var t = performance.now();
+      samples.push({ t: t, p: pos });
+      while (samples.length > 2 && t - samples[0].t > 100) samples.shift();
+      render(); emit();
+    });
+    function release(e) {
+      if (!dragging) return;
+      dragging = false; wheel.classList.remove("grabbing");
+      try { wheel.releasePointerCapture(e.pointerId); } catch (err) {}
+      var now = performance.now();
+      var tap = Math.abs(e.clientY - startY) < 5 && now - startT < 400;
+      if (tap || max === 0) { pos = Math.round(pos); render(); emit(); input.focus(); return; }
+      var v = 0, a = samples[0], b = samples[samples.length - 1];
+      if (samples.length >= 2 && now - b.t < 80 && b.t > a.t) v = (b.p - a.p) / ((b.t - a.t) / 1000);
+      var cap = 150 * gain; v = Math.max(-cap, Math.min(cap, v));
+      vel = v; start(Math.abs(v) < SNAP_V ? "snap" : "inertia");
+    }
+    wheel.addEventListener("pointerup", release);
+    wheel.addEventListener("pointercancel", release);
+
+    // ---- digitar ----
+    input.addEventListener("focus", function () { input.select(); });
+    input.addEventListener("input", function () {
+      var digits = input.value.replace(/\D/g, "");
+      if (digits === "") { input.value = ""; return; }
+      var v = parseInt(digits, 10);
+      if (v > max) v = max;
+      input.value = String(v);
+      stop(); pos = v; render(); emit();
+    });
+    input.addEventListener("blur", function () { input.value = String(value()); });
+    input.addEventListener("keydown", function (e) {
+      var step = 0;
+      if (e.key === "ArrowUp") step = 1; else if (e.key === "ArrowDown") step = -1;
+      else if (e.key === "PageUp") step = 10; else if (e.key === "PageDown") step = -10;
+      else if (e.key === "Enter") { input.blur(); return; }
+      if (!step) return;
+      e.preventDefault();
+      stop(); pos = Math.round(pos) + step; render(); emit();
+      input.value = String(value()); input.select();
+    });
+
+    setGain(); render();
+
+    return {
+      get value() { return value(); },
+      setMax: function (m) {
+        max = Math.max(0, m); setGain();
+        if (value() > max) pos = max; else pos = value();
+        render(); emit();
+      }
+    };
+  }
+
+  /* =====================================================================
+   * Dados e matemática
+   * ===================================================================== */
+  var G = window.GASTOS || [];
+  var N_TOTAL = G.length;
+  var LN10 = Math.LN10;
+
+  function tex(el, src, display) {
+    if (window.katex) {
+      try { window.katex.render(src, el, { displayMode: !!display, throwOnError: false }); return; } catch (e) {}
+    }
+    el.textContent = src;
+  }
+  var nfCache = {};
+  function nf(d) { return nfCache[d] || (nfCache[d] = new Intl.NumberFormat("pt-BR", { minimumFractionDigits: d, maximumFractionDigits: d })); }
+  var nInt = new Intl.NumberFormat("pt-BR");
+  function tc(s) { return s.replace(/,/g, "{,}"); }
+
+  function logComb(n, k) {
+    k = Math.min(k, n - k);
+    var s = 0;
+    for (var i = 1; i <= k; i++) s += Math.log(n - k + i) - Math.log(i);
+    return s;
+  }
+  function combExact(n, k) {
+    k = Math.min(k, n - k);
+    var r = 1;
+    for (var i = 1; i <= k; i++) r = r * (n - k + i) / i;
+    return Math.round(r);
+  }
+  // log(P(X=k)); -Infinity quando a probabilidade é 0
+  function logBinom(n, k, p) {
+    if (p <= 0) return k === 0 ? 0 : -Infinity;
+    if (p >= 1) return k === n ? 0 : -Infinity;
+    return logComb(n, k) + k * Math.log(p) + (n - k) * Math.log(1 - p);
+  }
+  // log da pmf inteira, por recorrência (O(n))
+  function logPmf(n, p) {
+    var lp = new Float64Array(n + 1), i;
+    if (p <= 0) { for (i = 0; i <= n; i++) lp[i] = i === 0 ? 0 : -Infinity; return lp; }
+    if (p >= 1) { for (i = 0; i <= n; i++) lp[i] = i === n ? 0 : -Infinity; return lp; }
+    var lr = Math.log(p / (1 - p));
+    lp[0] = n * Math.log(1 - p);
+    for (i = 0; i < n; i++) lp[i + 1] = lp[i] + Math.log((n - i) / (i + 1)) + lr;
+    return lp;
+  }
+
+  function sciFromLog10(l10, d) {
+    var e = Math.floor(l10), m = Math.pow(10, l10 - e), s = m.toFixed(d);
+    if (parseFloat(s) >= 10) { e += 1; s = (m / 10).toFixed(d); }
+    return s.replace(".", "{,}") + "\\times 10^{" + e + "}";
+  }
+  var SUP = { "-": "⁻", "0": "⁰", "1": "¹", "2": "²", "3": "³", "4": "⁴", "5": "⁵", "6": "⁶", "7": "⁷", "8": "⁸", "9": "⁹" };
+  function sup(e) { return String(e).split("").map(function (c) { return SUP[c]; }).join(""); }
+
+  var LN_1EM4 = Math.log(1e-4);
+  function fmtProbTex(lp) {
+    if (lp === -Infinity) return "0";
+    if (lp > LN_1EM4) return tc(nf(6).format(Math.exp(lp)));
+    return sciFromLog10(lp / LN10, 3);
+  }
+  function fmtPctText(lp) {
+    if (lp === -Infinity) return "0%";
+    if (lp > LN_1EM4) return nf(2).format(Math.exp(lp) * 100) + "%";
+    var l = lp / LN10 + 2, e = Math.floor(l), m = Math.pow(10, l - e), s = m.toFixed(2);
+    if (parseFloat(s) >= 10) { e += 1; s = (m / 10).toFixed(2); }
+    return s.replace(".", ",") + " × 10" + sup(e) + "%";
+  }
+  function fmtCombTex(n, k) {
+    var lc = logComb(n, k);
+    if (lc < 33) return String(combExact(n, k));
+    return sciFromLog10(lc / LN10, 3);
+  }
+
+  /* =====================================================================
+   * Estado e tela
+   * ===================================================================== */
+  var state = { L: 300, n: 20, k: 3 };
+  var $ = function (id) { return document.getElementById(id); };
+
+  tex($("hero-math"), "P(X=k)=\\binom{n}{k}\\,p^{k}(1-p)^{n-k}", false);
+  tex($("formula"), "P(X=k)=\\frac{n!}{k!\\,(n-k)!}\\;p^{k}\\,(1-p)^{n-k}", true);
+
+  if (!N_TOTAL) {
+    var err = document.createElement("div");
+    err.className = "erro";
+    err.innerHTML = "Não encontrei <code>gastos.js</code> ao lado deste arquivo. Rode <code>python 03_exportar_gastos.py</code> e recarregue a página.";
+    document.querySelector("main").insertBefore(err, document.querySelector("header").nextSibling);
+    return;
+  }
+
+  // Encolhe o texto (em px) até caber na largura do contêiner, sem rolagem.
+  function fit(el, basePx) {
+    el.style.fontSize = basePx + "px";
+    var avail = el.clientWidth, need = el.scrollWidth;
+    if (avail > 0 && need > avail) el.style.fontSize = Math.max(11, Math.floor(basePx * avail / need * 0.97)) + "px";
+  }
+
+  var scheduled = false;
+  function schedule() {
+    if (scheduled) return; scheduled = true;
+    requestAnimationFrame(function () { scheduled = false; update(); });
+  }
+
+  var wLimite = Roulette($("w-limite"), { id: "limite-input", max: 500, value: state.L, onChange: function (v) { state.L = v; schedule(); } });
+  var wK;
+  var wN = Roulette($("w-n"), { id: "n-input", max: 10000, value: state.n, onChange: function (v) {
+    state.n = v; if (wK) wK.setMax(v); schedule();
+  } });
+  wK = Roulette($("w-k"), { id: "k-input", max: state.n, value: state.k, onChange: function (v) { state.k = v; schedule(); } });
+
+  var cache = { L: null, sucessos: 0, iguais: 0 };
+  function contar(L) {
+    if (cache.L === L) return cache;
+    var s = 0, e = 0;
+    for (var i = 0; i < N_TOTAL; i++) { if (G[i] > L) s++; else if (G[i] === L) e++; }
+    cache = { L: L, sucessos: s, iguais: e };
+    return cache;
+  }
+
+  var chart = $("chart");
+  function svg(tag, attrs, text) {
+    var e = document.createElementNS("http://www.w3.org/2000/svg", tag);
+    for (var a in attrs) e.setAttribute(a, attrs[a]);
+    if (text != null) e.textContent = text;
+    return e;
+  }
+
+  function drawChart(n, k, p) {
+    var W = 640, H = 230, Lm = 48, Rm = 12, T = 12, B = 40, iw = W - Lm - Rm, ih = H - T - B, i;
+    var lp = logPmf(n, p), maxLp = -Infinity;
+    for (i = 0; i <= n; i++) if (lp[i] > maxLp) maxLp = lp[i];
+    var maxP = Math.exp(maxLp), lo = 0, hi = n;
+    if (n > 60) {
+      var cut = Math.log(maxP * 1e-3);
+      lo = n; hi = 0;
+      for (i = 0; i <= n; i++) if (lp[i] >= cut) { if (i < lo) lo = i; if (i > hi) hi = i; }
+      lo = Math.max(0, lo - 1); hi = Math.min(n, hi + 1);
+      if (hi - lo < 10) hi = Math.min(n, lo + 10);
+    }
+    var count = hi - lo + 1;
+    var ymax = Math.min(1, Math.ceil(maxP * 1.15 * 20) / 20) || 1;
+    chart.textContent = "";
+
+    var ticks = 4;
+    for (i = 0; i <= ticks; i++) {
+      var v = ymax * i / ticks, y = T + ih - (v / ymax) * ih;
+      chart.appendChild(svg("line", { x1: Lm, x2: W - Rm, y1: y, y2: y, stroke: i === 0 ? "#111" : "#e4e4e4", "stroke-width": i === 0 ? 1.2 : 1 }));
+      chart.appendChild(svg("text", { x: Lm - 8, y: y + 4, "text-anchor": "end", "font-size": 14, fill: "#6b6b6b", "font-family": "EB Garamond, serif" }, nf(2).format(v)));
+    }
+    var slot = iw / count, bw = Math.max(1, slot * 0.72), kIn = k >= lo && k <= hi;
+    for (i = lo; i <= hi; i++) {
+      var h = (Math.exp(lp[i]) / ymax) * ih, x = Lm + slot * (i - lo) + (slot - bw) / 2;
+      chart.appendChild(svg("rect", { x: x, y: T + ih - h, width: bw, height: Math.max(h, 0), fill: i === k ? "#111" : "#c9c9c9" }));
+    }
+    // rótulos do eixo x: passo "bonito"
+    var raw = count / 7, steps = [1, 2, 5], step = 1, mag = 1;
+    outer: for (;;) { for (var s = 0; s < 3; s++) { if (steps[s] * mag >= raw) { step = steps[s] * mag; break outer; } } mag *= 10; }
+    var labels = {}, first = Math.ceil(lo / step) * step, j;
+    for (j = first; j <= hi; j += step) labels[j] = true;
+    if (kIn) labels[k] = true;
+    Object.keys(labels).forEach(function (key) {
+      j = +key;
+      if (kIn && j !== k && Math.abs(j - k) * slot < 30) return;
+      chart.appendChild(svg("text", {
+        x: Lm + slot * (j - lo) + slot / 2, y: T + ih + 18, "text-anchor": "middle", "font-size": 14,
+        fill: j === k ? "#111" : "#6b6b6b", "font-weight": j === k ? 600 : 400, "font-family": "EB Garamond, serif"
+      }, String(j)));
+    });
+    chart.appendChild(svg("text", { x: Lm + iw / 2, y: H - 4, "text-anchor": "middle", "font-size": 16, "font-style": "italic", fill: "#111", "font-family": "EB Garamond, serif" }, "k (número de sucessos)"));
+
+    var cap = "Distribuição de X para n = " + nInt.format(n) + " e p = " + nf(4).format(p) + ". ";
+    cap += n > 60 && count < n + 1 ? "Exibindo k de " + nInt.format(lo) + " a " + nInt.format(hi) + ". " : "";
+    cap += kIn ? "A barra escura marca k = " + nInt.format(k) + "." : "k = " + nInt.format(k) + " fica fora do trecho exibido (probabilidade desprezível).";
+    $("chart-title").textContent = cap;
+  }
+
+  function update() {
+    var L = state.L, n = state.n, k = Math.min(state.k, state.n);
+    var c = contar(L), s = c.sucessos, f = N_TOTAL - s, p = s / N_TOTAL, q = 1 - p;
+
+    // seção 2 e 3
+    tex($("criterio"), "\\text{sucesso: } G>" + L + " \\qquad\\qquad \\text{fracasso: } G\\le " + L, true);
+    $("nota-limite").textContent = c.iguais === 0
+      ? "Nenhum cliente gasta exatamente R$ " + nInt.format(L) + ",00, então o limite não gera ambiguidade."
+      : c.iguais + (c.iguais === 1 ? " cliente gasta" : " clientes gastam") + " exatamente R$ " + nInt.format(L) + ",00 e " + (c.iguais === 1 ? "conta" : "contam") + " como fracasso (G ≤ L).";
+    $("t-s").textContent = nInt.format(s);
+    $("t-f").textContent = nInt.format(f);
+    $("t-n").textContent = nInt.format(N_TOTAL);
+    $("t-ps").textContent = nf(4).format(p) + " · " + nf(2).format(p * 100) + "%";
+    $("t-pf").textContent = nf(4).format(q) + " · " + nf(2).format(q * 100) + "%";
+
+    // seção 4
+    $("k-hint").textContent = "de 0 a " + nInt.format(n);
+    $("vigente").textContent = "Com G > R$ " + nInt.format(L) + ": p = " + nf(4).format(p) + " e q = " + nf(4).format(q) + ".";
+    $("msg").textContent = "";
+
+    var lp = logBinom(n, k, p);
+    var pT = tc(nf(4).format(p)), qT = tc(nf(4).format(q));
+    tex($("steps"),
+      "\\begin{gathered}P(X=" + k + ")=\\binom{" + n + "}{" + k + "}\\,(" + pT + ")^{" + k + "}\\,(" + qT + ")^{" + (n - k) + "}\\\\[4pt]" +
+      "\\text{com }\\tbinom{" + n + "}{" + k + "}=" + fmtCombTex(n, k) + "\\end{gathered}", true);
+    fit($("steps"), 23);
+    tex($("res"), "P(X=" + k + ")=" + fmtProbTex(lp), false);
+    fit($("res"), window.innerWidth < 520 ? 38 : 56);
+    $("pct").textContent = fmtPctText(lp) + " de chance de exatamente " + nInt.format(k) + " de " + nInt.format(n) +
+      " clientes gastarem mais de R$ " + nInt.format(L) + ",00.";
+    drawChart(n, k, p);
+  }
+
+  update();
+  window.addEventListener("load", schedule);
+  window.addEventListener("resize", schedule);
+})();
+</script>
+</body>
+</html>
